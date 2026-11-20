@@ -1,0 +1,3 @@
+# One trade per line:  Game | Item | Bonus | Note
+# Put new trades at the TOP. Leave bonus empty if there is none.
+Blox Fruits | 🔥 Hellfire Gas | Tiger and Yeti | Delivered fast
