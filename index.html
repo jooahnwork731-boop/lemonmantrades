@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lemon Man Trades</title>
+<style>
+  :root{
+    --lemon:#FFE14D; --lemon-dark:#F5C400; --leaf:#3BAA4A; --ink:#1E1B10;
+    --cream:#FFFBE6; --card:#FFFFFF; --muted:#6B6550;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Trebuchet MS","Segoe UI",system-ui,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
+  a{color:inherit}
+  .wrap{max-width:1050px;margin:0 auto;padding:0 20px}
+  nav{position:sticky;top:0;background:var(--ink);z-index:10}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
+  .logo{display:flex;align-items:center;gap:10px;color:var(--lemon);font-weight:900;font-size:1.25rem;text-decoration:none;letter-spacing:.5px}
+  .logo .lem{font-size:1.6rem}
+  nav ul{display:flex;gap:22px;list-style:none}
+  nav ul a{color:#fff;text-decoration:none;font-weight:600;font-size:.95rem}
+  nav ul a:hover{color:var(--lemon)}
+  .hero{background:radial-gradient(circle at 80% 20%,#FFF3A0 0,var(--lemon) 45%,var(--lemon-dark) 100%);padding:80px 0 90px;text-align:center;position:relative;overflow:hidden}
+  .hero h1{font-size:clamp(2.4rem,7vw,4.6rem);font-weight:900;line-height:1.05;text-shadow:4px 4px 0 #fff}
+  .hero p{font-size:1.2rem;max-width:620px;margin:18px auto 30px;color:#3a3420}
+  .mascot{font-size:5rem;display:inline-block;animation:bob 2.4s ease-in-out infinite}
+  @keyframes bob{50%{transform:translateY(-12px) rotate(-6deg)}}
+  .btn{display:inline-block;background:var(--ink);color:var(--lemon);padding:14px 30px;border-radius:999px;font-weight:800;text-decoration:none;font-size:1.05rem;border:none;cursor:pointer;transition:transform .15s}
+  .btn:hover{transform:translateY(-2px) scale(1.03)}
+  .btn.alt{background:#fff;color:var(--ink);margin-left:10px}
+  .floater{position:absolute;font-size:2.4rem;opacity:.35}
+  section{padding:70px 0}
+  h2{font-size:2.2rem;text-align:center;margin-bottom:10px}
+  .sub{text-align:center;color:var(--muted);margin-bottom:40px}
+  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+  .step{background:var(--card);border:3px solid var(--ink);border-radius:18px;padding:26px;box-shadow:6px 6px 0 var(--lemon-dark)}
+  .step .num{width:42px;height:42px;border-radius:50%;background:var(--lemon);border:3px solid var(--ink);display:grid;place-items:center;font-weight:900;margin-bottom:12px}
+  .step h3{margin-bottom:6px}
+  .games{background:var(--ink);color:#fff}
+  .games h2{color:var(--lemon)}
+  .games .sub{color:#c9c2a3}
+  .game-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px}
+  .game{background:#2c2817;border:2px solid #4a4326;border-radius:14px;padding:18px;text-align:center;font-weight:700;cursor:pointer;transition:.15s}
+  .game:hover{border-color:var(--lemon);transform:translateY(-3px)}
+  .game span{display:block;font-size:2rem;margin-bottom:6px}
+  .game.other{border-style:dashed}
+  .trade{background:var(--cream);border:3px solid var(--ink);border-radius:18px;box-shadow:6px 6px 0 var(--lemon-dark)}
+  .why{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+  .why div{background:#FFF4B8;border-radius:16px;padding:24px}
+  .why b{display:block;font-size:1.1rem;margin-bottom:4px}
+  .order{background:var(--lemon)}
+  form{max-width:620px;margin:0 auto;background:#fff;border:3px solid var(--ink);border-radius:20px;padding:30px;box-shadow:8px 8px 0 var(--ink)}
+  label{display:block;font-weight:700;margin:14px 0 6px}
+  input,select,textarea{width:100%;padding:12px 14px;border:2px solid #d8d0a8;border-radius:10px;font:inherit;background:var(--cream)}
+  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--ink)}
+  textarea{min-height:110px;resize:vertical}
+  form .btn{width:100%;margin-top:22px}
+  .email-line{text-align:center;margin-top:22px;font-weight:600}
+  .email-line a{background:#fff;padding:4px 10px;border-radius:8px;text-decoration:none;border:2px solid var(--ink)}
+  details{background:#fff;border:2px solid var(--ink);border-radius:12px;padding:16px 20px;margin-bottom:12px;max-width:760px;margin-left:auto;margin-right:auto}
+  summary{font-weight:800;cursor:pointer}
+  details p{margin-top:8px;color:#3a3420}
+  footer{background:var(--ink);color:#c9c2a3;text-align:center;padding:30px 20px;font-size:.9rem}
+  footer b{color:var(--lemon)}
+  @media(max-width:640px){
+    nav ul{gap:14px}
+    nav ul li:nth-child(3){display:none}
+    .btn.alt{margin:12px 0 0}
+  }
+</style>
+</head>
+
+<body>
+<nav>
+  <div class="wrap">
+    <a href="#" class="logo"><span class="lem">🍋</span>LEMON MAN TRADES</a>
+    <ul>
+      <li><a href="#how">How it works</a></li>
+      <li><a href="#recent">Trades</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#order">Order</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <span class="floater" style="top:12%;left:7%">🍋</span>
+  <span class="floater" style="top:65%;left:14%">⭐</span>
+  <span class="floater" style="top:20%;right:9%">💎</span>
+  <span class="floater" style="bottom:12%;right:16%">🍋</span>
+  <div class="wrap">
+    <div class="mascot">🍋</div>
+    <h1>Lemon Man Trades</h1>
+    <p>Need something in a Roblox game? Tell us what you want, we'll work out a price together, and we'll deliver it to you.</p>
+    <a href="#order" class="btn">Request an item</a>
+    <a href="#how" class="btn alt">How it works</a>
+  </div>
+</header>
+
+<section id="how">
+  <div class="wrap">
+    <h2>How it works</h2>
+    <p class="sub">Three simple steps. No accounts, no checkout pages.</p>
+    <div class="steps">
+      <div class="step"><div class="num">1</div><h3>Email us</h3><p>Send an email to <b>jooahnwork731@gmail.com</b> with the game and the item you want.</p></div>
+      <div class="step"><div class="num">2</div><h3>Agree on a price</h3><p>Every price is negotiable. We'll reply with an offer and work it out with you.</p></div>
+      <div class="step"><div class="num">3</div><h3>Get your item</h3><p>We deliver in-game, usually within a few days to a few weeks depending on the item.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="games" class="games">
+  <div class="wrap">
+    <h2>Games we trade in</h2>
+    <p class="sub">Click a game to start a request. Don't see yours? Ask anyway.</p>
+    <div class="game-grid">
+      <div class="game" data-game="Blox Fruits"><span>🍎</span>Blox Fruits</div>
+      <div class="game" data-game="Adopt Me!"><span>🐶</span>Adopt Me!</div>
+      <div class="game" data-game="Grow a Garden"><span>🌱</span>Grow a Garden</div>
+      <div class="game" data-game="Murder Mystery 2"><span>🔪</span>Murder Mystery 2</div>
+      <div class="game" data-game="Pet Simulator 99"><span>🐾</span>Pet Simulator 99</div>
+      <div class="game" data-game="Steal a Brainrot"><span>🧠</span>Steal a Brainrot</div>
+      <div class="game" data-game="Jailbreak"><span>🚓</span>Jailbreak</div>
+      <div class="game other" data-game="Other"><span>❓</span>Other game</div>
+    </div>
+  </div>
+</section>
+
+<section id="recent" style="background:#fff">
+  <div class="wrap">
+    <h2>Recent trades</h2>
+    <p class="sub">Real deals, delivered.</p>
+    <div class="why">
+      <div class="trade" style="padding:28px">
+        <span style="display:inline-block;background:#1E1B10;color:#FFE14D;font-weight:800;font-size:1rem;padding:6px 16px;border-radius:999px">🍎 BLOX FRUITS</span>
+        <h3 style="font-size:1.8rem;margin:12px 0 8px">🔥 Hellfire Gas</h3>
+        <p style="font-size:1.25rem">+ bonus <strong>Tiger</strong> and <strong>Yeti</strong> thrown in for free</p>
+        <p style="font-size:1.2rem;margin-top:10px;font-weight:700;color:#3BAA4A">✅ Delivered fast</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Why Lemon Man?</h2>
+    <p class="sub">Fresh deals, zero sour trades.</p>
+    <div class="why">
+      <div><b>💬 Price is negotiable</b>No fixed price list. Make an offer and we'll talk.</div>
+      <div><b>📦 We deliver</b>Most orders arrive within a few days. Rare items can take a few weeks.</div>
+      <div><b>🎮 Lots of games</b>If it's tradable in a Roblox game, just ask.</div>
+      <div><b>📧 Easy contact</b>Everything happens over email. Simple and on record.</div>
+    </div>
+  </div>
+</section>
+
+<section id="order" class="order">
+  <div class="wrap">
+    <h2>Request an item</h2>
+    <p class="sub" style="color:#3a3420">Fill this out and it'll open an email to us, ready to send.</p>
+    <form id="orderForm">
+      <label for="name">Your Roblox username</label>
+      <input id="name" required placeholder="e.g. CoolPlayer123">
+      <label for="game">Game</label>
+      <select id="game" required>
+        <option value="">Pick a game…</option>
+        <option>Blox Fruits</option>
+        <option>Adopt Me!</option>
+        <option>Grow a Garden</option>
+        <option>Murder Mystery 2</option>
+        <option>Pet Simulator 99</option>
+        <option>Steal a Brainrot</option>
+        <option>Jailbreak</option>
+        <option>Other</option>
+      </select>
+      <div id="otherWrap" style="display:none">
+        <label for="otherGame">What game?</label>
+        <input id="otherGame" placeholder="Type the game name">
+      </div>
+      <label for="item">What do you want?</label>
+      <textarea id="item" required placeholder="Item name(s), how many, and anything else we should know"></textarea>
+      <label for="offer">Your offer (optional)</label>
+      <input id="offer" placeholder="What you're willing to pay or trade">
+      <button type="submit" class="btn">🍋 Send request</button>
+    </form>
+    <div id="sentBox" style="display:none;max-width:620px;margin:22px auto 0;background:#fff;border:3px solid var(--ink);border-radius:16px;padding:20px">
+      <b>Didn't open your email app?</b> Copy this and email it to <b>jooahnwork731@gmail.com</b>:
+      <textarea id="msgCopy" readonly style="margin-top:10px;min-height:150px"></textarea>
+      <button type="button" class="btn" id="copyBtn" style="width:100%;margin-top:10px">Copy message</button>
+    </div>
+    <p class="email-line">Or email us directly: <a href="mailto:jooahnwork731@gmail.com">jooahnwork731@gmail.com</a></p>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <h2>FAQ</h2>
+    <p class="sub">Quick answers.</p>
+    <details><summary>How much does it cost?</summary><p>It depends on the item. Prices are negotiable, so send us what you want and an offer, and we'll reply.</p></details>
+    <details><summary>How long does delivery take?</summary><p>Usually a few days. Rare or hard-to-get items can take a few weeks. We'll give you an estimate before you agree.</p></details>
+    <details><summary>How do you deliver?</summary><p>We meet you in the game and trade the item to your account. We'll set up a time over email.</p></details>
+    <details><summary>Can I ask for a game that's not listed?</summary><p>Yes. Pick "Other" and tell us the game name.</p></details>
+  </div>
+</section>
+
+<footer>
+  <p><b>🍋 Lemon Man Trades</b> · <a href="mailto:jooahnwork731@gmail.com">jooahnwork731@gmail.com</a></p>
+  <p style="margin-top:6px">Not affiliated with Roblox Corporation or any game developer.</p>
+</footer>
+
+<script>
+  const EMAIL = "jooahnwork731@gmail.com";
+  const form = document.getElementById("orderForm");
+  const gameSel = document.getElementById("game");
+  const otherWrap = document.getElementById("otherWrap");
+  const otherGame = document.getElementById("otherGame");
+
+  function toggleOther(){
+    const isOther = gameSel.value === "Other";
+    otherWrap.style.display = isOther ? "block" : "none";
+    otherGame.required = isOther;
+    if (isOther) otherGame.focus();
+  }
+  gameSel.addEventListener("change", toggleOther);
+
+  document.querySelectorAll(".game").forEach(card => {
+    card.addEventListener("click", () => {
+      gameSel.value = card.dataset.game;
+      toggleOther();
+      document.getElementById("order").scrollIntoView();
+      setTimeout(() => (gameSel.value === "Other" ? otherGame : document.getElementById("name")).focus(), 400);
+    });
+  });
+
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    const name = document.getElementById("name").value.trim();
+    const game = gameSel.value === "Other" ? otherGame.value.trim() : gameSel.value;
+    const item = document.getElementById("item").value.trim();
+    const offer = document.getElementById("offer").value.trim();
+    const subject = `Lemon Man Trades request: ${game}`;
+    const body =
+`Hi Lemon Man Trades!
+
+Roblox username: ${name}
+Game: ${game}
+What I want: ${item}
+My offer: ${offer || "Not sure yet, open to negotiate"}
+
+Thanks!`;
+    document.getElementById("msgCopy").value = `Subject: ${subject}\n\n${body}`;
+    document.getElementById("sentBox").style.display = "block";
+    try { window.location.href = `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`; } catch (err) {}
+  });
+
+  document.getElementById("copyBtn").addEventListener("click", async () => {
+    const btn = document.getElementById("copyBtn");
+    try { await navigator.clipboard.writeText(document.getElementById("msgCopy").value); btn.textContent = "Copied! 🍋"; }
+    catch (err) { document.getElementById("msgCopy").select(); btn.textContent = "Select and copy it manually"; }
+  });
+</script>
+</body>
+</html>
