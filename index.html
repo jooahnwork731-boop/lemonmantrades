@@ -260,5 +260,27 @@ Thanks!`;
     catch (err) { document.getElementById("msgCopy").select(); btn.textContent = "Select and copy it manually"; }
   });
 </script>
+  <script>
+  // Recent trades: reads trades.txt and builds the cards
+  const GAME_EMOJI = {"blox fruits":"🍎","adopt me!":"🐶","adopt me":"🐶","grow a garden":"🌱","murder mystery 2":"🔪","mm2":"🔪","pet simulator 99":"🐾","steal a brainrot":"🧠","jailbreak":"🚓"};
+  function esc(t){ return t.replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
+  fetch("trades.txt?v=" + Date.now())
+    .then(r => r.ok ? r.text() : "")
+    .then(text => {
+      const box = document.querySelector("#recent .why");
+      const lines = text.split("\n").map(l => l.trim()).filter(l => l && !l.startsWith("#"));
+      if (!lines.length) { box.innerHTML = "<p>No trades posted yet. Check back soon!</p>"; return; }
+      box.innerHTML = lines.map(line => {
+        const [game = "", item = "", bonus = "", note = ""] = line.split("|").map(s => s.trim());
+        const emoji = GAME_EMOJI[game.toLowerCase()] || "🎮";
+        return `<div class="trade" style="padding:28px">
+          <span style="display:inline-block;background:#1E1B10;color:#FFE14D;font-weight:800;font-size:1rem;padding:6px 16px;border-radius:999px">${emoji} ${esc(game.toUpperCase())}</span>
+          <h3 style="font-size:1.8rem;margin:12px 0 8px">${esc(item)}</h3>
+          ${bonus ? `<p style="font-size:1.25rem">+ bonus <strong>${esc(bonus)}</strong> thrown in for free</p>` : ""}
+          <p style="font-size:1.2rem;margin-top:10px;font-weight:700;color:#3BAA4A">✅ ${esc(note || "Delivered")}</p>
+        </div>`;
+      }).join("");
+    });
+</script>
 </body>
 </html>
