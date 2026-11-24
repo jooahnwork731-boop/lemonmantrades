@@ -548,5 +548,14 @@ When: ${$("rDay").value.replace(/^(Today|Tomorrow) \((.+)\)$/, "$2")}, ${$("rTim
 $("reqForm").onsubmit = e => { e.preventDefault(); mail(reqMsg()); };
 $("reqCopy").onclick = () => { if (reqMsg()) copy("reqText", "reqCopy"); };
 </script>
+  <script>
+/* VOTE PATCH: which games people can vote for */
+const NO_VOTE = ["Jailbreak","Fisch","Royale High","Bee Swarm Simulator","Anime Vanguards","King Legacy","Creatures of Sonaria","Blade Ball"];
+$("voteGames").innerHTML = GAMES.filter(([n]) => !NO_VOTE.includes(n)).map(([n,e]) => `<button type="button" class="game" data-g="${n}"><span>${e}</span>${n}</button>`).join("");
+$("voteGames").querySelectorAll(".game").forEach(b => b.onclick = () => {
+  $("voteGames").querySelectorAll(".game").forEach(x => x.classList.remove("on")); b.classList.add("on"); picked = b.dataset.g;
+  delete $("closedMsg").dataset.err; tick();
+});
+</script>
 </body>
 </html>
