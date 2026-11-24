@@ -1,0 +1,18 @@
+# Lemon Man Trades value list
+# Format:  Game | Item | Value | Demand
+# Values can use K, M or B (like 650K or 1.2M). Demand is optional (Low / Medium / High).
+# updated: Sep 2026
+Blox Fruits | T-Rex | 20M | High
+Blox Fruits | Venom | 9M | High
+Blox Fruits | Magma | 960K | Medium
+Blox Fruits | Ghost | 950K | Medium
+Blox Fruits | Barrier | 800K | Medium
+Blox Fruits | Rubber | 750K | Medium
+Blox Fruits | Diamond | 650K | Medium
+Blox Fruits | Light | 650K | Medium
+Blox Fruits | Ice | 350K | Medium
+Blox Fruits | Spring | 60K | Low
+Blox Fruits | Blade | 50K | Low
+Blox Fruits | Chop | 30K | Low
+Blox Fruits | Spin | 7.5K | Low
+Blox Fruits | Rocket | 5K | Low
