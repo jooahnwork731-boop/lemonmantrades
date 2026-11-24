@@ -1,10 +1,40 @@
 # Lemon Man Trades value list
 # Format:  Game | Item | Value | Demand
-# Values can use K, M or B (like 650K or 1.2M). Demand is optional (Low / Medium / High).
 # updated: Nov 2026
 Blox Fruits | Gas | 72M | Very High
 Blox Fruits | T-Rex | 20M | High
 Blox Fruits | Venom | 9M | High
-Adopt Me! | Shadow Dragon | 683 Tracker Points | High
-Adopt Me! | Neon Shadow Dragon | 1354 Tracker Points | Very High
 Adopt Me! | Mega Neon Shadow Dragon | 2314 Tracker Points | Very High
+Adopt Me! | Neon Shadow Dragon | 1354 Tracker Points | Very High
+Adopt Me! | Shadow Dragon | 683 Tracker Points | High
+Murder Mystery 2 | Chroma Traveler's Gun | 145K-220K | High
+Murder Mystery 2 | Traveler's Gun | 5.2K | Medium
+Murder Mystery 2 | Evergun | 3.4K | High
+Grow a Garden | GIANT Grizzly Bear | 20,000 Sx (20 Sp) | Medium
+Grow a Garden | Kitsune | 2,000 Sx (2 Sp) | High
+Grow a Garden | Raccoon | 850 Sx | High
+Steal a Brainrot | Strawberry Elephant | 4.55M | High
+Steal a Brainrot | Headless Horseman | Top tier | High
+Steal a Brainrot | Elefanto Frigo | Top tier | High
+Pet Simulator 99 | Titanic Hippomelon | 662B diamonds RAP | High
+Jailbreak | HyperShift | 306M cash | High
+Jailbreak | HyperBlue Lvl5 | 64M cash | Medium
+Jailbreak | HyperPink Lvl5 | 55M cash | Medium
+King Legacy | Erebus | 15-25 Fins | High
+King Legacy | Demon Fruit | 9-15 Fins | Medium
+King Legacy | Tree Fruit | 9-15 Fins | Medium
+Fisch | Puff of Heaven | 7.2K | High
+Fisch | Demonwake | 380 | High
+Toilet Tower Defense | Telanthric Titan | 3.75M | High
+Toilet Tower Defense | Titan Cactus Man | 900K | High
+Royale High | Valentines Halo 2021 | 3.8M-4.1M diamonds | High
+Royale High | Halloween Halo 2019 | 2.8M-3M diamonds | Medium
+Royale High | Glimmering Halo 2018 | 2.5M-2.65M diamonds | Low
+Blade Ball | Subversion | 110-130 RAP | High
+Blade Ball | Winter's Touch | 90-110 RAP | High
+Anime Vanguards | Shiny Divalo | 1.26M rerolls | High
+Bee Swarm Simulator | Round Basic Bee Sticker | 5 | Very High
+Bee Swarm Simulator | Snow Cub Skin | 5 | Very High
+Bee Swarm Simulator | Flying Ninja Bee Sticker | 4 | High
+Creatures of Sonaria | Verdanette Plushie | 400K-650K mush | Medium
+Creatures of Sonaria | Ghartokus | 10K-40K mush | High
