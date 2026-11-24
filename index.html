@@ -436,5 +436,28 @@ readFile("winners.txt").then(rows => {
     : `<p class="empty">No winners yet. The first giveaway is coming soon!</p>`;
 });
 </script>
+  <script>
+/* VALUES PATCH: lets values be any text, like "683 tracker points" */
+let VALUES2 = null;
+const numOf = t => { const m = String(t).trim().toUpperCase().replace(/,/g,"").match(/^([0-9]*\.?[0-9]+)\s*([KMB](?![A-Z]))?/); return m ? parseFloat(m[1]) * ({K:1e3,M:1e6,B:1e9}[m[2]] || 1) : 0; };
+drawValues = function(){
+  if (!VALUES2) return;
+  const q = $("valueQ").value.trim().toLowerCase();
+  const list = VALUES2.filter(v => (!vGame || v.game.toLowerCase() === vGame.toLowerCase()) && (!q || v.item.toLowerCase().includes(q)));
+  $("sValues").textContent = VALUES2.length;
+  $("valueBody").innerHTML = list.length ? list.map(v => `<tr>
+      <td>${vGame ? "" : em(v.game) + " "}${esc(v.item)}</td><td class="v">${esc(v.raw)}</td>
+      <td>${v.demand ? `<span class="dem ${esc(v.demand)}">${esc(v.demand)}</span>` : "\u2014"}</td></tr>`).join("")
+    : `<tr><td colspan="3" style="text-align:center;color:var(--mut)">No values here yet. Check back soon!</td></tr>`;
+};
+$("valueQ").oninput = drawValues;
+fetch("values.txt?v=" + Date.now()).then(r => r.ok ? r.text() : "").catch(() => "").then(text => {
+  VALUES2 = text.split("\n").map(l => l.trim()).filter(l => l && !l.startsWith("#")).map(l => l.split("|").map(s => s.trim()))
+    .map(([game = "", item = "", raw = "", demand = ""]) => ({ game, item, raw, value: numOf(raw), demand }))
+    .filter(v => v.game && v.item && v.raw).sort((a, b) => b.value - a.value);
+  VALUES = VALUES2;
+  drawValues();
+});
+</script>
 </body>
 </html>
