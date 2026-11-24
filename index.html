@@ -459,5 +459,94 @@ fetch("values.txt?v=" + Date.now()).then(r => r.ok ? r.text() : "").catch(() => 
   drawValues();
 });
 </script>
+  <script>
+/* REQUEST PATCH: Request button on trades. The poster picks ONE request.
+   trades.txt:  Game | Has | Wants | Username | Matched With | When   (last 2 only after a match) */
+let TRADES2 = null;
+const RBX_NAME = /^[A-Za-z0-9_]{3,20}$/;
+drawTrades = function(){
+  if (!TRADES2) return;
+  const q = $("tradeQ").value.trim().toLowerCase();
+  let list = TRADES2.filter(t => (!tGame || t.game.toLowerCase() === tGame.toLowerCase()) &&
+    (!q || (t.has + " " + t.wants + " " + t.game).toLowerCase().includes(q)));
+  if ($("tradeSort").value === "game") list = [...list].sort((a, b) => a.game.localeCompare(b.game));
+  list = [...list.filter(t => !t.partner), ...list.filter(t => t.partner)];
+  $("sTrades").textContent = TRADES2.length;
+  $("tradeGrid").innerHTML = list.length ? list.slice(0, shown).map(t => `
+    <div class="trade" style="${t.partner ? "opacity:.85" : ""}">
+      <div class="top"><span class="tag">${em(t.game)} ${esc(t.game)}</span><span class="user">👤 ${esc(t.user)}</span></div>
+      <div class="side has"><small>HAS</small><div>${esc(t.has)}</div></div>
+      <div class="arrow">⇅</div>
+      <div class="side wants"><small>WANTS</small><div>${esc(t.wants)}</div></div>
+      ${t.partner
+        ? `<div style="background:rgba(255,225,77,.12);border:1px solid var(--y);border-radius:12px;padding:10px 12px;font-size:.9rem">
+             <b style="color:var(--y)">✅ MATCHED</b> with 👤 ${esc(t.partner)}<br>🕓 ${esc(t.when || "Time TBD")}</div>`
+        : `<button class="btn y" style="margin:0" data-req="${t.id}">🤝 Request this trade</button>`}
+    </div>`).join("") : `<p class="empty">No trades found. Be the first to post one! 👇</p>`;
+  $("moreBtn").style.display = list.length > shown ? "inline-block" : "none";
+  $("tradeGrid").querySelectorAll("[data-req]").forEach(b => b.onclick = () => openReq(TRADES2[+b.dataset.req]));
+};
+$("tradeQ").oninput = () => { shown = 12; drawTrades(); };
+$("tradeSort").onchange = drawTrades;
+fetch("trades.txt?v=" + Date.now()).then(r => r.ok ? r.text() : "").catch(() => "").then(text => {
+  TRADES2 = text.split("\n").map(l => l.trim()).filter(l => l && !l.startsWith("#")).map(l => l.split("|").map(s => s.trim()))
+    .filter(r => r[0] && r[1])
+    .map(([game, has = "", wants = "", user = "", partner = "", when = ""], id) =>
+      ({ id, game, has, wants: wants || "Offers", user: user || "Player", partner, when }));
+  TRADES = TRADES2;
+  drawTrades();
+});
+
+/* safety note under the board */
+$("tradeGrid").insertAdjacentHTML("afterend", `<p class="note" style="max-width:640px;margin:14px auto 0">🛡️ Can't chat with someone? That's okay. You don't need to. Meet in the game at the matched time, then use the game's trade window. Never move to another app, and never share your password, real name, age or school.</p>`);
+
+/* request popup */
+document.body.insertAdjacentHTML("beforeend", `
+<div id="reqBg" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:50;padding:16px;overflow:auto">
+  <form id="reqForm" class="panel" style="margin:40px auto;position:relative">
+    <button type="button" id="reqX" style="position:absolute;top:10px;right:14px;background:none;border:none;color:#fff;font-size:1.5rem;cursor:pointer">✕</button>
+    <h3 style="color:var(--y);margin-bottom:4px">🤝 Request this trade</h3>
+    <div id="reqInfo" style="font-size:.92rem;color:var(--mut)"></div>
+    <p class="note" style="text-align:left;margin:6px 0 0">Pick when you can trade. Then meet them in the game and use the trade window.</p>
+    <label for="rDay">📅 Day</label><select id="rDay" required></select>
+    <label for="rTime">🕓 Time (New York time)</label><select id="rTime" required></select>
+    <label for="rUser">👤 Your Roblox username</label>
+    <input id="rUser" required maxlength="20" placeholder="e.g. LuckyTrader" autocomplete="off">
+    <div class="center">
+      <button class="btn y">📧 Send Request</button>
+      <button type="button" class="btn w" id="reqCopy">📋 Copy</button>
+    </div>
+    <div class="msg" id="reqBox"><label for="reqText">Send this to <b>lemonmantradesofficial@gmail.com</b>:</label><textarea id="reqText" readonly></textarea></div>
+    <p class="note">The person who posted this trade picks ONE request. If they pick you, the card will say MATCHED with your name.</p>
+  </form>
+</div>`);
+let REQ = null;
+const DAYS = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+function openReq(t){
+  REQ = t;
+  $("reqInfo").innerHTML = `${em(t.game)} <b>${esc(t.game)}</b> · 👤 ${esc(t.user)}<br>Has <b>${esc(t.has)}</b> · Wants <b>${esc(t.wants)}</b>`;
+  const today = nyParts(new Date()).day;
+  $("rDay").innerHTML = [0,1,2,3,4,5,6].map(i => { const d = DAYS[(today + i) % 7]; return `<option>${i === 0 ? "Today (" + d + ")" : i === 1 ? "Tomorrow (" + d + ")" : d}</option>`; }).join("");
+  $("rTime").innerHTML = Array.from({ length: 13 }, (_, i) => { const h = 9 + i; return `<option>${(h % 12) || 12}:00 ${h < 12 ? "AM" : "PM"} ET</option>`; }).join("");
+  $("rUser").value = ""; $("reqBox").style.display = "none"; $("rUser").setCustomValidity("");
+  $("reqBg").style.display = "block";
+}
+$("reqX").onclick = () => $("reqBg").style.display = "none";
+$("reqBg").onclick = e => { if (e.target.id === "reqBg") $("reqBg").style.display = "none"; };
+$("rUser").oninput = () => $("rUser").setCustomValidity(RBX_NAME.test($("rUser").value.trim()) ? "" : "Roblox usernames are 3-20 letters, numbers or _ only.");
+function reqMsg(){
+  $("rUser").oninput();
+  if (!$("reqForm").reportValidity()) return false;
+  const body = `🍋 Lemon Man Trade Request
+
+TRADE: ${REQ.game} | ${REQ.has} | ${REQ.wants} | ${REQ.user}
+Requested by: ${$("rUser").value.trim()}
+When: ${$("rDay").value.replace(/^(Today|Tomorrow) \((.+)\)$/, "$2")}, ${$("rTime").value}`;
+  $("reqText").value = body; $("reqBox").style.display = "block";
+  return { subject: `Trade Request: ${REQ.game} - ${REQ.user}`, body };
+}
+$("reqForm").onsubmit = e => { e.preventDefault(); mail(reqMsg()); };
+$("reqCopy").onclick = () => { if (reqMsg()) copy("reqText", "reqCopy"); };
+</script>
 </body>
 </html>
