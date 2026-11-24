@@ -557,5 +557,28 @@ $("voteGames").querySelectorAll(".game").forEach(b => b.onclick = () => {
   delete $("closedMsg").dataset.err; tick();
 });
 </script>
+  <script>
+/* SCHEDULE PATCH: vote Monday-Friday (closes Fri 11:59 PM ET), giveaway Saturday 5 PM ET */
+(() => { const last = setInterval(() => {}, 1e9); for (let i = Math.max(1, last - 500); i <= last; i++) clearInterval(i); })();
+const GIVE_HOUR = 17;
+const lt = (secs, f) => new Date(Date.now() + secs * 1000).toLocaleString([], f);
+const T = { hour: "numeric", minute: "2-digit" }, DT = { weekday: "short", hour: "numeric", minute: "2-digit" };
+function scheduleText(){
+  const now = nyParts(new Date()), mon = untilNY(now, 1, 0), sat = untilNY(now, GIVE_DAY, GIVE_HOUR);
+  $("voteLocal").textContent = lt(mon, DT) + " to " + lt(mon + 5 * 86400 - 60, DT);
+  $("giveaway").querySelector(".sub").textContent = "Vote any day Monday to Friday for the game. On Saturday at 5 PM (New York time) one random voter wins a crazy OP item. Free for everyone, worldwide.";
+  $("giveaway").querySelector(".when").innerHTML = `🗳️ Voting: ${lt(mon, DT)} to ${lt(mon + 5 * 86400 - 60, DT)}<br>🎁 Giveaway: ${lt(sat, DT)}<br><span style="color:var(--mut);font-weight:600">Times shown in your time zone</span>`;
+}
+tick = function(){
+  const now = nyParts(new Date());
+  const open = now.day >= 1 && now.day <= 5;
+  if (open){ $("gwLabel").textContent = "🗳️ VOTING IS OPEN! Closes in"; $("gwClock").textContent = clockFmt(untilNY(now, 6, 0)); }
+  else if (now.day === GIVE_DAY && now.secs < GIVE_HOUR * 3600){ $("gwLabel").textContent = "🎁 GIVEAWAY TODAY! Starts in"; $("gwClock").textContent = clockFmt(GIVE_HOUR * 3600 - now.secs); }
+  else { $("gwLabel").textContent = "⏳ Next vote opens Monday in"; $("gwClock").textContent = clockFmt(untilNY(now, 1, 0)); }
+  if (!$("closedMsg").dataset.err){ $("closedMsg").style.display = open ? "none" : "block"; $("closedMsg").textContent = "Voting is closed. It opens " + lt(untilNY(now, 1, 0), DT) + " (your time)."; }
+  $("voteBtn").disabled = $("voteCopy").disabled = !open;
+};
+scheduleText(); tick(); setInterval(tick, 1000);
+</script>
 </body>
 </html>
