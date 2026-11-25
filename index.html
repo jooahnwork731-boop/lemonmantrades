@@ -822,5 +822,43 @@ section,header{scroll-margin-top:60px}
   }
 })();
 </script>
+  <!-- TRADE GAMES PATCH: pick a game to see trades (no "All"), new games get added automatically -->
+<script>
+(function(){
+  const box = $("tradeChips");
+  let known = "";
+  function buildChips(){
+    const names = GAMES.map(g => g[0]);
+    const lower = names.map(n => n.toLowerCase());
+    (typeof TRADES2 !== "undefined" && TRADES2 ? TRADES2 : []).forEach(t => {
+      const g = String(t.game || "").trim();
+      if (g && !lower.includes(g.toLowerCase())){ names.push(g); lower.push(g.toLowerCase()); }
+    });
+    const key = names.join("|");
+    if (key === known) return;
+    known = key;
+    box.innerHTML = names.map(n => `<button class="chip${tGame && n.toLowerCase() === tGame.toLowerCase() ? " on" : ""}" data-g="${esc(n)}">${em(n)} ${esc(n)}</button>`).join("");
+    box.querySelectorAll(".chip").forEach(c => c.onclick = () => {
+      box.querySelectorAll(".chip").forEach(x => x.classList.remove("on"));
+      c.classList.add("on"); tGame = c.dataset.g; shown = 12; drawTrades();
+    });
+    $("sGames").textContent = names.length;
+  }
+  tGame = "";
+  const drawTradesOld = drawTrades;
+  drawTrades = function(){
+    buildChips();
+    if (!tGame && !$("tradeQ").value.trim()){
+      if (typeof TRADES2 !== "undefined" && TRADES2) $("sTrades").textContent = TRADES2.length;
+      $("tradeGrid").innerHTML = `<p class="empty">👆 Pick a game above to see its trades (or search an item)</p>`;
+      $("moreBtn").style.display = "none";
+      return;
+    }
+    drawTradesOld();
+  };
+  $("tradeQ").oninput = () => { shown = 12; drawTrades(); };
+  drawTrades();
+})();
+</script>
 </body>
 </html>
