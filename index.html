@@ -765,5 +765,65 @@ if (SHEET_CSV.startsWith("http")){
     });
 }
 </script>
+  <!-- QUICK TRADE PATCH: Google Form posting + Google Sheet trades -->
+<script>
+const TRADE_FORM = "https://docs.google.com/forms/d/e/1FAIpQLSdrW7ijA2A4Vq7_92wPd8ArnlOi3t2Mnw8fYWY8GPlakRA9hQ/viewform?embedded=true";
+const SHEET_CSV  = "PASTE_SHEET_LINK_HERE";
+
+/* 1. Swap the email form for the Google Form */
+(function(){
+  const f = document.getElementById("postForm");
+  if (!f) return;
+  f.style.display = "none";
+  const sub = document.querySelector("#post .sub");
+  if (sub) sub.textContent = "Fill this in. Once it's checked, your trade shows up on the Trade Board. No email needed!";
+  f.insertAdjacentHTML("afterend", `
+    <div class="panel" style="padding:0;overflow:hidden">
+      <iframe src="${TRADE_FORM}" style="width:100%;height:900px;border:0;display:block;background:#fff" loading="lazy" title="Post a Trade">Loading…</iframe>
+    </div>
+    <p class="note">Username only. No links, no personal info, no real money. Posts that break the rules won't go up.</p>`);
+})();
+
+/* 2. Add approved trades (OK? = yes) from the Google Sheet to the Trade Board */
+function parseCSV(t){
+  const rows = []; let row = [], cell = "", q = false;
+  for (let i = 0; i < t.length; i++){
+    const c = t[i];
+    if (q){ if (c === '"' && t[i+1] === '"'){ cell += '"'; i++; } else if (c === '"') q = false; else cell += c; }
+    else if (c === '"') q = true;
+    else if (c === ","){ row.push(cell); cell = ""; }
+    else if (c === "\n"){ row.push(cell); rows.push(row); row = []; cell = ""; }
+    else if (c !== "\r") cell += c;
+  }
+  if (cell || row.length){ row.push(cell); rows.push(row); }
+  return rows;
+}
+if (SHEET_CSV.startsWith("http")){
+  fetch(SHEET_CSV + (SHEET_CSV.includes("?") ? "&" : "?") + "v=" + Date.now())
+    .then(r => r.ok ? r.text() : "").catch(() => "")
+    .then(text => {
+      const rows = parseCSV(text);
+      if (rows.length < 2) return;
+      const head = rows[0].map(h => h.trim().toLowerCase());
+      const col = name => head.findIndex(h => h.startsWith(name));
+      const G = col("game"), H = col("i have"), W = col("i want"), U = col("roblox") >= 0 ? col("roblox") : col("username"), OK = col("ok");
+      if (G < 0 || H < 0 || OK < 0) return;
+      const cut = s => String(s || "").trim().slice(0, 80);
+      const fresh = rows.slice(1)
+        .filter(r => cut(r[OK]).toLowerCase() === "yes" && cut(r[G]) && cut(r[H]))
+        .reverse()
+        .map(r => ({ game: cut(r[G]), has: cut(r[H]), wants: cut(r[W]) || "Offers",
+                     user: RBX_NAME.test(cut(r[U])) ? cut(r[U]) : "Player", partner: "", when: "" }));
+      const wait = setInterval(() => {
+        if (!TRADES2) return;
+        clearInterval(wait);
+        TRADES2 = [...fresh, ...TRADES2].map((t, id) => ({ ...t, id }));
+        TRADES = TRADES2;
+        drawTrades();
+      }, 200);
+      setTimeout(() => clearInterval(wait), 15000);
+    });
+}
+</script>
 </body>
 </html>
