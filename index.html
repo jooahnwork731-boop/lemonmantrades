@@ -614,5 +614,42 @@ drawValues = function(){
 $("valueQ").oninput = drawValues;
 drawValues();
 </script>
+  <!-- POINTS EXPLAIN PATCH -->
+<style>
+.ptsBox{background:rgba(255,230,0,.12);border:2px solid #ffd800;border-radius:14px;padding:14px 16px;margin:0 0 16px;line-height:1.5}
+.ptsBox h3{margin:0 0 8px;font-size:1.15em}
+.ptsBox .row{display:flex;gap:10px;flex-wrap:wrap;margin:8px 0}
+.ptsBox .tag{border-radius:10px;padding:6px 10px;font-weight:bold;background:rgba(255,255,255,.12)}
+.ptsBox .ex{background:rgba(0,0,0,.25);border-radius:10px;padding:8px 10px;margin-top:8px}
+</style>
+<script>
+(function(){
+  const vals = document.getElementById("values");
+  if (!vals || document.querySelector(".ptsBox")) return;
+  const th = vals.querySelectorAll("th");
+  if (th[1]) th[1].textContent = "Points (1-10)";
+  const box = document.createElement("div");
+  box.className = "ptsBox";
+  box.innerHTML = `
+    <h3>🍋 How to read the Value List</h3>
+    <b>⭐ Points = how much an item is WORTH.</b><br>
+    Points go from <b>1 to 10</b>. <b>10/10</b> is the best item in that game. <b>1/10</b> is the cheapest item on the list.
+    <div class="row">
+      <span class="tag">10/10 = super rare 🤑</span>
+      <span class="tag">7–9 = very good</span>
+      <span class="tag">4–6 = good</span>
+      <span class="tag">1–3 = low</span>
+    </div>
+    The number in <b>( )</b> is the real value from value sites, for people who want the exact number.<br>
+    ⚠️ Points only compare items in the <b>SAME game</b>. A 10/10 in Blox Fruits is <b>not</b> the same as a 10/10 in Adopt Me!<br><br>
+    <b>🔥 Demand = how many people WANT it.</b><br>
+    High demand = easy to trade, lots of people want it. Low demand = harder to find someone who wants it.<br>
+    Points and demand are <b>different</b>. An item can be cheap but wanted a lot, or worth a lot but wanted by few people.
+    <div class="ex">📌 <b>Example:</b> Brainrot God Antonio is <b>4/10</b> points (not worth much) but <b>High</b> demand (lots of people want it), so it's easy to trade.</div>
+    <div class="ex">✅ <b>Tip:</b> Don't add points together! Two 5/10 items are <b>not</b> worth one 10/10. For a fair trade, compare the real values in ( ). Values change often, so always double-check before a big trade!</div>`;
+  const chips = document.getElementById("valueChips");
+  chips.parentNode.insertBefore(box, chips);
+})();
+</script>
 </body>
 </html>
