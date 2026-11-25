@@ -645,8 +645,8 @@ drawValues();
     <b>⭐ Points: how much an item is worth</b>
     <ul>
       <li>10/10 is the best item in that game.</li>
-            <li>Each point lower means it's worth a bit less.</li>
-      <li>9 to 10 is top tier, 7 to 8 is great, 4 to 6 is good, 1 to 3 is horrible.</li>
+      <li>Each point lower means it's worth a lot less.</li>
+      <li>9 to 10 is top tier, 7 to 8 is great, 4 to 6 is good.</li>
       <li>Points only compare items in the same game.</li>
       <li>The number in ( ) is the exact value from value sites.</li>
     </ul>
@@ -822,7 +822,7 @@ section,header{scroll-margin-top:60px}
   }
 })();
 </script>
-  <!-- TRADE GAMES PATCH: pick a game to see trades (no "All"), new games get added automatically -->
+<!-- TRADE GAMES PATCH: pick a game to see trades (no "All"), new games get added automatically -->
 <script>
 (function(){
   const box = $("tradeChips");
@@ -858,6 +858,221 @@ section,header{scroll-margin-top:60px}
   };
   $("tradeQ").oninput = () => { shown = 12; drawTrades(); };
   drawTrades();
+})();
+</script>
+<!-- BOOST PATCH: calculator, trade values, winner wheel, trends, hot items, item of the day, suggestions, app icon, trust counter -->
+<style>
+.boostCard{position:relative;z-index:1;background:var(--c1);color:#fff;border-radius:16px;padding:12px 14px;max-width:560px;margin:14px auto 0;text-align:left;font-weight:700;font-size:.9rem}
+.boostCard b.t{color:var(--y);display:block;margin-bottom:4px}
+.hotChip{display:inline-block;background:var(--c2);border:1px solid var(--c3);border-radius:999px;padding:4px 10px;margin:3px 4px 0 0;cursor:pointer;font-size:.82rem}
+.trust{margin-top:10px;font-weight:800;font-size:.9rem}
+.tv{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:.8rem;font-weight:800;color:var(--mut)}
+.tv .ok{color:#7ee2ad}.tv .no{color:#ffb86b}
+.calcSide{background:var(--c2);border:2px solid var(--c3);border-radius:16px;padding:14px}
+.calcSide h3{color:var(--y);font-size:1.05rem;margin-bottom:8px}
+.calcAdd{display:flex;gap:6px}.calcAdd .btn{margin:0;padding:10px 16px}
+.calcList{list-style:none;margin-top:8px;display:flex;flex-direction:column;gap:6px}
+.calcList li{background:var(--bg);border-radius:10px;padding:8px 10px;display:flex;justify-content:space-between;gap:8px;font-weight:700;font-size:.9rem}
+.calcList button{background:none;border:none;color:#ff9fa2;font-size:1.1rem;cursor:pointer}
+.calcRes{margin-top:14px;border-radius:16px;padding:16px;text-align:center;font-weight:900;background:var(--c2);border:2px solid var(--c3)}
+.calcRes .big{font-size:2rem;display:block}
+.calcRes.win{border-color:var(--g);background:rgba(46,184,114,.15)}.calcRes.fair{border-color:var(--y);background:rgba(255,225,77,.12)}.calcRes.loss{border-color:var(--r);background:rgba(229,72,77,.15)}
+#wheelBox{background:var(--c2);border:2px solid var(--y);border-radius:20px;padding:18px;text-align:center;margin-top:16px}
+#wheelWrap{position:relative;width:280px;height:280px;margin:12px auto}
+#wheelCv{width:280px;height:280px;border-radius:50%;transition:transform 6s cubic-bezier(.12,.8,.18,1)}
+#wheelWrap:after{content:"▼";position:absolute;top:-14px;left:50%;transform:translateX(-50%);color:var(--y);font-size:1.6rem}
+#homeTip{position:fixed;left:12px;right:12px;bottom:12px;z-index:40;background:var(--c1);border:2px solid var(--y);border-radius:16px;padding:12px 40px 12px 14px;font-weight:700;font-size:.9rem;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+#homeTip button{position:absolute;top:6px;right:10px;background:none;border:none;color:#fff;font-size:1.3rem;cursor:pointer}
+</style>
+<script>
+const VOTES_CSV = "PASTE_VOTES_LINK_HERE";
+(function(){
+  const waitFor = (test, fn) => { let n = 0; const t = setInterval(() => { if (test()){ clearInterval(t); fn(); } else if (++n > 150) clearInterval(t); }, 200); };
+  const haveValues = () => typeof VALUES2 !== "undefined" && VALUES2 && VALUES2.length;
+  const realOf = v => { const m = String(v.raw).match(/\(([^)]*)\)/); return numOf(m ? m[1] : v.raw) || 0; };
+  const ptsOf = v => parseFloat(v.raw) || 0;
+  const low = s => String(s || "").trim().toLowerCase();
+  function findItem(game, text){
+    const t = low(text); if (!t || !haveValues()) return null;
+    const list = VALUES2.filter(v => !game || low(v.game) === low(game));
+    return list.find(v => low(v.item) === t) || list.find(v => low(v.item).length > 3 && t.includes(low(v.item))) || null;
+  }
+  const nyDate = () => new Intl.DateTimeFormat("en-US", { timeZone: "America/New_York" }).format(new Date());
+  const hash = s => { let h = 2166136261; for (const c of s) { h ^= c.codePointAt(0); h = Math.imul(h, 16777619); } return h >>> 0; };
+
+  /* 8. App icon + Add to Home Screen tip */
+  document.head.insertAdjacentHTML("beforeend", `<link rel="apple-touch-icon" href="icon.png"><link rel="icon" href="icon.png"><meta name="apple-mobile-web-app-title" content="Lemon Man"><meta name="theme-color" content="#FFE14D">`);
+  try {
+    const standalone = navigator.standalone || matchMedia("(display-mode: standalone)").matches;
+    if (!standalone && /iPhone|iPad|Macintosh/.test(navigator.userAgent) && "ontouchend" in document && !localStorage.getItem("lmHomeTip")){
+      document.body.insertAdjacentHTML("beforeend", `<div id="homeTip">📲 <b style="color:var(--y)">Get the Lemon Man app!</b> Tap Share ⬆️ then <b>"Add to Home Screen"</b>.<button type="button" aria-label="Close">✕</button></div>`);
+      $("homeTip").querySelector("button").onclick = () => { $("homeTip").remove(); try { localStorage.setItem("lmHomeTip", "1"); } catch (e) {} };
+    }
+  } catch (e) {}
+
+  /* 7. Search suggestions */
+  document.body.insertAdjacentHTML("beforeend", `<datalist id="itemSug"></datalist><datalist id="calcSug"></datalist>`);
+  ["heroQ", "tradeQ", "valueQ"].forEach(id => $(id) && $(id).setAttribute("list", "itemSug"));
+  waitFor(haveValues, () => { $("itemSug").innerHTML = [...new Set(VALUES2.map(v => v.item))].map(n => `<option value="${esc(n)}">`).join(""); });
+
+  /* 1. Trade Calculator */
+  document.getElementById("values").insertAdjacentHTML("afterend", `
+  <section id="calc" class="alt"><div class="wrap">
+    <h2>🧮 Trade Calculator</h2>
+    <p class="sub">Is your trade a WIN, FAIR or LOSS? Pick a game, then add items to both sides.</p>
+    <select id="cGame" style="max-width:640px;display:block;margin:0 auto 14px"></select>
+    <div class="two" style="max-width:640px;margin:0 auto">
+      <div class="calcSide"><h3>📤 You give</h3><div class="calcAdd"><input id="cGiveQ" list="calcSug" placeholder="Item name…" autocomplete="off"><button type="button" class="btn y" id="cGiveB">+</button></div><ul class="calcList" id="cGiveL"></ul></div>
+      <div class="calcSide"><h3>📥 You get</h3><div class="calcAdd"><input id="cGetQ" list="calcSug" placeholder="Item name…" autocomplete="off"><button type="button" class="btn y" id="cGetB">+</button></div><ul class="calcList" id="cGetL"></ul></div>
+    </div>
+    <div class="calcRes" id="cRes" style="max-width:640px;margin:14px auto 0">Add items to both sides 👆</div>
+    <p class="note">Uses the Value List. Values are estimates, and demand matters too, so always double-check big trades.</p>
+  </div></section>`);
+  const CALC = { give: [], get: [] };
+  function calcDraw(){
+    ["give", "get"].forEach(s => {
+      const ul = $(s === "give" ? "cGiveL" : "cGetL");
+      ul.innerHTML = CALC[s].map((v, i) => `<li><span>${esc(v.item)} <span style="color:var(--y)">${ptsOf(v)}/10</span></span><button type="button" data-s="${s}" data-i="${i}" aria-label="Remove">✕</button></li>`).join("");
+      ul.querySelectorAll("button").forEach(b => b.onclick = () => { CALC[b.dataset.s].splice(+b.dataset.i, 1); calcDraw(); });
+    });
+    const g = CALC.give.reduce((a, v) => a + realOf(v), 0), t = CALC.get.reduce((a, v) => a + realOf(v), 0), r = $("cRes");
+    r.className = "calcRes";
+    if (!CALC.give.length || !CALC.get.length){ r.innerHTML = "Add items to both sides 👆"; return; }
+    const ratio = t / g, k = ratio > 1.1 ? "win" : ratio < 0.9 ? "loss" : "fair";
+    r.classList.add(k);
+    r.innerHTML = `<span class="big">${k === "win" ? "🟢 WIN" : k === "loss" ? "🔴 LOSS" : "🟡 FAIR"}</span>
+      You give ${fmt(g)} · You get ${fmt(t)}<br><span style="font-weight:700;color:var(--mut);font-size:.85rem">${k === "fair" ? "Pretty even trade!" : k === "win" ? "You get more than you give." : "You give more than you get."}</span>`;
+  }
+  function calcAdd(side){
+    const inp = $(side === "give" ? "cGiveQ" : "cGetQ"), v = findItem($("cGame").value, inp.value);
+    if (!v){ inp.setCustomValidity("That item isn't on the Value List for this game."); inp.reportValidity(); return; }
+    inp.setCustomValidity(""); if (CALC[side].length >= 8) return;
+    CALC[side].push(v); inp.value = ""; calcDraw();
+  }
+  ["give", "get"].forEach(s => {
+    const inp = $(s === "give" ? "cGiveQ" : "cGetQ");
+    $(s === "give" ? "cGiveB" : "cGetB").onclick = () => calcAdd(s);
+    inp.onkeydown = e => { if (e.key === "Enter"){ e.preventDefault(); calcAdd(s); } };
+    inp.oninput = () => inp.setCustomValidity("");
+  });
+  waitFor(haveValues, () => {
+    const games = GAMES.map(g => g[0]).filter(n => VALUES2.some(v => low(v.game) === low(n)));
+    $("cGame").innerHTML = games.map(n => `<option value="${esc(n)}">${em(n)} ${esc(n)}</option>`).join("");
+    const fill = () => { $("calcSug").innerHTML = VALUES2.filter(v => low(v.game) === low($("cGame").value)).map(v => `<option value="${esc(v.item)}">`).join(""); };
+    $("cGame").onchange = () => { CALC.give = []; CALC.get = []; fill(); calcDraw(); };
+    fill();
+  });
+  const ml = document.getElementById("menuList");
+  if (ml){ const a = ml.querySelector('a[href="#values"]'); if (a) a.insertAdjacentHTML("afterend", `<a href="#calc">🧮 Trade Calculator</a>`); }
+
+  /* 2. Values on trade cards */
+  const drawTradesBase = drawTrades;
+  drawTrades = function(){
+    drawTradesBase();
+    if (!haveValues()) return;
+    $("tradeGrid").querySelectorAll(".trade").forEach(card => {
+      const tag = card.querySelector(".tag").textContent, game = tag.slice(tag.indexOf(" ") + 1);
+      const h = findItem(game, card.querySelector(".has div").textContent), w = findItem(game, card.querySelector(".wants div").textContent);
+      if (!h && !w) return;
+      let badge = "";
+      if (h && w){ const r = realOf(w) / realOf(h); badge = r >= 0.9 && r <= 1.1 ? `<span class="ok">⚖️ Fair</span>` : `<span class="no">⚠️ Not even</span>`; }
+      card.querySelector(".wants").insertAdjacentHTML("afterend", `<div class="tv"><span>💎 ${h ? ptsOf(h) + "/10" : "?"} ⇄ ${w ? ptsOf(w) + "/10" : "?"}</span>${badge}</div>`);
+    });
+  };
+  waitFor(() => haveValues() && typeof TRADES2 !== "undefined" && TRADES2, () => drawTrades());
+
+  /* 4. Value trend arrows (optional 5th column in values.txt: up / down) */
+  const TREND = {};
+  fetch("values.txt?v=" + Date.now()).then(r => r.ok ? r.text() : "").catch(() => "").then(t => {
+    t.split("\n").forEach(l => { const p = l.split("|").map(s => s.trim()); if (p.length > 4 && !l.trim().startsWith("#")){ const k = low(p[4]); if (k === "up" || k === "down") TREND[low(p[1])] = k; } });
+    if (Object.keys(TREND).length) drawValues();
+  });
+  const drawValuesBase = drawValues;
+  drawValues = function(){
+    drawValuesBase();
+    $("valueBody").querySelectorAll("tr").forEach(tr => {
+      const td = tr.querySelector("td"); if (!td || tr.cells.length < 3) return;
+      const name = low(td.textContent.replace(/^\S+\s/, "")), k = TREND[low(td.textContent)] || TREND[name];
+      if (k) td.insertAdjacentHTML("beforeend", k === "up" ? ` <span title="Going up">📈</span>` : ` <span title="Going down">📉</span>`);
+    });
+  };
+
+  /* 9. Trust counter + 5. Hot items + 6. Item of the Day (on Home) */
+  const hero = document.querySelector(".hero .wrap");
+  hero.querySelector(".stats").insertAdjacentHTML("afterend", `<div class="trust" id="trust"></div>`);
+  hero.insertAdjacentHTML("beforeend", `<div class="boostCard" id="hotBox" style="display:none"><b class="t">🔥 Most wanted right now</b><div id="hotList"></div></div>
+    <div class="boostCard" id="iotd" style="display:none"></div>`);
+  waitFor(() => typeof TRADES2 !== "undefined" && TRADES2, () => setTimeout(() => {
+    const matched = TRADES2.filter(t => t.partner).length, winners = document.querySelectorAll("#winnerGrid .wcard").length;
+    $("trust").textContent = `✅ ${matched} trades matched · 🔁 ${TRADES2.length} trades posted · 🏆 ${winners} winners`;
+    const count = {};
+    TRADES2.filter(t => !t.partner).forEach(t => { const k = String(t.wants).trim(); if (k && low(k) !== "offers") count[k] = (count[k] || 0) + 1; });
+    const top = Object.entries(count).sort((a, b) => b[1] - a[1]).slice(0, 6);
+    if (top.length){
+      $("hotList").innerHTML = top.map(([k, n]) => `<span class="hotChip" data-q="${esc(k)}">${esc(k)}${n > 1 ? " ×" + n : ""}</span>`).join("");
+      $("hotList").querySelectorAll(".hotChip").forEach(c => c.onclick = () => { $("tradeQ").value = c.dataset.q; shown = 12; drawTrades(); $("trades").scrollIntoView(); });
+      $("hotBox").style.display = "block";
+    }
+  }, 1500));
+  waitFor(haveValues, () => {
+    const pool = VALUES2.filter(v => ptsOf(v) >= 7), v = pool.length ? pool[hash(nyDate()) % pool.length] : null;
+    if (!v) return;
+    $("iotd").innerHTML = `<b class="t">⭐ Item of the Day</b><span style="font-size:1.1rem">${em(v.game)} <b>${esc(v.item)}</b></span><br>
+      <span style="color:var(--mut)">${esc(v.game)} · Points: <b style="color:var(--y)">${esc(v.raw)}</b> · Demand: <b style="color:var(--y)">${esc(v.demand || "?")}</b></span>`;
+    $("iotd").style.display = "block";
+  });
+
+  /* 3. Winner wheel (Saturday 5 PM ET to Sunday) */
+  const gwWrap = document.querySelector("#giveaway .gw");
+  gwWrap.insertAdjacentHTML("afterend", `<div id="wheelBox"><h3 style="color:var(--y);font-size:1.3rem">🎡 Winner Wheel</h3><div id="wheelMsg" style="color:var(--mut);font-weight:700;margin-top:6px"></div></div>`);
+  function wheelOpen(){ const n = nyParts(new Date()); return (n.day === 6 && n.secs >= 17 * 3600) || n.day === 0; }
+  function loadVotes(){
+    if (!VOTES_CSV.startsWith("http")) return Promise.resolve([]);
+    return fetch(VOTES_CSV + "&v=" + Date.now()).then(r => r.ok ? r.text() : "").catch(() => "").then(text => {
+      const rows = parseCSV(text); if (rows.length < 2) return [];
+      const head = rows[0].map(low), U = head.findIndex(h => h.includes("username") || h.startsWith("roblox")), T = head.findIndex(h => h.startsWith("timestamp"));
+      if (U < 0) return [];
+      const since = Date.now() - 7 * 86400000, seen = new Set(), names = [];
+      rows.slice(1).forEach(r => {
+        const name = String(r[U] || "").trim(), ts = T >= 0 ? Date.parse(r[T]) : NaN;
+        if (!RBX_NAME.test(name) || (!isNaN(ts) && ts < since) || seen.has(low(name))) return;
+        seen.add(low(name)); names.push(name);
+      });
+      return names.sort((a, b) => low(a).localeCompare(low(b)));
+    });
+  }
+  function drawWheel(names){
+    const cv = $("wheelCv"), x = cv.getContext("2d"), S = 560, n = names.length, a = 2 * Math.PI / n;
+    cv.width = cv.height = S; x.translate(S / 2, S / 2);
+    const cols = ["#FFE14D", "#7EE2AD", "#FFB86B", "#8EC8FF"];
+    names.forEach((nm, i) => {
+      x.beginPath(); x.moveTo(0, 0); x.arc(0, 0, S / 2, i * a - Math.PI / 2, (i + 1) * a - Math.PI / 2); x.fillStyle = cols[i % 4]; x.fill();
+      x.save(); x.rotate((i + .5) * a - Math.PI / 2); x.fillStyle = "#1F2024";
+      x.font = `bold ${n > 30 ? 14 : n > 15 ? 18 : 24}px sans-serif`; x.textAlign = "right"; x.textBaseline = "middle";
+      x.fillText(nm.length > 14 ? nm.slice(0, 13) + "…" : nm, S / 2 - 14, 0); x.restore();
+    });
+  }
+  function wheelSetup(){
+    const msg = $("wheelMsg");
+    if (!wheelOpen()){ msg.textContent = "The wheel spins Saturday at 5 PM (New York time) to pick this week's winner. Vote to get on it!"; return; }
+    if (!VOTES_CSV.startsWith("http")){ msg.textContent = "Winner coming soon! Check the Winners list."; return; }
+    loadVotes().then(names => {
+      if (!names.length){ msg.textContent = "No votes found this week."; return; }
+      const back = nyParts(new Date()).day === 0 ? 1 : 0;
+      const satDate = new Intl.DateTimeFormat("en-US", { timeZone: "America/New_York" }).format(new Date(Date.now() - back * 86400000));
+      const win = hash(satDate + "|" + names.join(",").toLowerCase()) % names.length;
+      msg.innerHTML = `${names.length} voters are on the wheel!<div id="wheelWrap"><canvas id="wheelCv"></canvas></div><button type="button" class="btn y" id="spinBtn">🎡 SPIN</button><div id="wheelWin" style="margin-top:10px;font-size:1.2rem;font-weight:900;color:var(--y)"></div>
+        <p class="note">Everyone gets the same winner. It's picked fairly from this week's votes.</p>`;
+      drawWheel(names);
+      $("spinBtn").onclick = () => {
+        $("spinBtn").disabled = true;
+        const a = 360 / names.length, deg = 360 * 8 - (win + .5) * a;
+        $("wheelCv").style.transform = `rotate(${deg}deg)`;
+        setTimeout(() => { $("wheelWin").textContent = `🏆 Winner: ${names[win]}!`; }, 6100);
+      };
+    });
+  }
+  wheelSetup();
 })();
 </script>
 </body>
