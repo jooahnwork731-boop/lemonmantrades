@@ -794,5 +794,48 @@ const PRIZES_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQZusnRnq4Dn
   });
 })();
 </script>
+  <!-- MENU PATCH: ☰ menu in the top corner, one section at a time -->
+<style>
+nav ul{display:none!important}
+#menuBtn{background:var(--y);color:var(--c1);border:none;border-radius:12px;padding:8px 14px;font:inherit;font-weight:900;font-size:1rem;cursor:pointer}
+#menuList{display:none;position:absolute;top:60px;right:16px;background:var(--c1);border:2px solid var(--y);border-radius:16px;padding:8px;min-width:210px;z-index:30;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+#menuList.open{display:block}
+#menuList a{display:block;padding:11px 14px;border-radius:10px;text-decoration:none;font-weight:800}
+#menuList a.on{background:var(--y);color:var(--c1)}
+#menuList a:not(.on):hover{background:var(--c2)}
+nav .wrap{position:relative}
+.page-off{display:none!important}
+</style>
+<script>
+(function(){
+  if (document.getElementById("menuBtn")) return;
+  const rules = [...document.querySelectorAll("section")].find(s => s.textContent.includes("Hub Rules"));
+  if (rules) rules.id = "rules";
+  const PAGES = [["top","🏠 Home"],["trades","🔁 Trade Board"],["post","📮 Post a Trade"],["values","💎 Value List"],
+                 ["safety","🚨 Scam Alerts"],["giveaway","🎁 Giveaway"],["rules","📜 Rules"]];
+  const wrap = document.querySelector("nav .wrap");
+  wrap.insertAdjacentHTML("beforeend", `<button id="menuBtn" type="button">☰ Menu</button>
+    <div id="menuList">${PAGES.map(([id, name]) => `<a href="#${id}" data-p="${id}">${name}</a>`).join("")}</div>`);
+  const list = document.getElementById("menuList");
+  function show(id){
+    if (!PAGES.some(p => p[0] === id)) id = "top";
+    PAGES.forEach(([p]) => { const el = document.getElementById(p); if (el) el.classList.toggle("page-off", p !== id); });
+    list.querySelectorAll("a").forEach(a => a.classList.toggle("on", a.dataset.p === id));
+    list.classList.remove("open");
+    window.scrollTo(0, 0);
+  }
+  document.getElementById("menuBtn").onclick = e => { e.stopPropagation(); list.classList.toggle("open"); };
+  document.addEventListener("click", e => { if (!list.contains(e.target)) list.classList.remove("open"); });
+  window.addEventListener("hashchange", () => show(location.hash.slice(1)));
+  /* the search box jumps to Trades or Values, so open that page */
+  const jump = Element.prototype.scrollIntoView;
+  Element.prototype.scrollIntoView = function(){
+    if (PAGES.some(p => p[0] === this.id)) { if (location.hash !== "#" + this.id) location.hash = this.id; else show(this.id); return; }
+    return jump.apply(this, arguments);
+  };
+  document.querySelector(".logo").onclick = e => { e.preventDefault(); location.hash = "top"; };
+  show(location.hash.slice(1));
+})();
+</script>
 </body>
 </html>
