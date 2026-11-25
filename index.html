@@ -597,5 +597,22 @@ function formCheck(){
 }
 formCheck(); setInterval(formCheck, 30000);
 </script>
+  <script>
+/* PICK-A-GAME PATCH: values only show after you pick a game (or search) */
+$("valueChips").querySelector('[data-g=""]').remove();
+$("valueChips").querySelectorAll(".chip").forEach(c => c.classList.remove("on"));
+vGame = "";
+const drawValuesOld = drawValues;
+drawValues = function(){
+  if (!vGame && !$("valueQ").value.trim()){
+    if (typeof VALUES2 !== "undefined" && VALUES2) $("sValues").textContent = VALUES2.length;
+    $("valueBody").innerHTML = `<tr><td colspan="3" style="text-align:center;color:var(--mut);padding:22px">👆 Pick a game above to see its values (or search an item)</td></tr>`;
+    return;
+  }
+  drawValuesOld();
+};
+$("valueQ").oninput = drawValues;
+drawValues();
+</script>
 </body>
 </html>
