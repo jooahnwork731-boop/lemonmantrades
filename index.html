@@ -765,5 +765,34 @@ if (SHEET_CSV.startsWith("http")){
     });
 }
 </script>
+  <!-- PRIZE POOL PATCH: shows prizes from the "Prizes" tab of the Storage sheet -->
+<script>
+const PRIZES_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQZusnRnq4DnoOnmKG-0e7ZoU4AucYBiikValn5yQZbVjwSk2m4X9OcV_8nd256WCCzpOzmnjAAjSX3/pub?gid=1624764997&single=true&output=csv";
+(function(){
+  const gw = document.querySelector("#giveaway .gw");
+  if (!gw || document.getElementById("prizeGrid")) return;
+  gw.insertAdjacentHTML("afterend", `
+    <h2 style="margin-top:40px;font-size:1.5rem">🎁 Prize Pool</h2>
+    <p class="sub">What you could win this week. Vote to enter!</p>
+    <div class="grid" id="prizeGrid"><p class="empty">Prizes coming soon!</p></div>`);
+  if (!PRIZES_CSV.startsWith("http")) return;
+  fetch(PRIZES_CSV + "&v=" + Date.now()).then(r => r.ok ? r.text() : "").catch(() => "").then(text => {
+    const rows = parseCSV(text);
+    if (rows.length < 2) return;
+    const head = rows[0].map(h => h.trim().toLowerCase());
+    const col = n => head.findIndex(h => h.startsWith(n));
+    const G = col("game"), P = col("prize"), N = col("how");
+    if (G < 0 || P < 0) return;
+    const cut = s => String(s || "").trim().slice(0, 60);
+    const list = rows.slice(1).filter(r => cut(r[G]) && cut(r[P]));
+    if (!list.length) return;
+    $("prizeGrid").innerHTML = list.map(r => {
+      const n = N >= 0 ? cut(r[N]) : "";
+      return `<div class="wcard"><span class="tag">${em(cut(r[G]))} ${esc(cut(r[G]))}</span>
+        <h3>🎁 ${esc(cut(r[P]))}${n && n !== "1" ? " ×" + esc(n) : ""}</h3></div>`;
+    }).join("");
+  });
+})();
+</script>
 </body>
 </html>
