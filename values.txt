@@ -1,62 +1,81 @@
-# Lemon Man Trades value list
+ # Lemon Man Trades value list
 # Format:  Game | Item | Value | Demand
+# Values are community estimates from public value lists, checked Nov 2026. Always double-check before big trades.
 # updated: Nov 2026
-Blox Fruits | Gas | 72M | Very High
+Blox Fruits | West Dragon | 2.94B | Very High
+Blox Fruits | East Dragon | 2.46B | Very High
+Blox Fruits | Kitsune | 480M | Very High
+Blox Fruits | Magnet | 330M | High
+Blox Fruits | Venom | 120M | Very High
+Blox Fruits | Control | 90M | High
+Blox Fruits | Tiger | 80M | High
+Blox Fruits | Yeti | 70M | Medium
+Blox Fruits | Gas | 60M | Very High
+Blox Fruits | Dough | 30M | Very High
 Blox Fruits | T-Rex | 20M | High
-Blox Fruits | Venom | 9M | High
+Blox Fruits | Lightning | 20M | Medium
+Blox Fruits | Spirit | 10M | High
+Blox Fruits | Portal | 10M | Very High
+Blox Fruits | Buddha | 10M | Very High
+Adopt Me! | Bat Dragon | 1000 Tracker Points | Very High
 Adopt Me! | Mega Neon Shadow Dragon | 2314 Tracker Points | Very High
 Adopt Me! | Neon Shadow Dragon | 1354 Tracker Points | Very High
 Adopt Me! | Shadow Dragon | 683 Tracker Points | High
-Murder Mystery 2 | Chroma Traveler's Gun | 145K-220K | High
-Murder Mystery 2 | Traveler's Gun | 5.2K | Medium
-Murder Mystery 2 | Evergun | 3.4K | High
-Grow a Garden | GIANT Grizzly Bear | 20,000 Sx (20 Sp) | Medium
-Grow a Garden | Kitsune | 2,000 Sx (2 Sp) | High
-Grow a Garden | Raccoon | 850 Sx | High
-Steal a Brainrot | Strawberry Elephant | 4.55M | High
-Steal a Brainrot | Headless Horseman | Top tier | High
-Steal a Brainrot | Elefanto Frigo | Top tier | High
-Pet Simulator 99 | Titanic Hippomelon | 662B diamonds RAP | High
-Jailbreak | HyperShift | 306M cash | High
-Jailbreak | HyperBlue Lvl5 | 64M cash | Medium
-Jailbreak | HyperPink Lvl5 | 55M cash | Medium
-King Legacy | Erebus | 15-25 Fins | High
-King Legacy | Demon Fruit | 9-15 Fins | Medium
-King Legacy | Tree Fruit | 9-15 Fins | Medium
-Fisch | Puff of Heaven | 7.2K | High
-Fisch | Demonwake | 380 | High
-Toilet Tower Defense | Telanthric Titan | 3.75M | High
-Toilet Tower Defense | Titan Cactus Man | 900K | High
-Royale High | Valentines Halo 2021 | 3.8M-4.1M diamonds | High
-Royale High | Halloween Halo 2019 | 2.8M-3M diamonds | Medium
-Royale High | Glimmering Halo 2018 | 2.5M-2.65M diamonds | Low
-Blade Ball | Subversion | 110-130 RAP | High
-Blade Ball | Winter's Touch | 90-110 RAP | High
-Anime Vanguards | Shiny Divalo | 1.26M rerolls | High
-Bee Swarm Simulator | Round Basic Bee Sticker | 5 | Very High
-Bee Swarm Simulator | Snow Cub Skin | 5 | Very High
-Bee Swarm Simulator | Flying Ninja Bee Sticker | 4 | High
-Creatures of Sonaria | Verdanette Plushie | 400K-650K mush | Medium
-Creatures of Sonaria | Ghartokus | 10K-40K mush | High
-# Lemon Man Trades value list
-# Format:  Game | Item | Value | Demand
-# Pet Simulator 99 values from petsimulatorvalues.com (Nov 2026)
-# updated: Nov 2026
-Blox Fruits | Gas | 72M | Very High
-Blox Fruits | T-Rex | 20M | High
-Blox Fruits | Venom | 9M | High
-Adopt Me! | Mega Neon Shadow Dragon | 2314 Tracker Points | Very High
-Adopt Me! | Neon Shadow Dragon | 1354 Tracker Points | Very High
-Adopt Me! | Shadow Dragon | 683 Tracker Points | High
-Murder Mystery 2 | Chroma Traveler's Gun | 145K-220K | High
-Murder Mystery 2 | Traveler's Gun | 5.2K | Medium
-Murder Mystery 2 | Evergun | 3.4K | High
-Grow a Garden | GIANT Grizzly Bear | 20,000 Sx (20 Sp) | Medium
-Grow a Garden | Kitsune | 2,000 Sx (2 Sp) | High
-Grow a Garden | Raccoon | 850 Sx | High
-Steal a Brainrot | Strawberry Elephant | 4.55M | High
-Steal a Brainrot | Headless Horseman | Top tier | High
-Steal a Brainrot | Elefanto Frigo | Top tier | High
+Adopt Me! | Giraffe | 463 Tracker Points | High
+Adopt Me! | Frost Dragon | 316 Tracker Points | High
+Adopt Me! | Owl | 243.5 Tracker Points | High
+Adopt Me! | Giant Panda | 204 Tracker Points | High
+Adopt Me! | Parrot | 195.5 Tracker Points | High
+Adopt Me! | Crow | 178 Tracker Points | High
+Adopt Me! | Blazing Lion | 170 Tracker Points | Medium
+Adopt Me! | Balloon Unicorn | 168 Tracker Points | Medium
+Adopt Me! | African Wild Dog | 158 Tracker Points | Medium
+Adopt Me! | Amethyst Penguin | 150 Tracker Points | Medium
+Murder Mystery 2 | Chroma Traveler's Gun | 140K | High
+Murder Mystery 2 | Chroma Evergun | 47K | Medium
+Murder Mystery 2 | Chroma Evergreen | 33K | Medium
+Murder Mystery 2 | Chroma Bauble | 29K | Medium
+Murder Mystery 2 | Chroma Constellation | 26K | Medium
+Murder Mystery 2 | Chroma Vampire's Gun | 25K | Medium
+Murder Mystery 2 | Chroma Alienbeam | 23K | Medium
+Murder Mystery 2 | Gingerscope | 15.25K | Medium
+Murder Mystery 2 | Chroma Raygun | 12.5K | Medium
+Murder Mystery 2 | Chroma Emberscythe | 10K | High
+Murder Mystery 2 | Chroma Sunrise | 8.25K | Medium
+Murder Mystery 2 | Traveler's Axe | 7.7K | Medium
+Murder Mystery 2 | Chroma Snowcannon | 7.65K | Medium
+Murder Mystery 2 | Chroma Blizzard | 5.5K | Medium
+Murder Mystery 2 | Traveler's Gun | 5.15K | Medium
+Grow a Garden | Water Buffalo | 6.195M | High
+Grow a Garden | Blue Lobster Thermidor | 377K | High
+Grow a Garden | Black Swan | 318K | High
+Grow a Garden | Rainbow Elephant | 243K | Very High
+Grow a Garden | Calico | 189K | High
+Grow a Garden | Albino Peacock | 87.75K | Medium
+Grow a Garden | Rainbow Griffin | 63.75K | Medium
+Grow a Garden | Rainbow Chinchilla | 58.75K | Medium
+Grow a Garden | Ghostly Mummy | 51.25K | High
+Grow a Garden | Rainbow Phoenix | 47.5K | Medium
+Grow a Garden | Blue Whale | 27.5K | Medium
+Grow a Garden | Ghostly Headless Horseman | 23.75K | Medium
+Grow a Garden | Goblin Gardener | 23.5K | Medium
+Grow a Garden | Ghostly Spider | 21K | Medium
+Grow a Garden | Rainbow Dilophosaurus | 20.75K | Medium
+Steal a Brainrot | OG Strawberry Elephant | 4.55M | Very High
+Steal a Brainrot | Secret Griffin | 4.40M | Very Low
+Steal a Brainrot | OG Skibidi Toilet | 4.05M | Very Low
+Steal a Brainrot | Secret Cerberus | 1.65M | Very Low
+Steal a Brainrot | OG Headless Horseman | 875K | High
+Steal a Brainrot | Legendary Signore Carapace | 207.5K | Medium
+Steal a Brainrot | Mythic Elefanto Frigo | 112.5K | Very High
+Steal a Brainrot | OG Meowl | 75K | Very Low
+Steal a Brainrot | Brainrot God Antonio | 70K | High
+Steal a Brainrot | Secret Dragon Gingerini | 40K | High
+Steal a Brainrot | Hydra Bunny | 15.5K | High
+Steal a Brainrot | Secret Fishino Clownino | 15K | High
+Steal a Brainrot | Legendary Tirilikalika Tirilikalako | 11K | Low
+Steal a Brainrot | Common Phoenix | 9K | Very High
+Steal a Brainrot | Secret Hydra Dragon Cannelloni | 7.5K | Very Low
 Pet Simulator 99 | Gargantuan Hypnotic Kitsune | 925B | Medium
 Pet Simulator 99 | Gargantuan Royal Beast | 750B | High
 Pet Simulator 99 | Gargantuan Kaiju King | 630B | Very High
@@ -100,24 +119,138 @@ Pet Simulator 99 | Titanic Starfall Dragon | 16.2B | High
 Pet Simulator 99 | Titanic Electric Werewolf | 12.7B | High
 Pet Simulator 99 | Titanic Empyrean Dragon | 5.4B | High
 Pet Simulator 99 | Titanic Special Ops Goat | 4.85B | High
-Jailbreak | HyperShift | 306M cash | High
-Jailbreak | HyperBlue Lvl5 | 64M cash | Medium
-Jailbreak | HyperPink Lvl5 | 55M cash | Medium
-King Legacy | Erebus | 15-25 Fins | High
-King Legacy | Demon Fruit | 9-15 Fins | Medium
-King Legacy | Tree Fruit | 9-15 Fins | Medium
-Fisch | Puff of Heaven | 7.2K | High
+Jailbreak | HyperShift | 306M cash | Low
+Jailbreak | HyperBlue Lvl5 | 64M cash | High
+Jailbreak | HyperPink Lvl5 | 55M cash | High
+Jailbreak | Javelin | 47M cash | Medium
+Jailbreak | Laser Cannon | 44M cash | High
+Jailbreak | Void | 44M cash | Medium
+Jailbreak | Thrusters | 44M cash | High
+Jailbreak | HyperBlue Lvl4 | 41M cash | High
+Jailbreak | Beignet | 40M cash | High
+Jailbreak | HyperDiamond Lvl5 | 40M cash | High
+Jailbreak | Proto-8 | 36M cash | High
+Jailbreak | HyperPurple Lvl5 | 35M cash | High
+Jailbreak | Red 5 | 35M cash | High
+Jailbreak | Power-1 | 25M cash | High
+Jailbreak | Drip | 23M cash | Medium
+King Legacy | Hellroot Bundle | 1300 Fins | High
+King Legacy | Noirceur | 1300 Fins | High
+King Legacy | Perm Dragon | 825 Fins | High
+King Legacy | Perm Dough | 775 Fins | High
+King Legacy | Volt Bundle | 775 Fins | High
+King Legacy | Perm Phoenix | 735 Fins | High
+King Legacy | Perm Pter | 725 Fins | High
+King Legacy | Conqueror | 725 Fins | High
+King Legacy | Perm Tree | 700 Fins | High
+King Legacy | Perm Gate | 690 Fins | High
+King Legacy | Perm Demon | 650 Fins | High
+King Legacy | Perm Toy | 637.5 Fins | High
+King Legacy | Perm Melody | 615 Fins | High
+King Legacy | Cerulean Blossom | 590 Fins | High
+King Legacy | Primal Pack | 500 Fins | High
+Fisch | Puff of Heaven | 7.2K | Medium
+Fisch | Cthulu's Revenge | 5K | Medium
+Fisch | Evangeline | 2.3K | High
+Fisch | Nocturne | 1.92K | High
+Fisch | Curse IV | 1.8K | High
+Fisch | Cyanic Demonride | 1.57K | High
+Fisch | Scarwing | 1.4K | High
+Fisch | Heavyblade of Glory | 825 | High
+Fisch | Slime Trade Booth | 700 | Medium
+Fisch | Black Comet | 570 | High
+Fisch | Fuchsia Fidelity | 525 | High
+Fisch | Malevolence | 490 | High
+Fisch | The Reaper | 445 | High
+Fisch | Platinum Menace | 410 | High
 Fisch | Demonwake | 380 | High
-Toilet Tower Defense | Telanthric Titan | 3.75M | High
-Toilet Tower Defense | Titan Cactus Man | 900K | High
-Royale High | Valentines Halo 2021 | 3.8M-4.1M diamonds | High
-Royale High | Halloween Halo 2019 | 2.8M-3M diamonds | Medium
-Royale High | Glimmering Halo 2018 | 2.5M-2.65M diamonds | Low
+Toilet Tower Defense | Golden Speakerman Titan | 4.23B gems | Low
+Toilet Tower Defense | Telanthric Titan | 3.8B gems | Low
+Toilet Tower Defense | Nuke Titan TV Man | 2.3B gems | Low
+Toilet Tower Defense | Hacked Juggernaut Titan | 850M gems | Low
+Toilet Tower Defense | Frost Speakerman Titan | 728M gems | Low
+Toilet Tower Defense | Titan Infected Speakerman | 600M gems | Medium
+Toilet Tower Defense | Titan Cactus Man | 485M gems | Low
+Toilet Tower Defense | Titan Colosseus Maximus | 400M gems | Low
+Toilet Tower Defense | Komodo Titan Speakerman | 400M gems | Low
+Toilet Tower Defense | Chrono Clockman | 258M gems | Low
+Toilet Tower Defense | Upgraded Titan Clockman | 200M gems | Low
+Toilet Tower Defense | Gamma Ray Sniper | 97M gems | Low
+Toilet Tower Defense | Upgraded Titan DrillDragon | 63.1M gems | Medium
+Toilet Tower Defense | Futuristic Titan Speakerman | 35M gems | Low
+Toilet Tower Defense | Chief Drillman | 20M gems | Low
+Royale High | Divine Adoration Everfriend Halo 2024 | 16M-17.2M diamonds | Very High
+Royale High | Eternity's Aim Everfriend Halo 2026 | 6.8M diamonds | Very High
+Royale High | Valkyrie Set | 6.2M diamonds | High
+Royale High | Silk Spun Halo Eveningfall 2025 | 4.8M diamonds | Very High
+Royale High | Royale Jelly Tidalglow Halo 2026 | 3.8M diamonds | High
+Royale High | Frolicking Fields Halo Flowering 2026 | 2.9M-3M diamonds | High
+Royale High | Haunted Hollow Eveningfall Halo 2026 | 2M diamonds | Medium
+Royale High | Harmonic Hearts Everfriend Halo 2025 | 19.6M diamonds | Very High
+Royale High | Glacial Angel Glitterfrost Halo 2024 | 15.5M-16.5M diamonds | Very High
+Royale High | Dark Fairy Eveningfall Halo 2023 | 9.2M diamonds | High
+Royale High | Infernal Phoenix Glitterfrost Halo 2026 | 7.3M diamonds | Very High
+Royale High | Witching Hour Autumn Halo 2022 | 3.8M diamonds | High
+Royale High | Wishing Star Woods Glitterfrost Halo 2025 | 3.8M diamonds | High
+Royale High | Spring Halo 2022 | 2.95M diamonds | Medium
+Royale High | Luminous Lagoon Tidalglow Halo 2025 | 2.8M diamonds | High
+Blade Ball | Nightfall | 2.2K-2.6K RAP | High
+Blade Ball | Periastron's Glory | 2.2K-2.6K RAP | High
 Blade Ball | Subversion | 110-130 RAP | High
-Blade Ball | Winter's Touch | 90-110 RAP | High
-Anime Vanguards | Shiny Divalo | 1.26M rerolls | High
-Bee Swarm Simulator | Round Basic Bee Sticker | 5 | Very High
-Bee Swarm Simulator | Snow Cub Skin | 5 | Very High
-Bee Swarm Simulator | Flying Ninja Bee Sticker | 4 | High
-Creatures of Sonaria | Verdanette Plushie | 400K-650K mush | Medium
-Creatures of Sonaria | Ghartokus | 10K-40K mush | High
+Blade Ball | Winter's Touch | 90-110 RAP | Very High
+Blade Ball | Staff of Despair | 80-100 RAP | Very High
+Blade Ball | Sky Axe | 50-65 RAP | Medium
+Blade Ball | Venomweaver | 45-55 RAP | Medium
+Blade Ball | Void Hammer | 45-55 RAP | Medium
+Blade Ball | Sunburst Axe | 40-50 RAP | Medium
+Blade Ball | Titan's Gleam | 38-48 RAP | Medium
+Blade Ball | Righteous Blade | 36-46 RAP | Medium
+Blade Ball | Trinity Axe | 25-32 RAP | Medium
+Blade Ball | Phoenix Rebirth | 23-30 RAP | Medium
+Blade Ball | Sabrina's Sword of Healing | 11-15 RAP | Medium
+Blade Ball | Russo's Sword of Truth | 8-12 RAP | Medium
+Anime Vanguards | Shiny Legendary Super Brolzi (December) | 175K | Medium
+Anime Vanguards | Shiny Legendary Super Brolzi (November) | 135K | Low
+Anime Vanguards | Shiny Octopus | 130K | Medium
+Anime Vanguards | Shiny Seban | 65K | Medium
+Anime Vanguards | Legendary Super Brolzi (December) | 46K | Medium
+Anime Vanguards | Shiny Soburo (Contract) | 45K | Medium
+Anime Vanguards | Legendary Super Brolzi (November) | 40K | Low
+Anime Vanguards | Shiny Gazelle (Zombie) | 36.5K | Medium
+Anime Vanguards | Octopus | 22K | Medium
+Anime Vanguards | Shiny Friran (Teacher) | 17K | High
+Anime Vanguards | Shiny Isdead (Romantic) | 17K | Medium
+Anime Vanguards | Shiny Saiko (Spirit Medium) | 15.5K | Medium
+Anime Vanguards | Shiny Diogo (Alternate) | 14.5K | Medium
+Anime Vanguards | Seban | 14K | Medium
+Anime Vanguards | Shiny Koguro (Unsealed) | 11K | High
+Bee Swarm Simulator | Brown Cub Skin | 5 (out of 5) | Very High
+Bee Swarm Simulator | Noob Cub Skin | 5 (out of 5) | High
+Bee Swarm Simulator | Bee Cub Skin | 5 (out of 5) | High
+Bee Swarm Simulator | Snow Cub Skin | 5 (out of 5) | High
+Bee Swarm Simulator | Dapper From Above Sticker | 4 (out of 5) | High
+Bee Swarm Simulator | Robo Cub Skin | 4 (out of 5) | High
+Bee Swarm Simulator | Stick Cub Skin | 4 (out of 5) | High
+Bee Swarm Simulator | Gingerbread Cub Skin | 4 (out of 5) | High
+Bee Swarm Simulator | Round Basic Bee Sticker | 3 (out of 5) | Medium
+Bee Swarm Simulator | Star Cub Skin | 3 (out of 5) | Medium
+Bee Swarm Simulator | Peppermint Robo Cub Skin | 3 (out of 5) | Medium
+Bee Swarm Simulator | Basic Pink Hive Skin | 3 (out of 5) | Medium
+Bee Swarm Simulator | Basic Green Hive Skin | 3 (out of 5) | Medium
+Bee Swarm Simulator | Basic White Hive Skin | 3 (out of 5) | Medium
+Bee Swarm Simulator | Basic Black Hive Skin | 3 (out of 5) | Low
+Creatures of Sonaria | Humming Frost | 1M-15M mush | High
+Creatures of Sonaria | Lunar Qilin | 5M-10M mush | High
+Creatures of Sonaria | Sonarian Material | 4M-8M mush | High
+Creatures of Sonaria | Shining Material | 3M-6M mush | High
+Creatures of Sonaria | Kaiju Material | 2M-4.5M mush | High
+Creatures of Sonaria | Synthesize Material | 1M-3M mush | High
+Creatures of Sonaria | Valcorwings | 2M-2.5M mush | High
+Creatures of Sonaria | Super Hygos Palette | 2M-2.5M mush | High
+Creatures of Sonaria | Super Starlit Palette | 2M-2.5M mush | High
+Creatures of Sonaria | Super Korathos Palette | 2M-2.5M mush | High
+Creatures of Sonaria | Super Ikoran Palette | 2M-2.5M mush | High
+Creatures of Sonaria | Super Felifaux Palette | 2M-2.5M mush | High
+Creatures of Sonaria | Glaring Material | 1M-2.5M mush | High
+Creatures of Sonaria | Angelic | 2M-2.5M mush | High
+Creatures of Sonaria | Foul Feline | 1M-2.5M mush | High
