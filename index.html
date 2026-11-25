@@ -580,5 +580,22 @@ tick = function(){
 };
 scheduleText(); tick(); setInterval(tick, 1000);
 </script>
+  <script>
+/* FORM PATCH: voting uses the Google Form (shows Monday-Friday only) */
+const FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSe25XPCad356VXHhmSLZGO_FYH20i9NsjS9oW3tU371Xpxx5w/viewform?embedded=true";
+const vf = $("voteForm");
+[...vf.children].forEach(el => { if (el.id !== "closedMsg") el.style.display = "none"; });
+vf.onsubmit = e => e.preventDefault();
+vf.insertAdjacentHTML("beforeend", `
+  <div id="formWrap">
+    <iframe src="${FORM_URL}" style="width:100%;height:760px;border:0;border-radius:12px;background:#fff" loading="lazy" title="Lemon Man giveaway vote">Loading…</iframe>
+    <p class="note">One vote per person. Voting enters you in Saturday's giveaway. Username only, never your password.</p>
+  </div>`);
+function formCheck(){
+  const d = nyParts(new Date()).day, open = d >= 1 && d <= 5;
+  $("formWrap").style.display = open ? "block" : "none";
+}
+formCheck(); setInterval(formCheck, 30000);
+</script>
 </body>
 </html>
