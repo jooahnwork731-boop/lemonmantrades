@@ -651,5 +651,59 @@ drawValues();
   chips.parentNode.insertBefore(box, chips);
 })();
 </script>
+  <!-- POINTS HELP PATCH (replaces the old POINTS EXPLAIN PATCH) -->
+<style>
+.ptsBox{display:none!important}
+#ptsBtn{display:inline-block;margin:0 0 14px;padding:10px 16px;border:2px solid #ffd800;border-radius:999px;background:transparent;color:#ffd800;font-weight:bold;font-size:1em;cursor:pointer}
+#ptsHelp{position:fixed;inset:0;background:rgba(0,0,0,.7);display:none;align-items:center;justify-content:center;z-index:9999;padding:16px}
+#ptsHelp.open{display:flex}
+#ptsHelp .card{background:#1d1f24;color:#fff;border:2px solid #ffd800;border-radius:16px;max-width:460px;width:100%;max-height:85vh;overflow:auto;padding:18px;line-height:1.5}
+#ptsHelp h3{margin:0 0 10px;color:#ffd800}
+#ptsHelp ul{margin:6px 0 12px;padding-left:20px}
+#ptsHelp .x{float:right;background:none;border:0;color:#fff;font-size:1.4em;cursor:pointer}
+</style>
+<script>
+(function(){
+  const vals = document.getElementById("values");
+  if (!vals || document.getElementById("ptsBtn")) return;
+  const old = document.querySelector(".ptsBox"); if (old) old.remove();
+  const th = vals.querySelectorAll("th"); if (th[1]) th[1].textContent = "Points (1-10)";
+ 
+  const btn = document.createElement("button");
+  btn.id = "ptsBtn"; btn.type = "button"; btn.textContent = "❓ How do points work?";
+  const chips = document.getElementById("valueChips");
+  chips.parentNode.insertBefore(btn, chips);
+ 
+  const pop = document.createElement("div");
+  pop.id = "ptsHelp";
+  pop.innerHTML = `<div class="card">
+    <button class="x" type="button" aria-label="Close">✕</button>
+    <h3>🍋 How the Value List works</h3>
+    <b>⭐ Points: how much an item is worth</b>
+    <ul>
+      <li>10/10 is the best item in that game.</li>
+      <li>7 to 9 is very good, 4 to 6 is good, and 1 to 3 is low.</li>
+      <li>Points only compare items in the same game.</li>
+      <li>The number in ( ) is the exact value from value sites.</li>
+    </ul>
+    <b>🔥 Demand: how many people want it</b>
+    <ul>
+      <li>High demand means it's easy to trade.</li>
+      <li>Low demand means it's harder to find someone who wants it.</li>
+      <li>An item can be cheap but popular, like Antonio (4/10, High demand).</li>
+    </ul>
+    <b>✅ Trading tips</b>
+    <ul>
+      <li>Don't add points together. Two 5/10 items don't equal one 10/10.</li>
+      <li>For a fair trade, compare the exact values in ( ).</li>
+      <li>Values change often, so double-check before big trades.</li>
+    </ul>
+  </div>`;
+  document.body.appendChild(pop);
+ 
+  btn.onclick = () => pop.classList.add("open");
+  pop.onclick = e => { if (e.target === pop || e.target.classList.contains("x")) pop.classList.remove("open"); };
+})();
+</script>
 </body>
 </html>
