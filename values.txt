@@ -1,88 +1,435 @@
 # Lemon Man Trades value list
-# Format:  Game | Item | Points (1-10) | Demand
-# Points = how much it's worth compared to the other items in the SAME game. 10 = the best item. Real value in ( ).
+# Format:  Game | Item | Points (1-10) (real value) | Demand
 # Points = how much it's worth. 10 = the best item in that game. Each point lower = worth a lot less. Real value in ( ).
-# updated: Nov 2026
-Blox Fruits | West Dragon | 10/10 (2.94B) | Very High
-Blox Fruits | East Dragon | 10/10 (2.46B) | Very High
-Blox Fruits | Kitsune | 8/10 (480M) | Very High
-Blox Fruits | Magnet | 8/10 (330M) | High
-Blox Fruits | Venom | 7/10 (120M) | Very High
-Blox Fruits | Control | 7/10 (90M) | High
-Blox Fruits | Tiger | 6/10 (80M) | High
-Blox Fruits | Yeti | 6/10 (70M) | Medium
-Blox Fruits | Gas | 6/10 (60M) | Very High
-Blox Fruits | Dough | 6/10 (30M) | Very High
-Blox Fruits | T-Rex | 5/10 (20M) | High
-Blox Fruits | Lightning | 5/10 (20M) | Medium
-Blox Fruits | Spirit | 4/10 (10M) | High
-Blox Fruits | Portal | 4/10 (10M) | Very High
-Blox Fruits | Buddha | 4/10 (10M) | Very High
-Adopt Me! | Mega Neon Shadow Dragon | 10/10 (2314 Tracker Points) | Very High
-Adopt Me! | Neon Shadow Dragon | 9/10 (1354 Tracker Points) | Very High
-Adopt Me! | Bat Dragon | 9/10 (1000 Tracker Points) | Very High
-Adopt Me! | Shadow Dragon | 9/10 (683 Tracker Points) | High
-Adopt Me! | Giraffe | 8/10 (463 Tracker Points) | High
-Adopt Me! | Frost Dragon | 8/10 (316 Tracker Points) | High
-Adopt Me! | Owl | 8/10 (243.5 Tracker Points) | High
-Adopt Me! | Giant Panda | 8/10 (204 Tracker Points) | High
-Adopt Me! | Parrot | 8/10 (195.5 Tracker Points) | High
-Adopt Me! | Crow | 7/10 (178 Tracker Points) | High
-Adopt Me! | Blazing Lion | 7/10 (170 Tracker Points) | Medium
-Adopt Me! | Balloon Unicorn | 7/10 (168 Tracker Points) | Medium
-Adopt Me! | African Wild Dog | 7/10 (158 Tracker Points) | Medium
-Adopt Me! | Amethyst Penguin | 7/10 (150 Tracker Points) | Medium
-Murder Mystery 2 | Chroma Traveler's Gun | 10/10 (140K) | High
-Murder Mystery 2 | Chroma Evergun | 9/10 (47K) | Medium
-Murder Mystery 2 | Chroma Evergreen | 9/10 (33K) | Medium
-Murder Mystery 2 | Chroma Bauble | 8/10 (29K) | Medium
-Murder Mystery 2 | Chroma Constellation | 8/10 (26K) | Medium
-Murder Mystery 2 | Chroma Vampire's Gun | 8/10 (25K) | Medium
-Murder Mystery 2 | Chroma Alienbeam | 8/10 (23K) | Medium
-Murder Mystery 2 | Gingerscope | 8/10 (15.25K) | Medium
-Murder Mystery 2 | Chroma Raygun | 8/10 (12.5K) | Medium
-Murder Mystery 2 | Chroma Emberscythe | 7/10 (10K) | High
-Murder Mystery 2 | Chroma Sunrise | 7/10 (8.25K) | Medium
-Murder Mystery 2 | Traveler's Axe | 7/10 (7.7K) | Medium
-Murder Mystery 2 | Chroma Snowcannon | 7/10 (7.65K) | Medium
-Murder Mystery 2 | Chroma Blizzard | 7/10 (5.5K) | Medium
-Murder Mystery 2 | Traveler's Gun | 7/10 (5.15K) | Medium
-Grow a Garden | Water Buffalo | 10/10 (6.195M) | High
-Grow a Garden | Blue Lobster Thermidor | 7/10 (377K) | High
-Grow a Garden | Black Swan | 7/10 (318K) | High
-Grow a Garden | Rainbow Elephant | 7/10 (243K) | Very High
-Grow a Garden | Calico | 7/10 (189K) | High
-Grow a Garden | Albino Peacock | 6/10 (87.75K) | Medium
-Grow a Garden | Rainbow Griffin | 6/10 (63.75K) | Medium
-Grow a Garden | Rainbow Chinchilla | 5/10 (58.75K) | Medium
-Grow a Garden | Ghostly Mummy | 5/10 (51.25K) | High
-Grow a Garden | Rainbow Phoenix | 5/10 (47.5K) | Medium
-Grow a Garden | Blue Whale | 5/10 (27.5K) | Medium
-Grow a Garden | Ghostly Headless Horseman | 5/10 (23.75K) | Medium
-Grow a Garden | Goblin Gardener | 5/10 (23.5K) | Medium
-Grow a Garden | Ghostly Spider | 4/10 (21K) | Medium
-Grow a Garden | Rainbow Dilophosaurus | 4/10 (20.75K) | Medium
+# Values are community estimates from public value lists (Nov 2026): game.guide, adoptmevalues.app, rblxguide (Supreme Values + MM2Values), jbvalues, axeetech, vaultedvalues, progameguides, traderie.
+# Some demand ratings are estimates where the source did not list one (most of Adopt Me and Grow a Garden).
+# updated: Nov 25, 2026
+Blox Fruits | Eclipse Chromatic | 10/10 (65B) | Very High
+Blox Fruits | Rabid Skin | 10/10 (24B) | Medium
+Blox Fruits | DogHouse Frame Break | 10/10 (12.28B) | Medium
+Blox Fruits | Galaxy Kitsune | 10/10 (10.43B) | Very High
+Blox Fruits | Vibes (Frame Break) | 10/10 (9.33B) | High
+Blox Fruits | Crimson Kitsune | 10/10 (7.39B) | Very High
+Blox Fruits | Parrot Skin | 10/10 (6.89B) | Very High
+Blox Fruits | Ember Dragon | 10/10 (6.87B) | Very High
+Blox Fruits | Meme Fruit | 10/10 (6.43B) | Medium
+Blox Fruits | Perm West Dragon | 10/10 (6.38B) | Very High
+Blox Fruits | Perm East Dragon | 10/10 (6.38B) | Very High
+Blox Fruits | Purple Lightning | 10/10 (6.2B) | High
+Blox Fruits | Perm Kitsune | 10/10 (4.82B) | Very High
+Blox Fruits | Perm Control | 10/10 (4.82B) | High
+Blox Fruits | Perm Tiger | 9/10 (3.51B) | High
+Blox Fruits | Perm Yeti | 9/10 (3.51B) | Medium
+Blox Fruits | Fruit Notifier | 9/10 (3.36B) | High
+Blox Fruits | West Dragon | 9/10 (3.01B) | Very High
+Blox Fruits | Super Spirit Pain | 9/10 (2.94B) | Very High
+Blox Fruits | Perm Spirit | 9/10 (2.82B) | High
+Blox Fruits | Perm Gas | 9/10 (2.75B) | Very High
+Blox Fruits | Perm Venom | 9/10 (2.7B) | Very High
+Blox Fruits | Perm Shadow | 9/10 (2.61B) | Medium
+Blox Fruits | Perm Dough | 9/10 (2.56B) | Very High
+Blox Fruits | East Dragon | 9/10 (2.51B) | Very High
+Blox Fruits | Perm T-Rex | 9/10 (2.48B) | High
+Blox Fruits | Arcsteel Magnet | 9/10 (2.46B) | Very High
+Blox Fruits | Perm Mammoth | 9/10 (2.45B) | Medium
+Blox Fruits | Perm Gravity | 9/10 (2.37B) | Medium
+Blox Fruits | Perm Blizzard | 9/10 (2.28B) | Medium
+Blox Fruits | Perm Pain | 9/10 (2.22B) | Medium
+Blox Fruits | Perm Lightning | 9/10 (2.13B) | Medium
+Blox Fruits | Divine Portal | 9/10 (2.06B) | High
+Blox Fruits | Red Lightning | 9/10 (2.01B) | High
+Blox Fruits | Perm Portal | 9/10 (1.93B) | Very High
+Blox Fruits | Perm Phoenix | 9/10 (1.86B) | Low
+Blox Fruits | Perm Sound | 9/10 (1.71B) | Low
+Blox Fruits | Dog Blade | 9/10 (1.64B) | Medium
+Blox Fruits | Perm Spider | 9/10 (1.6B) | Very Low
+Blox Fruits | Perm Creation | 9/10 (1.56B) | Very Low
+Blox Fruits | Runic Fiend | 9/10 (1.53B) | Medium
+Blox Fruits | Perm Love | 9/10 (1.53B) | Low
+Blox Fruits | Perm Buddha | 8/10 (1.46B) | Very High
+Blox Fruits | Perm Quake | 8/10 (1.28B) | Very Low
+Blox Fruits | 3x Mythical Scroll | 8/10 (1.19B) | Medium
+Blox Fruits | Perm Magma | 8/10 (1.12B) | Medium
+Blox Fruits | Dark Blade | 8/10 (1.08B) | High
+Blox Fruits | Perm Ghost | 8/10 (1.05B) | Very Low
+Blox Fruits | Fiend Yeti | 8/10 (1.04B) | Very High
+Blox Fruits | Celestial Pain | 8/10 (980M) | Very High
+Blox Fruits | Werewolf | 8/10 (976.66M) | High
+Blox Fruits | Perm Rubber | 8/10 (976.66M) | Very Low
+Blox Fruits | Perm Light | 8/10 (963.33M) | Low
+Blox Fruits | Perm Diamond | 8/10 (858.33M) | Very Low
+Blox Fruits | Perm Eagle | 8/10 (835M) | Very Low
+Blox Fruits | Perm Dark | 8/10 (798.33M) | Very Low
+Blox Fruits | Sadness Pain | 8/10 (733.33M) | High
+Blox Fruits | Perm Sand | 8/10 (711.66M) | Very Low
+Blox Fruits | Perm Ice | 8/10 (641.66M) | Low
+Blox Fruits | Azura Bomb | 7/10 (496.66M) | High
+Blox Fruits | Kitsune | 7/10 (495M) | Very High
+Blox Fruits | 5x Legendary Scroll | 7/10 (490M) | Low
+Blox Fruits | Nuclear Bomb | 7/10 (475M) | Medium
+Blox Fruits | Perm Flame | 7/10 (456.66M) | Very Low
+Blox Fruits | Thermite Bomb | 7/10 (428.33M) | Medium
+Blox Fruits | 2x Mastery | 7/10 (400M) | High
+Blox Fruits | 2x Money | 7/10 (393.33M) | High
+Blox Fruits | Frustration Pain | 7/10 (373.33M) | Medium
+Blox Fruits | +1 Fruit Storage | 7/10 (351.66M) | High
+Blox Fruits | Matrix Eagle | 7/10 (337.5M) | High
+Blox Fruits | Starlight Gravity | 7/10 (318.33M) | High
+Blox Fruits | Magnet | 7/10 (315M) | Very High
+Blox Fruits | 2x Boss Drops | 7/10 (278.33M) | Medium
+Blox Fruits | Fast Boats | 7/10 (261.66M) | Medium
+Blox Fruits | Perm Spike | 7/10 (223.33M) | Very Low
+Blox Fruits | Requiem Eagle | 7/10 (213.33M) | High
+Blox Fruits | Green Lightning | 7/10 (195M) | High
+Blox Fruits | Rose Quartz Diamond | 6/10 (190.83M) | High
+Blox Fruits | Emerald Diamond | 6/10 (164.16M) | High
+Blox Fruits | Yellow Lightning | 6/10 (130M) | High
+Blox Fruits | Venom | 6/10 (121.25M) | Very High
+Blox Fruits | Perm Smoke | 6/10 (113.33M) | Very Low
+Blox Fruits | Control | 6/10 (95.62M) | High
+Blox Fruits | Ruby Diamond | 6/10 (90.83M) | High
+Blox Fruits | Perm Bomb | 6/10 (89.16M) | Very Low
+Blox Fruits | Tiger | 6/10 (85M) | High
+Blox Fruits | Hellfire Gas | 6/10 (85M) | Medium
+Blox Fruits | Torment Pain | 6/10 (83.33M) | High
+Blox Fruits | Yeti | 6/10 (74.37M) | Medium
+Blox Fruits | Perm Spring | 6/10 (69.16M) | Very Low
+Blox Fruits | Gas | 5/10 (63.75M) | Very High
+Blox Fruits | Perm Blade | 5/10 (33.33M) | Very Low
+Blox Fruits | Dough | 5/10 (31.87M) | Very High
+Blox Fruits | Glacier Eagle | 4/10 (23.33M) | Low
+Blox Fruits | T-Rex | 4/10 (21.25M) | High
+Blox Fruits | Scarlet Ghost | 4/10 (20.83M) | Low
+Blox Fruits | Lightning | 4/10 (20.62M) | Medium
+Blox Fruits | Perm Spin | 4/10 (18.33M) | Very Low
+Blox Fruits | Stat Reset | 4/10 (15M) | Low
+Blox Fruits | Topaz Diamond | 4/10 (10.83M) | Low
+Blox Fruits | Perm Rocket | 4/10 (10.83M) | Very Low
+Blox Fruits | Buddha | 4/10 (10.62M) | Very High
+Blox Fruits | Portal | 4/10 (10.62M) | Very High
+Blox Fruits | Spirit | 4/10 (10.62M) | High
+Blox Fruits | Celebration Bomb | 4/10 (10M) | Low
+Blox Fruits | Pain | 4/10 (10M) | Medium
+Blox Fruits | Gravity | 4/10 (10M) | Medium
+Blox Fruits | Lime Blade | 4/10 (10M) | Very Low
+Blox Fruits | Mammoth | 4/10 (9.75M) | Medium
+Blox Fruits | Shadow | 3/10 (6.5M) | Medium
+Blox Fruits | Blizzard | 3/10 (5.25M) | Medium
+Blox Fruits | Phoenix | 2/10 (2.41M) | Low
+Blox Fruits | Sound | 2/10 (2.37M) | Low
+Blox Fruits | Creation | 2/10 (1.97M) | Very Low
+Blox Fruits | Spider | 2/10 (1.5M) | Very Low
+Blox Fruits | Love | 2/10 (1.31M) | Low
+Blox Fruits | Magma | 2/10 (1.16M) | Medium
+Blox Fruits | Quake | 1/10 (1M) | Very Low
+Blox Fruits | Light | 1/10 (833.3K) | Low
+Blox Fruits | Ghost | 1/10 (816.7K) | Very Low
+Blox Fruits | Diamond | 1/10 (800K) | Very Low
+Blox Fruits | Eagle | 1/10 (733.3K) | Very Low
+Blox Fruits | Rubber | 1/10 (726.7K) | Very Low
+Blox Fruits | Ice | 1/10 (533.3K) | Low
+Blox Fruits | Sand | 1/10 (446.7K) | Very Low
+Blox Fruits | Dark | 1/10 (433.3K) | Very Low
+Blox Fruits | Flame | 1/10 (260K) | Very Low
+Blox Fruits | Spike | 1/10 (180K) | Very Low
+Blox Fruits | Smoke | 1/10 (100K) | Very Low
+Blox Fruits | Bomb | 1/10 (80K) | Very Low
+Blox Fruits | Spring | 1/10 (60K) | Very Low
+Blox Fruits | Blade | 1/10 (43.3K) | Very Low
+Blox Fruits | Spin | 1/10 (7.5K) | Very Low
+Blox Fruits | Rocket | 1/10 (5K) | Very Low
+Adopt Me! | Mega Neon Bat Dragon | 10/10 (6600) | Very High
+Adopt Me! | Mega Neon Shadow Dragon | 10/10 (3300) | Very High
+Adopt Me! | Mega Neon Giraffe | 10/10 (2900) | Very High
+Adopt Me! | Mega Neon Giant Panda | 10/10 (2700) | Very High
+Adopt Me! | Neon Bat Dragon | 10/10 (2300) | Very High
+Adopt Me! | Mega Neon Amethyst Penguin | 10/10 (2200) | Very High
+Adopt Me! | Mega Neon Balloon Unicorn | 10/10 (2100) | Very High
+Adopt Me! | Mega Neon Blazing Lion | 10/10 (2100) | Very High
+Adopt Me! | Mega Neon African Wild Dog | 10/10 (2000) | Very High
+Adopt Me! | Mega Neon Owl | 10/10 (1800) | Very High
+Adopt Me! | Mega Neon Haetae | 10/10 (1800) | Very High
+Adopt Me! | Mega Neon Frost Dragon | 10/10 (1600) | Very High
+Adopt Me! | Neon Shadow Dragon | 10/10 (1400) | Very High
+Adopt Me! | Mega Neon Crow | 9/10 (1200) | Very High
+Adopt Me! | Mega Neon Hedgehog | 9/10 (1100) | Very High
+Adopt Me! | Bat Dragon | 9/10 (1000) | Very High
+Adopt Me! | Mega Neon Parrot | 9/10 (1000) | Very High
+Adopt Me! | Neon Giraffe | 9/10 (919) | Very High
+Adopt Me! | Mega Neon Dalmatian | 9/10 (850) | Very High
+Adopt Me! | Shadow Dragon | 9/10 (683) | Very High
+Adopt Me! | Neon Giant Panda | 9/10 (680) | Very High
+Adopt Me! | Neon Balloon Unicorn | 9/10 (613) | Very High
+Adopt Me! | Neon Owl | 9/10 (600) | Very High
+Adopt Me! | Neon African Wild Dog | 9/10 (600) | Very High
+Adopt Me! | Neon Frost Dragon | 9/10 (559) | Very High
+Adopt Me! | Neon Blazing Lion | 9/10 (545) | Very High
+Adopt Me! | Neon Amethyst Penguin | 9/10 (530) | Very High
+Adopt Me! | Mega Neon Pelican | 9/10 (504) | Very High
+Adopt Me! | Neon Haetae | 9/10 (480) | Very High
+Adopt Me! | Mega Neon Peppermint Penguin | 9/10 (475) | Very High
+Adopt Me! | Giraffe | 8/10 (466) | Very High
+Adopt Me! | Mega Neon Mini Pig | 8/10 (444) | Very High
+Adopt Me! | Mega Neon Alpaca | 8/10 (444) | Very High
+Adopt Me! | Neon Crow | 8/10 (401) | Very High
+Adopt Me! | Neon Parrot | 8/10 (395) | Very High
+Adopt Me! | Mega Neon Cabbit | 8/10 (376) | Very High
+Adopt Me! | Mega Neon Goose | 8/10 (362) | Very High
+Adopt Me! | Frost Dragon | 8/10 (319) | Very High
+Adopt Me! | Neon Hedgehog | 8/10 (294) | High
+Adopt Me! | Mega Neon Cow | 8/10 (260) | High
+Adopt Me! | Owl | 8/10 (244) | High
+Adopt Me! | Neon Dalmatian | 8/10 (233) | High
+Adopt Me! | Parrot | 8/10 (195.5) | High
+Adopt Me! | Crow | 8/10 (179) | High
+Adopt Me! | Balloon Unicorn | 8/10 (174) | High
+Adopt Me! | Giant Panda | 8/10 (171) | High
+Adopt Me! | African Wild Dog | 7/10 (160) | High
+Adopt Me! | Haetae | 7/10 (148) | High
+Adopt Me! | Blazing Lion | 7/10 (142) | High
+Adopt Me! | Neon Peppermint Penguin | 7/10 (142) | High
+Adopt Me! | Amethyst Penguin | 7/10 (130) | High
+Adopt Me! | Neon Mini Pig | 7/10 (128) | High
+Adopt Me! | Neon Pelican | 7/10 (126) | High
+Adopt Me! | Hedgehog | 7/10 (125) | High
+Adopt Me! | Neon Alpaca | 7/10 (113) | High
+Adopt Me! | Dalmatian | 7/10 (107) | High
+Adopt Me! | Neon Goose | 7/10 (102) | High
+Adopt Me! | Neon Cabbit | 7/10 (95) | Medium
+Adopt Me! | Neon Cow | 7/10 (85) | Medium
+Adopt Me! | Mini Pig | 6/10 (46) | Medium
+Adopt Me! | Goose | 6/10 (41) | Medium
+Adopt Me! | Cow | 6/10 (40.25) | Medium
+Adopt Me! | Peppermint Penguin | 6/10 (39) | Medium
+Adopt Me! | Cabbit | 6/10 (34) | Medium
+Adopt Me! | Pelican | 6/10 (31.5) | Medium
+Adopt Me! | Alpaca | 6/10 (31) | Medium
+Adopt Me! | Siamese Cat | 6/10 (25) | Medium
+Adopt Me! | Flamingo | 6/10 (22.5) | Medium
+Adopt Me! | Elephant | 5/10 (18.25) | Medium
+Adopt Me! | Caterpillar | 5/10 (15) | Medium
+Adopt Me! | Lion | 5/10 (15) | Medium
+Adopt Me! | Blue Dog | 5/10 (14.5) | Medium
+Adopt Me! | Border Collie | 5/10 (14.5) | Medium
+Adopt Me! | Munchkin Cat | 5/10 (13) | Medium
+Adopt Me! | Pig | 5/10 (11.5) | Medium
+Adopt Me! | Pink Cat | 5/10 (10) | Medium
+Adopt Me! | Giant Anteater | 5/10 (9.25) | Low
+Adopt Me! | Shrew | 4/10 (7) | Low
+Adopt Me! | Meerkat | 4/10 (5.25) | Low
+Adopt Me! | Ring-Tailed Lemur | 4/10 (4.75) | Low
+Adopt Me! | Hyena | 4/10 (4.25) | Low
+Adopt Me! | Brown Bear | 4/10 (4) | Low
+Adopt Me! | Polar Bear | 4/10 (3.75) | Low
+Adopt Me! | Silly Duck | 3/10 (2) | Low
+Adopt Me! | Wild Boar | 3/10 (1.5) | Low
+Adopt Me! | Chicken | 3/10 (1.4) | Low
+Adopt Me! | Capybara | 3/10 (1.35) | Low
+Adopt Me! | Harp Seal | 3/10 (1.29) | Low
+Adopt Me! | Black Panther | 3/10 (1.25) | Low
+Adopt Me! | Drake | 3/10 (1.15) | Low
+Adopt Me! | Amami Rabbit | 2/10 (0.51) | Low
+Adopt Me! | Quokka | 2/10 (0.42) | Low
+Adopt Me! | Ash Zebra | 2/10 (0.42) | Low
+Adopt Me! | Canadian Goose | 1/10 (0.36) | Low
+Adopt Me! | Chick | 1/10 (0.3) | Low
+Adopt Me! | Malaysian Tapir | 1/10 (0.21) | Low
+Adopt Me! | Coyote | 1/10 (0.18) | Low
+Adopt Me! | Dirty Ducky | 1/10 (0.17) | Low
+Adopt Me! | Classic Teapot | 1/10 (0.15) | Low
+Adopt Me! | Robin | 1/10 (0.13) | Low
+Adopt Me! | Brachiosaurus | 1/10 (0.12) | Low
+Adopt Me! | Cockroach | 1/10 (0.11) | Low
+Adopt Me! | Dugong | 1/10 (0.11) | Low
+Adopt Me! | Liger | 1/10 (0.1) | Low
+Murder Mystery 2 | Chroma Traveler's Gun | 10/10 (140,000) | High
+Murder Mystery 2 | Chroma Evergun | 10/10 (47,000) | Medium
+Murder Mystery 2 | Chroma Evergreen | 10/10 (33,000) | Medium
+Murder Mystery 2 | Chroma Bauble | 10/10 (29,000) | Medium
+Murder Mystery 2 | Chroma Constellation | 10/10 (26,500) | Medium
+Murder Mystery 2 | Chroma Vampire's Gun | 10/10 (24,750) | Medium
+Murder Mystery 2 | Chroma Alienbeam | 10/10 (23,500) | Medium
+Murder Mystery 2 | Gingerscope | 9/10 (15,375) | Medium
+Murder Mystery 2 | Chroma Raygun | 9/10 (12,500) | Medium
+Murder Mystery 2 | Chroma Emberscythe | 9/10 (10,000) | Medium
+Murder Mystery 2 | Chroma Sunrise | 9/10 (8,375) | Low
+Murder Mystery 2 | Traveler's Axe | 9/10 (7,700) | Medium
+Murder Mystery 2 | Chroma Snowcannon | 9/10 (7,700) | Low
+Murder Mystery 2 | Chroma Sunset | 8/10 (5,500) | Low
+Murder Mystery 2 | Chroma Blizzard | 8/10 (5,500) | Medium
+Murder Mystery 2 | Traveler's Gun | 8/10 (5,175) | Medium
+Murder Mystery 2 | Chroma Emberbow | 8/10 (4,475) | Medium
+Murder Mystery 2 | Chroma Snowstorm | 8/10 (4,250) | Low
+Murder Mystery 2 | Chroma Heart Wand | 8/10 (3,450) | Low
+Murder Mystery 2 | Evergun | 8/10 (3,438) | Medium
+Murder Mystery 2 | Evergreen | 8/10 (2,700) | Medium
+Murder Mystery 2 | Constellation | 7/10 (2,488) | Medium
+Murder Mystery 2 | Celestial | 7/10 (1,950) | Low
+Murder Mystery 2 | Vampire's Gun | 7/10 (1,888) | Medium
+Murder Mystery 2 | Alienbeam | 7/10 (1,862) | Medium
+Murder Mystery 2 | Turkey | 7/10 (1,850) | Medium
+Murder Mystery 2 | Raygun | 7/10 (1,838) | Medium
+Murder Mystery 2 | Darkshot | 7/10 (1,538) | Medium
+Murder Mystery 2 | Darksword | 7/10 (1,512) | Medium
+Murder Mystery 2 | Vampire's Axe | 7/10 (1,388) | Medium
+Murder Mystery 2 | Blossom | 7/10 (1,160) | Low
+Murder Mystery 2 | Sakura | 7/10 (1,150) | Low
+Murder Mystery 2 | Sunrise | 6/10 (788) | Low
+Murder Mystery 2 | Snowcannon | 6/10 (678) | Low
+Murder Mystery 2 | Bauble | 6/10 (675) | Low
+Murder Mystery 2 | Sunset | 6/10 (650) | Low
+Murder Mystery 2 | Soul | 6/10 (620) | Medium
+Murder Mystery 2 | Spirit | 6/10 (610) | Medium
+Murder Mystery 2 | Xenoshot | 6/10 (435) | Low
+Murder Mystery 2 | Xenoknife | 6/10 (432) | Low
+Murder Mystery 2 | Rainbow Gun | 6/10 (408) | Medium
+Murder Mystery 2 | Flora | 6/10 (402) | Low
+Murder Mystery 2 | Rainbow | 6/10 (400) | Medium
+Murder Mystery 2 | Bloom | 6/10 (395) | Low
+Murder Mystery 2 | Emberbow | 6/10 (350) | Low
+Murder Mystery 2 | Heart Wand | 6/10 (345) | Low
+Murder Mystery 2 | Emberscythe | 6/10 (338) | Low
+Murder Mystery 2 | Harvester | 5/10 (250) | Low
+Murder Mystery 2 | Blizzard | 5/10 (250) | Low
+Murder Mystery 2 | Snowstorm | 5/10 (250) | Low
+Murder Mystery 2 | Icepiercer | 5/10 (162) | Low
+Grow a Garden | Water Buffalo | 10/10 (6,195,000) | High
+Grow a Garden | Blue Lobster Thermidor | 10/10 (377,000) | High
+Grow a Garden | Black Swan | 10/10 (318,000) | High
+Grow a Garden | Rainbow Elephant | 10/10 (243,000) | High
+Grow a Garden | Calico | 10/10 (189,000) | High
+Grow a Garden | Albino Peacock | 9/10 (87,750) | Medium
+Grow a Garden | Rainbow Griffin | 9/10 (63,750) | Medium
+Grow a Garden | Rainbow Chinchilla | 9/10 (58,750) | Medium
+Grow a Garden | Ghostly Mummy | 8/10 (51,250) | High
+Grow a Garden | Rainbow Phoenix | 8/10 (47,500) | Medium
+Grow a Garden | Rainbow Krampus | 8/10 (47,250) | Medium
+Grow a Garden | Rainbow Spinosaurus | 8/10 (42,000) | Medium
+Grow a Garden | Rainbow New Years Dragon | 8/10 (42,000) | High
+Grow a Garden | Giant Scorpion | 8/10 (38,250) | Medium
+Grow a Garden | Rainbow Bearded Dragon | 8/10 (36,750) | Medium
+Grow a Garden | Wind Wyvern | 8/10 (36,500) | Medium
+Grow a Garden | Festive Ice Golem | 8/10 (36,250) | Medium
+Grow a Garden | Galah Cockatoo | 8/10 (35,000) | Medium
+Grow a Garden | Ghostly Black Cat | 8/10 (30,500) | Medium
+Grow a Garden | GIANT Swan | 8/10 (27,750) | Medium
+Grow a Garden | Blue Whale | 8/10 (27,500) | Medium
+Grow a Garden | Ghostly Headless Horseman | 8/10 (23,750) | Medium
+Grow a Garden | Goblin Gardener | 8/10 (23,500) | Medium
+Grow a Garden | Ghostly Spider | 8/10 (21,000) | Medium
+Grow a Garden | Rainbow Dilophosaurus | 8/10 (20,750) | Medium
+Grow a Garden | Festive Wendigo | 8/10 (19,000) | Medium
+Grow a Garden | Rainbow Magpie | 7/10 (18,750) | Medium
+Grow a Garden | Rainbow Shroomie | 7/10 (18,250) | Medium
+Grow a Garden | Rainbow Lobster Thermidor | 7/10 (16,750) | Medium
+Grow a Garden | Rainbow Carnival Elephant | 7/10 (16,250) | Medium
+Grow a Garden | Rainbow Corrupted Kitsune | 7/10 (16,000) | Medium
+Grow a Garden | Rainbow Birb | 7/10 (15,000) | Medium
+Grow a Garden | German Shepherd | 7/10 (14,750) | Medium
+Grow a Garden | GIANT Barn Owl | 7/10 (14,500) | Medium
+Grow a Garden | Festive Moose | 7/10 (11,000) | Medium
+Grow a Garden | Diamond Dragonfly | 7/10 (10,750) | Medium
+Grow a Garden | Rainbow Hotdog Daschund | 7/10 (10,250) | Medium
+Grow a Garden | Rainbow Christmas Gorilla | 7/10 (9,500) | Low
+Grow a Garden | Rainbow Ankylosaurus | 7/10 (9,500) | Low
+Grow a Garden | GIANT Grizzly Bear | 6/10 (6,525) | Low
+Grow a Garden | Ghostly Tomb Marmot | 6/10 (5,225) | Low
+Grow a Garden | White Tiger | 6/10 (5,175) | Low
+Grow a Garden | Champion Beetle | 6/10 (5,000) | Low
+Grow a Garden | Rainbow Pachycephalosaurus | 6/10 (4,425) | Low
+Grow a Garden | Festive Frost Squirrel | 6/10 (4,225) | Low
+Grow a Garden | Rainbow Parasaurolophus | 6/10 (4,200) | Low
+Grow a Garden | Ghostly Scarab | 6/10 (3,800) | Low
+Grow a Garden | Rainbow Iguanodon | 6/10 (3,800) | Low
+Grow a Garden | Rainbow Star Wolf | 6/10 (3,750) | Low
+Grow a Garden | Angora Goat | 6/10 (3,700) | Low
+Grow a Garden | Festive Yeti | 6/10 (3,675) | Low
+Grow a Garden | Lioness | 6/10 (3,675) | Low
+Grow a Garden | Rainbow Rhino | 6/10 (3,400) | Low
+Grow a Garden | Festive Nutcracker | 6/10 (3,275) | Low
+Grow a Garden | Flame Bee | 6/10 (3,150) | Low
+Grow a Garden | Rainbow Kodama | 6/10 (2,800) | Low
+Grow a Garden | Rainbow Snow Bunny | 6/10 (2,750) | Low
+Grow a Garden | Rainbow French Hen | 6/10 (2,700) | Low
+Grow a Garden | Rainbow Mandrake | 5/10 (2,300) | Low
+Grow a Garden | Gilded Choc Nyala | 5/10 (2,150) | Low
+Grow a Garden | Festive Santa Bear | 5/10 (2,100) | Low
+Grow a Garden | Rainbow Pink Bunny | 5/10 (2,000) | Low
+Grow a Garden | Gilded Choc Peryton | 5/10 (1,875) | Low
+Grow a Garden | Rainbow Maneki-neko | 5/10 (1,800) | Low
+Grow a Garden | Rainbow Goldfinch | 5/10 (1,700) | Low
+Grow a Garden | GIANT Badger | 5/10 (1,675) | Low
+Grow a Garden | Wind-Up Rat | 5/10 (1,650) | Low
+Grow a Garden | Rainbow New Years Chimp | 5/10 (1,600) | Low
+Grow a Garden | Rainbow Unicycle Monkey | 5/10 (1,575) | Low
+Grow a Garden | Rainbow Bear on Bike | 5/10 (1,550) | Low
+Grow a Garden | Rainbow Show Pony | 5/10 (1,425) | Low
+Grow a Garden | Raccoon | 5/10 (1,225) | Low
+Grow a Garden | Ghostly Bone Dog | 5/10 (1,150) | Low
+Grow a Garden | Rainbow Bacon Pig | 5/10 (1,135) | Low
+Grow a Garden | Rainbow Oxpecker | 5/10 (1,075) | Low
+Grow a Garden | Rainbow Mochi Mouse | 5/10 (1,050) | Low
+Grow a Garden | Rainbow Zebra | 5/10 (1,000) | Low
 Steal a Brainrot | OG Strawberry Elephant | 10/10 (4.55M) | Very High
 Steal a Brainrot | Secret Griffin | 10/10 (4.40M) | Very Low
 Steal a Brainrot | OG Skibidi Toilet | 10/10 (4.05M) | Very Low
 Steal a Brainrot | Secret Cerberus | 9/10 (1.65M) | Very Low
-Steal a Brainrot | OG Headless Horseman | 8/10 (875K) | High
+Steal a Brainrot | OG Headless Horseman | 9/10 (875K) | High
 Steal a Brainrot | Legendary Signore Carapace | 7/10 (207.5K) | Medium
 Steal a Brainrot | Mythic Elefanto Frigo | 6/10 (112.5K) | Very High
 Steal a Brainrot | OG Meowl | 6/10 (75K) | Very Low
 Steal a Brainrot | Brainrot God Antonio | 6/10 (70K) | High
 Steal a Brainrot | Secret Dragon Gingerini | 5/10 (40K) | High
-Steal a Brainrot | Hydra Bunny | 4/10 (15.5K) | High
-Steal a Brainrot | Secret Fishino Clownino | 4/10 (15K) | High
+Steal a Brainrot | Hydra Bunny | 5/10 (15.5K) | High
+Steal a Brainrot | Secret Fishino Clownino | 5/10 (15K) | High
 Steal a Brainrot | Legendary Tirilikalika Tirilikalako | 4/10 (11K) | Low
 Steal a Brainrot | Common Phoenix | 4/10 (9K) | Very High
 Steal a Brainrot | Secret Hydra Dragon Cannelloni | 4/10 (7.5K) | Very Low
+Steal a Brainrot | Common Plant Bros | 4/10 (7.3K) | High
+Steal a Brainrot | Common Sammyni Spookyni | 4/10 (6.9K) | Very High
+Steal a Brainrot | Common Los Dragons | 4/10 (6.5K) | Very High
+Steal a Brainrot | Common Dragon Skeletonini | 4/10 (6K) | Very High
+Steal a Brainrot | Common Hydra Serpent | 3/10 (3.5K) | Very High
+Steal a Brainrot | Common Arca Bros | 3/10 (3.5K) | Very High
+Steal a Brainrot | Secret Dragon Cannelloni | 3/10 (3.4K) | Very High
+Steal a Brainrot | Secret Popcuru and Fizzuru | 3/10 (3.1K) | Very Low
+Steal a Brainrot | Secret La Casa Boo | 3/10 (3K) | Very Low
+Steal a Brainrot | Los Chillis | 3/10 (2.8K) | High
+Steal a Brainrot | Common Kraken | 3/10 (2.5K) | Very High
+Steal a Brainrot | Secret Ketupat Bros | 3/10 (2.5K) | Very Low
+Steal a Brainrot | Digi Narwhal | 3/10 (2.4K) | Very Low
+Steal a Brainrot | Secret Reinito Sleighito | 3/10 (2.1K) | High
+Steal a Brainrot | Secret Los Sekolahs | 3/10 (2.1K) | High
+Steal a Brainrot | Secret Rosey and Teddy | 3/10 (2.1K) | Very Low
+Steal a Brainrot | Secret Cooki and Milki | 3/10 (2.1K) | Very Low
+Steal a Brainrot | Secret Los Amigos | 3/10 (2K) | High
+Steal a Brainrot | Common Medusini and Demonini | 3/10 (2K) | Very High
+Steal a Brainrot | Common Venuspino | 3/10 (1.9K) | Very High
+Steal a Brainrot | Secret Ginger Gerat | 3/10 (1.9K) | Very Low
+Steal a Brainrot | Secret Festive 67 | 2/10 (1.8K) | High
+Steal a Brainrot | Secret Money Money Reindeer | 2/10 (1.8K) | High
+Steal a Brainrot | Common Skelly and Coffy | 2/10 (1.7K) | Very High
+Steal a Brainrot | Secret Spooky and Pumpky | 2/10 (1.6K) | High
+Steal a Brainrot | Common Spooketti Tualetti | 2/10 (1.5K) | Very High
+Steal a Brainrot | Secret Fragrama and Chocrama | 2/10 (1.5K) | High
+Steal a Brainrot | Secret La Food Combinasion | 2/10 (1.4K) | High
+Steal a Brainrot | Secret Love Love Bear | 2/10 (1.4K) | Very Low
+Steal a Brainrot | Secret Sammyni Fattini | 2/10 (1.4K) | High
+Steal a Brainrot | Common Orchidox | 2/10 (1.3K) | Very High
+Steal a Brainrot | Money Money Bros | 2/10 (1.2K) | High
+Steal a Brainrot | Secret Capitano Moby | 2/10 (1.1K) | High
+Steal a Brainrot | Secret Celestial Pegasus | 2/10 (1.1K) | High
+Steal a Brainrot | Rare Pengolino Nuvoletto | 2/10 (1.1K) | Very Low
+Steal a Brainrot | Common Draculino | 2/10 (1K) | Very High
+Steal a Brainrot | Secret Kalika Bros | 2/10 (920) | Very High
+Steal a Brainrot | Foxini Lanternini | 2/10 (900) | Very Low
+Steal a Brainrot | Common Spooky Spooky Sahur | 2/10 (900) | High
 Pet Simulator 99 | Gargantuan Hypnotic Kitsune | 10/10 (925B) | Medium
 Pet Simulator 99 | Gargantuan Royal Beast | 10/10 (750B) | High
 Pet Simulator 99 | Gargantuan Kaiju King | 10/10 (630B) | Very High
-Pet Simulator 99 | Gargantuan Googly Agony | 9/10 (530B) | High
-Pet Simulator 99 | Gargantuan Yin-Yang Kitsune | 9/10 (425B) | High
-Pet Simulator 99 | Gargantuan Hellish Axolotl | 9/10 (385B) | High
+Pet Simulator 99 | Gargantuan Googly Agony | 10/10 (530B) | High
+Pet Simulator 99 | Gargantuan Yin-Yang Kitsune | 10/10 (425B) | High
+Pet Simulator 99 | Gargantuan Hellish Axolotl | 10/10 (385B) | High
 Pet Simulator 99 | Gargantuan Dot Matrix Pegasus | 9/10 (360B) | Medium
 Pet Simulator 99 | Gargantuan Exquisite Parrot | 9/10 (340B) | High
 Pet Simulator 99 | Gargantuan Jurassic Dragon | 9/10 (330B) | Medium
@@ -93,12 +440,12 @@ Pet Simulator 99 | Gargantuan Dark Dragon | 9/10 (255B) | Medium
 Pet Simulator 99 | Gargantuan Forest Wyvern | 9/10 (245B) | Medium
 Pet Simulator 99 | Gargantuan Santa Paws | 9/10 (230B) | High
 Pet Simulator 99 | Golden Gargantuan Skelemelon | 9/10 (230B) | Medium
-Pet Simulator 99 | Golden Gargantuan Doge | 8/10 (175B) | Medium
-Pet Simulator 99 | Gargantuan Matryoshka Bear | 8/10 (172B) | High
-Pet Simulator 99 | Gargantuan Grim Reaper | 8/10 (172B) | High
-Pet Simulator 99 | Gargantuan Doge | 8/10 (149B) | High
-Pet Simulator 99 | Golden Gargantuan Floppa | 8/10 (140B) | Medium
-Pet Simulator 99 | Golden Gargantuan Wise Cat | 8/10 (136B) | Medium
+Pet Simulator 99 | Golden Gargantuan Doge | 9/10 (175B) | Medium
+Pet Simulator 99 | Gargantuan Matryoshka Bear | 9/10 (172B) | High
+Pet Simulator 99 | Gargantuan Grim Reaper | 9/10 (172B) | High
+Pet Simulator 99 | Gargantuan Doge | 9/10 (149B) | High
+Pet Simulator 99 | Golden Gargantuan Floppa | 9/10 (140B) | Medium
+Pet Simulator 99 | Golden Gargantuan Wise Cat | 9/10 (136B) | Medium
 Pet Simulator 99 | Gargantuan Leafy Deer | 8/10 (135B) | Medium
 Pet Simulator 99 | Gargantuan Glass Squid | 8/10 (126B) | Medium
 Pet Simulator 99 | Gargantuan Blurred Agony | 8/10 (115B) | Medium
@@ -114,78 +461,224 @@ Pet Simulator 99 | Gargantuan Gingerbread Angelus | 8/10 (100B) | Medium
 Pet Simulator 99 | Gargantuan Super Cat | 8/10 (95.5B) | Medium
 Pet Simulator 99 | Titanic Wild Corrupt Agony | 8/10 (85B) | High
 Pet Simulator 99 | Titanic Poseidon Axolotl | 7/10 (38B) | High
-Pet Simulator 99 | Titanic Yin-Yang Grim Reaper | 6/10 (20.25B) | High
-Pet Simulator 99 | Titanic Kaiju Moth | 6/10 (18B) | High
+Pet Simulator 99 | Titanic Yin-Yang Grim Reaper | 7/10 (20.25B) | High
+Pet Simulator 99 | Titanic Kaiju Moth | 7/10 (18B) | High
 Pet Simulator 99 | Titanic Starfall Dragon | 6/10 (16.2B) | High
 Pet Simulator 99 | Titanic Electric Werewolf | 6/10 (12.7B) | High
 Pet Simulator 99 | Titanic Empyrean Dragon | 5/10 (5.4B) | High
 Pet Simulator 99 | Titanic Special Ops Goat | 5/10 (4.85B) | High
 Jailbreak | HyperShift | 10/10 (306M cash) | Low
-Jailbreak | HyperBlue Lvl5 | 8/10 (64M cash) | High
-Jailbreak | HyperPink Lvl5 | 8/10 (55M cash) | High
-Jailbreak | Javelin | 8/10 (47M cash) | Medium
-Jailbreak | Laser Cannon | 8/10 (44M cash) | High
-Jailbreak | Void | 8/10 (44M cash) | Medium
-Jailbreak | Thrusters | 8/10 (44M cash) | High
-Jailbreak | HyperBlue Lvl4 | 8/10 (41M cash) | High
-Jailbreak | Beignet | 8/10 (40M cash) | High
-Jailbreak | HyperDiamond Lvl5 | 8/10 (40M cash) | High
-Jailbreak | Proto-8 | 8/10 (36M cash) | High
-Jailbreak | HyperPurple Lvl5 | 8/10 (35M cash) | High
-Jailbreak | Red 5 | 8/10 (35M cash) | High
-Jailbreak | Power-1 | 8/10 (25M cash) | High
-Jailbreak | Drip | 7/10 (23M cash) | Medium
+Jailbreak | HyperBlue Lvl5 | 10/10 (64M cash) | High
+Jailbreak | HyperPink Lvl5 | 10/10 (55M cash) | High
+Jailbreak | Javelin | 10/10 (47M cash) | Low
+Jailbreak | Laser Cannon | 10/10 (44M cash) | High
+Jailbreak | Void | 10/10 (44M cash) | Medium
+Jailbreak | Thrusters | 10/10 (44M cash) | High
+Jailbreak | HyperBlue Lvl4 | 10/10 (41M cash) | High
+Jailbreak | Beignet | 10/10 (40M cash) | High
+Jailbreak | HyperDiamond Lvl5 | 10/10 (40M cash) | High
+Jailbreak | Proto-8 | 9/10 (36M cash) | High
+Jailbreak | HyperPurple Lvl5 | 9/10 (35M cash) | High
+Jailbreak | Red 5 | 9/10 (35M cash) | High
+Jailbreak | Noob Scream | 9/10 (28M cash) | Medium
+Jailbreak | Torpedo | 9/10 (26M cash) | Low
+Jailbreak | Power-1 | 9/10 (25M cash) | High
+Jailbreak | Drip | 9/10 (23M cash) | Medium
+Jailbreak | Arachnid | 9/10 (14.5M cash) | Medium
+Jailbreak | HyperDiamond Lvl3 | 8/10 (10M cash) | Medium
+Jailbreak | Snow Trail | 8/10 (6.5M cash) | Medium
+Jailbreak | SnowCannon | 7/10 (3.5M cash) | Medium
+Jailbreak | HyperDiamond Lvl2 | 7/10 (2.5M cash) | Medium
+Jailbreak | Ice Spike | 7/10 (2.5M cash) | Medium
+Jailbreak | Snowchain | 7/10 (2.5M cash) | Medium
+Jailbreak | Sarcophagus Bed | 7/10 (2M cash) | Medium
+Jailbreak | HyperPink Lvl2 | 7/10 (2M cash) | Medium
+Jailbreak | Voltline | 6/10 (1.25M cash) | Medium
+Jailbreak | Ankylosaurus | 5/10 (500K cash) | Low
+Jailbreak | Kraken | 5/10 (500K cash) | Low
 King Legacy | Hellroot Bundle | 10/10 (1300 Fins) | High
 King Legacy | Noirceur | 10/10 (1300 Fins) | High
 King Legacy | Perm Dragon | 10/10 (825 Fins) | High
-King Legacy | Perm Dough | 9/10 (775 Fins) | High
-King Legacy | Volt Bundle | 9/10 (775 Fins) | High
-King Legacy | Perm Phoenix | 9/10 (735 Fins) | High
-King Legacy | Perm Pter | 9/10 (725 Fins) | High
-King Legacy | Conqueror | 9/10 (725 Fins) | High
-King Legacy | Perm Tree | 9/10 (700 Fins) | High
-King Legacy | Perm Gate | 9/10 (690 Fins) | High
-King Legacy | Perm Demon | 9/10 (650 Fins) | High
-King Legacy | Perm Toy | 9/10 (637.5 Fins) | High
-King Legacy | Perm Melody | 9/10 (615 Fins) | High
-King Legacy | Cerulean Blossom | 9/10 (590 Fins) | High
-King Legacy | Primal Pack | 9/10 (500 Fins) | High
+King Legacy | Perm Dough | 10/10 (775 Fins) | High
+King Legacy | Volt Bundle | 10/10 (775 Fins) | High
+King Legacy | Perm Phoenix | 10/10 (735 Fins) | High
+King Legacy | Perm Pter | 10/10 (725 Fins) | High
+King Legacy | Conqueror | 10/10 (725 Fins) | High
+King Legacy | Perm Tree | 10/10 (700 Fins) | High
+King Legacy | Perm Gate | 10/10 (690 Fins) | High
+King Legacy | Perm Demon | 10/10 (650 Fins) | High
+King Legacy | Perm Toy | 10/10 (637.5 Fins) | High
+King Legacy | Perm Melody | 10/10 (615 Fins) | High
+King Legacy | Cerulean Blossom | 10/10 (590 Fins) | High
+King Legacy | Primal Pack | 10/10 (500 Fins) | High
+King Legacy | Perm Quake | 9/10 (425 Fins) | High
+King Legacy | Perm Rumble | 9/10 (410 Fins) | High
+King Legacy | Perm Gas | 9/10 (410 Fins) | High
+King Legacy | BlazeIce Pack | 9/10 (375 Fins) | High
+King Legacy | Perm Control | 9/10 (325 Fins) | High
+King Legacy | +1 Slot (Passive) | 9/10 (290 Fins) | High
+King Legacy | Perm Light | 9/10 (275 Fins) | High
+King Legacy | Perm Snow | 9/10 (265 Fins) | High
+King Legacy | 2x Money | 9/10 (265 Fins) | High
+King Legacy | Perm Spino | 9/10 (250 Fins) | High
+King Legacy | 2x Drop Item | 9/10 (240 Fins) | High
+King Legacy | Perm Gravity | 9/10 (215 Fins) | High
+King Legacy | Perm Buddha | 9/10 (210 Fins) | High
+King Legacy | Night Blade | 9/10 (210 Fins) | High
+King Legacy | Perm Flame | 9/10 (205 Fins) | High
+King Legacy | Perm Allo | 9/10 (200 Fins) | High
+King Legacy | Perm Magma | 9/10 (190 Fins) | High
+King Legacy | Perm Brachio | 9/10 (175 Fins) | High
+King Legacy | Perm Venom | 8/10 (155 Fins) | High
+King Legacy | Dragon Band | 8/10 (135 Fins) | High
+King Legacy | Perm Ice | 8/10 (125 Fins) | High
+King Legacy | Crustacean Armor | 8/10 (120 Fins) | High
+King Legacy | Perm Dark | 8/10 (110 Fins) | High
+King Legacy | Perm Love | 8/10 (110 Fins) | High
+King Legacy | Ancient Sword | 8/10 (95 Fins) | Medium
+King Legacy | Coffin Boat | 8/10 (90 Fins) | Medium
+King Legacy | +1 Fruit Storage | 8/10 (85 Fins) | Medium
+King Legacy | Legacy Pose | 8/10 (72.5 Fins) | Medium
+King Legacy | EXP Crown | 7/10 (55 Fins) | Medium
+King Legacy | Perm Rubber | 7/10 (45 Fins) | Medium
+King Legacy | Perm Paw | 7/10 (45 Fins) | Medium
+King Legacy | Water Kimono | 7/10 (42.5 Fins) | Medium
+King Legacy | Perm Telekinesis | 7/10 (40 Fins) | Medium
+King Legacy | Abyssal Crab Axe | 7/10 (40 Fins) | Medium
+King Legacy | Dragon Fang | 7/10 (35 Fins) | Medium
+King Legacy | Acrospear (Mats) | 7/10 (32.5 Fins) | Medium
+King Legacy | Cyborg V2 (Mats) | 7/10 (32.5 Fins) | Medium
+King Legacy | Animation (Any) | 7/10 (32.5 Fins) | Medium
+King Legacy | Drakenfyr Cape | 7/10 (30 Fins) | Medium
+King Legacy | Phoenix Blade V2 (Mats) | 7/10 (27.5 Fins) | Medium
+King Legacy | Dark Stone (Mats) | 7/10 (25.5 Fins) | Medium
+King Legacy | Poison Stone (Mats) | 7/10 (22.5 Fins) | Medium
+King Legacy | Tree Fruit | 7/10 (22.5 Fins) | Medium
+King Legacy | Pter Fruit | 7/10 (22.5 Fins) | Medium
+King Legacy | Demon Fruit | 6/10 (21 Fins) | Medium
 Fisch | Puff of Heaven | 10/10 (7.2K) | Medium
 Fisch | Cthulu's Revenge | 10/10 (5K) | Medium
-Fisch | Evangeline | 9/10 (2.3K) | High
-Fisch | Nocturne | 9/10 (1.92K) | High
-Fisch | Curse IV | 9/10 (1.8K) | High
-Fisch | Cyanic Demonride | 9/10 (1.57K) | High
-Fisch | Scarwing | 8/10 (1.4K) | High
-Fisch | Heavyblade of Glory | 8/10 (825) | High
-Fisch | Slime Trade Booth | 8/10 (700) | Medium
-Fisch | Black Comet | 8/10 (570) | High
-Fisch | Fuchsia Fidelity | 7/10 (525) | High
-Fisch | Malevolence | 7/10 (490) | High
-Fisch | The Reaper | 7/10 (445) | High
-Fisch | Platinum Menace | 7/10 (410) | High
-Fisch | Demonwake | 7/10 (380) | High
-Toilet Tower Defense | Golden Speakerman Titan | 10/10 (4.23B gems) | Low
-Toilet Tower Defense | Telanthric Titan | 10/10 (3.8B gems) | Low
-Toilet Tower Defense | Nuke Titan TV Man | 9/10 (2.3B gems) | Low
-Toilet Tower Defense | Hacked Juggernaut Titan | 8/10 (850M gems) | Low
-Toilet Tower Defense | Frost Speakerman Titan | 8/10 (728M gems) | Low
-Toilet Tower Defense | Titan Infected Speakerman | 8/10 (600M gems) | Medium
-Toilet Tower Defense | Titan Cactus Man | 8/10 (485M gems) | Low
-Toilet Tower Defense | Titan Colosseus Maximus | 8/10 (400M gems) | Low
-Toilet Tower Defense | Komodo Titan Speakerman | 8/10 (400M gems) | Low
-Toilet Tower Defense | Chrono Clockman | 7/10 (258M gems) | Low
-Toilet Tower Defense | Upgraded Titan Clockman | 7/10 (200M gems) | Low
-Toilet Tower Defense | Gamma Ray Sniper | 6/10 (97M gems) | Low
-Toilet Tower Defense | Upgraded Titan DrillDragon | 6/10 (63.1M gems) | Medium
-Toilet Tower Defense | Futuristic Titan Speakerman | 5/10 (35M gems) | Low
-Toilet Tower Defense | Chief Drillman | 5/10 (20M gems) | Low
+Fisch | Evangeline | 10/10 (2.3K) | High
+Fisch | Nocturne | 10/10 (1.92K) | High
+Fisch | Curse IV | 10/10 (1.8K) | High
+Fisch | Cyanic Demonride | 10/10 (1.57K) | High
+Fisch | Scarwing | 10/10 (1.4K) | High
+Fisch | Heavyblade of Glory | 9/10 (825) | High
+Fisch | Slime Trade Booth | 9/10 (700) | Medium
+Fisch | Black Comet | 9/10 (570) | High
+Fisch | Fuchsia Fidelity | 9/10 (525) | High
+Fisch | Malevolence | 9/10 (490) | High
+Fisch | The Reaper | 9/10 (445) | High
+Fisch | Platinum Menace | 8/10 (410) | High
+Fisch | Demonwake | 8/10 (380) | High
+Fisch | Final Census | 8/10 (375) | High
+Fisch | Nessie Booth | 8/10 (370) | Medium
+Fisch | Meowmobile | 8/10 (285) | High
+Fisch | Cuddly Claw | 8/10 (285) | High
+Fisch | Pastel Impulse | 8/10 (275) | High
+Fisch | Elysian Jolt | 8/10 (275) | High
+Fisch | Dreamline | 8/10 (265) | High
+Fisch | Seastrum | 8/10 (240) | Medium
+Fisch | Violet Viper | 8/10 (210) | Medium
+Fisch | Purr of Rebellion | 8/10 (210) | High
+Fisch | Curse III | 8/10 (200) | Medium
+Fisch | Shelter Booth | 8/10 (180) | Medium
+Fisch | Aurelia's Grace | 8/10 (175) | Medium
+Fisch | Pinky Parcel | 8/10 (160) | High
+Fisch | Radiant Executioner | 7/10 (145) | High
+Fisch | Kraken of the Void | 7/10 (135) | Medium
+Fisch | Cathedral Booth | 7/10 (130) | Medium
+Fisch | Pantheress | 7/10 (130) | High
+Fisch | Crimson Excision | 7/10 (130) | High
+Fisch | AntiMatter | 7/10 (125) | High
+Fisch | Blue Bonsai | 7/10 (115) | High
+Fisch | Vampmobile | 7/10 (110) | Medium
+Fisch | Battimobile | 7/10 (110) | Medium
+Fisch | Cthulhu Boat | 7/10 (110) | Medium
+Fisch | Umbral Vengeance | 7/10 (105) | High
+Fisch | Crest of Galactica | 7/10 (100) | High
+Fisch | Roslit Leviathan | 7/10 (100) | Low
+Fisch | Cthulunaut | 7/10 (100) | Medium
+Fisch | Fine Offering | 7/10 (95) | High
+Fisch | Infrared Tunes | 7/10 (95) | Medium
+Fisch | Poltergeist | 7/10 (95) | High
+Fisch | Puffernaut | 7/10 (90) | Medium
+Fisch | Bunblade | 7/10 (85) | Medium
+Fisch | Stars Highways | 7/10 (85) | Medium
+Fisch | Seraphic Rainbow | 7/10 (85) | Medium
+Fisch | Demonia Surfblade | 7/10 (85) | Medium
+Fisch | KR ROAR | 7/10 (80) | High
+Fisch | Caelinfernum | 7/10 (75) | Medium
+Fisch | Inky Pal | 7/10 (75) | Low
+Fisch | Peep Princess Booth | 7/10 (75) | Medium
+Fisch | Purrari | 7/10 (75) | High
+Fisch | Orange Unicycle | 7/10 (70) | Low
+Fisch | Inkling Overseer | 7/10 (70) | Low
+Fisch | Grand Symphony | 7/10 (65) | High
+Fisch | Sushi-Rider | 7/10 (65) | Low
+Toilet Tower Defense | Golden Speakerman Titan | 10/10 (423M gems) | Medium
+Toilet Tower Defense | Telanthric Titan | 10/10 (380M gems) | Low
+Toilet Tower Defense | Nuke Titan TV Man | 10/10 (230M gems) | Low
+Toilet Tower Defense | Frost Speakerman Titan | 8/10 (35M gems) | Low
+Toilet Tower Defense | Hacked Juggernaut Titan | 8/10 (30M gems) | Medium
+Toilet Tower Defense | Titan Infected Speakerman | 8/10 (20M gems) | High
+Toilet Tower Defense | Titan Cactus Man | 7/10 (17.5M gems) | Medium
+Toilet Tower Defense | Titan Colosseus Maximus | 7/10 (15M gems) | Very Low
+Toilet Tower Defense | Komodo Speakerman Titan | 7/10 (15M gems) | Low
+Toilet Tower Defense | Chrono Clockman | 7/10 (8.25M gems) | Medium
+Toilet Tower Defense | Upgraded Titan Clockman | 7/10 (7M gems) | Low
+Toilet Tower Defense | Upgraded Titan Drilldragon | 7/10 (6.8M gems) | High
+Toilet Tower Defense | Gamma Ray Sniper | 6/10 (6.3M gems) | Medium
+Toilet Tower Defense | DJ TV Man | 6/10 (6.2M gems) | Medium
+Toilet Tower Defense | Exclusive Scientist Crate | 6/10 (5.5M gems) | Medium
+Toilet Tower Defense | Upgraded Titan Drillman | 6/10 (5.35M gems) | Medium
+Toilet Tower Defense | Futuristic Titan Speakerman | 6/10 (5M gems) | Medium
+Toilet Tower Defense | Titan Freedom Speakerman | 6/10 (4.65M gems) | Low
+Toilet Tower Defense | Omega Reactor Overlord | 6/10 (4.34M gems) | Low
+Toilet Tower Defense | Titan Warlord Clockman | 6/10 (4.34M gems) | Low
+Toilet Tower Defense | Titan Cryo Clock Striker | 6/10 (3.6M gems) | Medium
+Toilet Tower Defense | Chief Drillman | 6/10 (3.5M gems) | Low
+Toilet Tower Defense | Telanthric | 6/10 (3.5M gems) | Low
+Toilet Tower Defense | Spider TV | 6/10 (3.2M gems) | Low
+Toilet Tower Defense | Chained Watchman Of Doom | 6/10 (3.2M gems) | Medium
+Toilet Tower Defense | Titan Grill TV Man | 6/10 (3.1M gems) | Very Low
+Toilet Tower Defense | Aquatitan Speakerman | 6/10 (3.1M gems) | Low
+Toilet Tower Defense | Titan Meatball Man | 6/10 (3.1M gems) | Low
+Toilet Tower Defense | Titan Astro Duchess | 6/10 (3M gems) | Low
+Toilet Tower Defense | Backman | 6/10 (3M gems) | Very Low
+Toilet Tower Defense | Engineer Cameraman | 6/10 (2.8M gems) | Medium
+Toilet Tower Defense | Chief Clockman | 6/10 (2.7M gems) | Medium
+Toilet Tower Defense | Quantum Cameraman | 6/10 (2.65M gems) | Low
+Toilet Tower Defense | Corrupted Cameraman | 6/10 (2.5M gems) | Low
+Toilet Tower Defense | Futuristic G-Man | 6/10 (2.35M gems) | Low
+Toilet Tower Defense | Clone Titan TV Man | 5/10 (2.15M gems) | Medium
+Toilet Tower Defense | Golden Future Large Clockman | 5/10 (2.04M gems) | Medium
+Toilet Tower Defense | Puppet Master TV Man | 5/10 (2.04M gems) | Low
+Toilet Tower Defense | Octopus VIP | 5/10 (1.85M gems) | Medium
+Toilet Tower Defense | Sinister Titan Clockman | 5/10 (1.75M gems) | Low
+Toilet Tower Defense | Electric TV Man | 5/10 (1.6M gems) | Low
+Toilet Tower Defense | Exclusive Food Crate | 5/10 (1.55M gems) | Very Low
+Toilet Tower Defense | Titan Abomination | 5/10 (1.45M gems) | Low
+Toilet Tower Defense | Angelic Guardian | 5/10 (1.4M gems) | Low
+Toilet Tower Defense | Titan Watchman Of Doom | 5/10 (1.4M gems) | Low
+Toilet Tower Defense | Titan Printer Man | 5/10 (1.35M gems) | Medium
+Toilet Tower Defense | Executioner Speakerman | 5/10 (1.3M gems) | Low
+Toilet Tower Defense | Scary Crate | 5/10 (1.3M gems) | Low
+Toilet Tower Defense | Scientist Cameraman 1337 | 5/10 (1.25M gems) | Medium
+Toilet Tower Defense | 2025 Independence Day Crate | 5/10 (1.25M gems) | Very Low
+Toilet Tower Defense | Titan Mafia Toilet | 5/10 (1.2M gems) | Low
+Toilet Tower Defense | Summer Juggernaut | 5/10 (1.2M gems) | Low
+Toilet Tower Defense | Titan Glacier TV Man | 5/10 (1.2M gems) | Low
+Toilet Tower Defense | Hacked Astro Juggernaut | 5/10 (1.1M gems) | High
+Toilet Tower Defense | Turkey Crate | 5/10 (1M gems) | Medium
+Toilet Tower Defense | Solar Flare TV Man | 5/10 (1M gems) | Low
+Toilet Tower Defense | Speakerman | 5/10 (1M gems) | Very Low
 Royale High | Harmonic Hearts Everfriend Halo 2025 | 10/10 (19.6M diamonds) | Very High
 Royale High | Divine Adoration Everfriend Halo 2024 | 10/10 (16M-17.2M diamonds) | Very High
 Royale High | Glacial Angel Glitterfrost Halo 2024 | 10/10 (15.5M-16.5M diamonds) | Very High
 Royale High | Dark Fairy Eveningfall Halo 2023 | 9/10 (9.2M diamonds) | High
-Royale High | Eternity's Aim Everfriend Halo 2026 | 9/10 (6.8M diamonds) | Very High
 Royale High | Infernal Phoenix Glitterfrost Halo 2026 | 9/10 (7.3M diamonds) | Very High
+Royale High | Eternity's Aim Everfriend Halo 2026 | 9/10 (6.8M diamonds) | Very High
 Royale High | Valkyrie Set | 9/10 (6.2M diamonds) | High
 Royale High | Silk Spun Halo Eveningfall 2025 | 9/10 (4.8M diamonds) | Very High
 Royale High | Royale Jelly Tidalglow Halo 2026 | 8/10 (3.8M diamonds) | High
@@ -245,7 +738,6 @@ Creatures of Sonaria | Lunar Qilin | 10/10 (5M-10M mush) | High
 Creatures of Sonaria | Sonarian Material | 10/10 (4M-8M mush) | High
 Creatures of Sonaria | Shining Material | 9/10 (3M-6M mush) | High
 Creatures of Sonaria | Kaiju Material | 9/10 (2M-4.5M mush) | High
-Creatures of Sonaria | Synthesize Material | 9/10 (1M-3M mush) | High
 Creatures of Sonaria | Valcorwings | 9/10 (2M-2.5M mush) | High
 Creatures of Sonaria | Super Hygos Palette | 9/10 (2M-2.5M mush) | High
 Creatures of Sonaria | Super Starlit Palette | 9/10 (2M-2.5M mush) | High
@@ -253,5 +745,6 @@ Creatures of Sonaria | Super Korathos Palette | 9/10 (2M-2.5M mush) | High
 Creatures of Sonaria | Super Ikoran Palette | 9/10 (2M-2.5M mush) | High
 Creatures of Sonaria | Super Felifaux Palette | 9/10 (2M-2.5M mush) | High
 Creatures of Sonaria | Angelic | 9/10 (2M-2.5M mush) | High
+Creatures of Sonaria | Synthesize Material | 9/10 (1M-3M mush) | High
 Creatures of Sonaria | Glaring Material | 9/10 (1M-2.5M mush) | High
 Creatures of Sonaria | Foul Feline | 9/10 (1M-2.5M mush) | High
