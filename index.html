@@ -1188,5 +1188,36 @@ const REQUESTS_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQZusnRnq4
   window.addEventListener("scroll", () => { if (ticking) return; ticking = true; requestAnimationFrame(() => { $("toTop").style.display = scrollY > 900 ? "block" : "none"; ticking = false; }); }, { passive: true });
 })();
 </script>
+  <!-- HOT ITEMS PATCH: each trade stays together and shows the full trade -->
+<script>
+(function(){
+  function drawHot(){
+    if (typeof TRADES2 === "undefined" || !TRADES2 || !$("hotList")) return false;
+    const open = TRADES2.filter(t => !t.partner && String(t.wants).trim().toLowerCase() !== "offers");
+    const groups = {};
+    open.forEach(t => {
+      const key = t.game.toLowerCase() + "|" + String(t.wants).trim().toLowerCase();
+      (groups[key] = groups[key] || { t, n: 0 }).n++;
+    });
+    const top = Object.values(groups).sort((a, b) => b.n - a.n).slice(0, 5);
+    if (!top.length){ $("hotBox").style.display = "none"; return true; }
+    $("hotList").innerHTML = top.map(({ t, n }, i) => `
+      <div class="hotRow" data-i="${i}" style="background:var(--c2);border:1px solid var(--c3);border-radius:12px;padding:8px 10px;margin-top:6px;cursor:pointer">
+        <div>${em(t.game)} <b style="color:var(--y)">${esc(t.wants)}</b>${n > 1 ? ` <span style="color:var(--mut)">×${n}</span>` : ""}</div>
+        <div style="font-size:.78rem;color:var(--mut)">${esc(t.game)} · 👤 ${esc(t.user)} has ${esc(t.has)}</div>
+      </div>`).join("");
+    $("hotList").querySelectorAll(".hotRow").forEach(r => r.onclick = () => {
+      const t = top[+r.dataset.i].t;
+      tGame = t.game; shown = 12;
+      $("tradeChips").querySelectorAll(".chip").forEach(c => c.classList.toggle("on", c.dataset.g.toLowerCase() === t.game.toLowerCase()));
+      $("tradeQ").value = ""; drawTrades(); $("trades").scrollIntoView();
+    });
+    $("hotBox").style.display = "block";
+    return true;
+  }
+  let n = 0;
+  const timer = setInterval(() => { n++; if ((n > 10 && drawHot()) || n > 60) clearInterval(timer); }, 300);
+})();
+</script>
 </body>
 </html>
