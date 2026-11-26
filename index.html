@@ -710,14 +710,16 @@ if (SHEET_CSV.startsWith("http")){
       if (rows.length < 2) return;
       const head = rows[0].map(h => h.trim().toLowerCase());
       const col = name => head.findIndex(h => h.startsWith(name));
-      const G = col("game"), H = col("i have"), W = col("i want"), U = col("roblox") >= 0 ? col("roblox") : col("username"), OK = col("ok");
+      const G = col("game"), H = col("i have"), W = col("i want"), U = col("roblox") >= 0 ? col("roblox") : col("username"), OK = col("ok"), TS = col("timestamp");
+      const MAX_AGE = 14 * 86400000;
       if (G < 0 || H < 0 || OK < 0) return;
       const cut = s => String(s || "").trim().slice(0, 80);
       const fresh = rows.slice(1)
         .filter(r => cut(r[OK]).toLowerCase() === "yes" && cut(r[G]) && cut(r[H]))
+        .filter(r => { const t = TS >= 0 ? Date.parse(r[TS]) : NaN; return isNaN(t) || Date.now() - t < MAX_AGE; })
         .reverse()
-        .map(r => ({ game: cut(r[G]), has: cut(r[H]), wants: cut(r[W]) || "Offers",
-                     user: RBX_NAME.test(cut(r[U])) ? cut(r[U]) : "Player", partner: "", when: "" }));
+        .map(r => ({ game: cut(r[G]), has: String(r[H] || "").trim().slice(0, 200), wants: String(r[W] || "").trim().slice(0, 200) || "Offers",
+                     user: RBX_NAME.test(cut(r[U])) ? cut(r[U]) : "Player", partner: "", when: "", time: TS >= 0 ? cut(r[TS]) : "" }));
       const wait = setInterval(() => {
         if (!TRADES2) return;
         clearInterval(wait);
@@ -965,18 +967,48 @@ const VOTES_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQZusnRnq4Dno
   const ml = document.getElementById("menuList");
   if (ml){ const a = ml.querySelector('a[href="#values"]'); if (a) a.insertAdjacentHTML("afterend", `<a href="#calc">🧮 Trade Calculator</a>`); }
 
-  /* 2. Values on trade cards */
+  /* 2. Trade cards: many items per side, total value, time posted, copy username, report */
+  const splitItems = s => String(s || "").split(/\s*(?:,|\+|&|\/|\n|\band\b)\s*/i).map(x => x.trim()).filter(Boolean).slice(0, 10);
+  const ago = ts => { const t = Date.parse(ts); if (isNaN(t)) return ""; const m = Math.max(0, Math.round((Date.now() - t) / 60000));
+    return m < 60 ? (m <= 1 ? "just now" : m + " min ago") : m < 1440 ? Math.round(m / 60) + "h ago" : Math.round(m / 1440) + "d ago"; };
   const drawTradesBase = drawTrades;
   drawTrades = function(){
     drawTradesBase();
-    if (!haveValues()) return;
     $("tradeGrid").querySelectorAll(".trade").forEach(card => {
       const tag = card.querySelector(".tag").textContent, game = tag.slice(tag.indexOf(" ") + 1);
-      const h = findItem(game, card.querySelector(".has div").textContent), w = findItem(game, card.querySelector(".wants div").textContent);
-      if (!h && !w) return;
-      let badge = "";
-      if (h && w){ const r = realOf(w) / realOf(h); badge = r >= 0.9 && r <= 1.1 ? `<span class="ok">⚖️ Fair</span>` : `<span class="no">⚠️ Not even</span>`; }
-      card.querySelector(".wants").insertAdjacentHTML("afterend", `<div class="tv"><span>💎 ${h ? ptsOf(h) + "/10" : "?"} ⇄ ${w ? ptsOf(w) + "/10" : "?"}</span>${badge}</div>`);
+      const hasEl = card.querySelector(".has div"), wantEl = card.querySelector(".wants div");
+      const hasTxt = hasEl.textContent, wantTxt = wantEl.textContent, userEl = card.querySelector(".user");
+      const user = userEl.textContent.replace(/^\S+\s/, "");
+      const t = (TRADES2 || []).find(x => x.game === game && x.has === hasTxt && x.wants === wantTxt && x.user === user) || {};
+      const H = splitItems(hasTxt), W = splitItems(wantTxt);
+      const chips = list => list.map(n => `<span style="display:inline-block;background:rgba(0,0,0,.25);border-radius:8px;padding:2px 8px;margin:2px 4px 2px 0">${esc(n)}</span>`).join("");
+      if (H.length > 1) hasEl.innerHTML = chips(H);
+      if (W.length > 1) wantEl.innerHTML = chips(W);
+      /* value line */
+      if (haveValues()){
+        const hv = H.map(n => findItem(game, n)), wv = W.map(n => findItem(game, n));
+        const hOk = hv.every(Boolean), wOk = wv.every(Boolean) && low(wantTxt) !== "offers";
+        if (hv.some(Boolean) || wv.some(Boolean)){
+          const sum = l => l.reduce((a, v) => a + realOf(v), 0);
+          const side = (ok, l) => ok ? (l.length > 1 ? fmt(sum(l)) : ptsOf(l[0]) + "/10") : "?";
+          let badge = "";
+          if (hOk && wOk){ const r = sum(wv) / sum(hv); badge = r >= 0.9 && r <= 1.1 ? `<span class="ok">⚖️ Fair</span>` : `<span class="no">⚠️ Not even</span>`; }
+          card.querySelector(".wants").insertAdjacentHTML("afterend", `<div class="tv"><span>💎 ${side(hOk, hv)} ⇄ ${side(wOk, wv)}</span>${badge}</div>`);
+        }
+      }
+      /* time posted + copy username + report */
+      const when = t.time ? ago(t.time) : "";
+      userEl.style.cursor = "pointer"; userEl.title = "Tap to copy username";
+      userEl.onclick = () => { try { navigator.clipboard.writeText(user); userEl.textContent = "✅ Copied!"; setTimeout(() => userEl.textContent = "👤 " + user, 1500); } catch (e) {} };
+      card.insertAdjacentHTML("beforeend", `<div style="display:flex;justify-content:space-between;font-size:.75rem;color:var(--mut);font-weight:700">
+        <span>${when ? "🕓 " + when : ""}</span><a href="#" class="repLink" style="color:var(--mut)">🚩 Report</a></div>`);
+      card.querySelector(".repLink").onclick = e => { e.preventDefault();
+        mail({ subject: "Report trade: " + game + " - " + user, body: `🚩 Report this trade\n\nGame: ${game}\nHas: ${hasTxt}\nWants: ${wantTxt}\nUser: ${user}\n\nWhat's wrong:` }); };
+    });
+    /* trade counts on game buttons */
+    if (typeof TRADES2 !== "undefined" && TRADES2) $("tradeChips").querySelectorAll(".chip").forEach(c => {
+      const g = c.dataset.g, n = TRADES2.filter(t => !t.partner && low(t.game) === low(g)).length;
+      c.textContent = `${em(g)} ${g}${n ? " (" + n + ")" : ""}`;
     });
   };
   waitFor(() => haveValues() && typeof TRADES2 !== "undefined" && TRADES2, () => drawTrades());
@@ -1006,7 +1038,7 @@ const VOTES_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQZusnRnq4Dno
     const matched = TRADES2.filter(t => t.partner).length, winners = document.querySelectorAll("#winnerGrid .wcard").length;
     $("trust").textContent = `✅ ${matched} trades matched · 🔁 ${TRADES2.length} trades posted · 🏆 ${winners} winners`;
     const count = {};
-    TRADES2.filter(t => !t.partner).forEach(t => { const k = String(t.wants).trim(); if (k && low(k) !== "offers") count[k] = (count[k] || 0) + 1; });
+    TRADES2.filter(t => !t.partner).forEach(t => splitItems(t.wants).forEach(k => { if (low(k) !== "offers") count[k] = (count[k] || 0) + 1; }));
     const top = Object.entries(count).sort((a, b) => b[1] - a[1]).slice(0, 6);
     if (top.length){
       $("hotList").innerHTML = top.map(([k, n]) => `<span class="hotChip" data-q="${esc(k)}">${esc(k)}${n > 1 ? " ×" + n : ""}</span>`).join("");
@@ -1073,6 +1105,32 @@ const VOTES_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQZusnRnq4Dno
     });
   }
   wheelSetup();
+})();
+</script>
+<!-- LAUNCH QOL PATCH: multi-item tip, share button, back to top -->
+<style>
+#toTop{position:fixed;right:14px;bottom:14px;z-index:35;width:48px;height:48px;border-radius:50%;border:none;background:var(--y);color:var(--c1);font-size:1.3rem;font-weight:900;cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,.4);display:none}
+</style>
+<script>
+(function(){
+  /* tip for trading more than one item */
+  const tip = `<p class="note" style="margin-top:6px">💡 Trading more than one item? Put commas between them, like <b>Kitsune, Dough</b>.</p>`;
+  const ob = document.getElementById("openTrade"); if (ob) ob.parentNode.insertAdjacentHTML("afterend", tip);
+  const tp = document.querySelector("#tradePop .popBox h3"); if (tp) tp.insertAdjacentHTML("afterend", tip.replace('margin-top:6px', 'margin:-4px 0 8px;text-align:left'));
+  /* share button */
+  const btns = document.querySelector(".hero a.btn.w");
+  if (btns){
+    btns.insertAdjacentHTML("afterend", `<button type="button" class="btn y" id="shareBtn" style="border:2px solid var(--c1)">📤 Share</button>`);
+    $("shareBtn").onclick = async () => {
+      const data = { title: "Lemon Man Trades", text: "Free Roblox trading hub with values, a trade calculator and weekly giveaways!", url: location.origin + location.pathname };
+      try { if (navigator.share) await navigator.share(data); else { await navigator.clipboard.writeText(data.url); $("shareBtn").textContent = "✅ Link copied!"; setTimeout(() => $("shareBtn").textContent = "📤 Share", 1800); } } catch (e) {}
+    };
+  }
+  /* back to top */
+  document.body.insertAdjacentHTML("beforeend", `<button type="button" id="toTop" aria-label="Back to top">⬆</button>`);
+  $("toTop").onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+  let ticking = false;
+  window.addEventListener("scroll", () => { if (ticking) return; ticking = true; requestAnimationFrame(() => { $("toTop").style.display = scrollY > 900 ? "block" : "none"; ticking = false; }); }, { passive: true });
 })();
 </script>
 </body>
