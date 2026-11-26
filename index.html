@@ -924,7 +924,15 @@ const VOTES_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQZusnRnq4Dno
   /* 7. Search suggestions */
   document.body.insertAdjacentHTML("beforeend", `<datalist id="itemSug"></datalist><datalist id="calcSug"></datalist>`);
   ["heroQ", "tradeQ", "valueQ"].forEach(id => $(id) && $(id).setAttribute("list", "itemSug"));
-  waitFor(haveValues, () => { $("itemSug").innerHTML = [...new Set(VALUES2.map(v => v.item))].map(n => `<option value="${esc(n)}">`).join(""); });
+  /* suggestions: only the 20 best matches for what you type (keeps phones fast with 1,700 items) */
+  let sugT = null;
+  const fillSug = q => {
+    q = low(q); if (!haveValues() || q.length < 2){ $("itemSug").innerHTML = ""; return; }
+    const out = [], seen = new Set();
+    for (const v of VALUES2){ const n = low(v.item); if (n.includes(q) && !seen.has(n)){ seen.add(n); out.push(v.item); if (out.length >= 20) break; } }
+    $("itemSug").innerHTML = out.map(n => `<option value="${esc(n)}">`).join("");
+  };
+  ["heroQ", "tradeQ", "valueQ"].forEach(id => $(id) && $(id).addEventListener("input", e => { clearTimeout(sugT); sugT = setTimeout(() => fillSug(e.target.value), 150); }));
 
   /* 1. Trade Calculator */
   document.getElementById("values").insertAdjacentHTML("afterend", `
@@ -1232,6 +1240,31 @@ const REQUESTS_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQZusnRnq4
   const drawTradesHot = drawTrades;
   drawTrades = function(){ drawTradesHot.apply(this, arguments); drawHot(); };
   [2000, 4000, 8000].forEach(ms => setTimeout(drawHot, ms));
+})();
+</script>
+<!-- VALUE PAGING PATCH: show 50 values at a time so big games don't lag -->
+<script>
+(function(){
+  let vLimit = 50, lastKey = "";
+  const more = document.createElement("div");
+  more.className = "more";
+  more.innerHTML = `<button type="button" class="btn w" id="valMore">Show more</button>`;
+  $("valueBody").closest("table").insertAdjacentElement("afterend", more);
+  const drawValuesPaged = drawValues;
+  drawValues = function(){
+    const key = vGame + "|" + $("valueQ").value.trim().toLowerCase();
+    if (key !== lastKey){ vLimit = 50; lastKey = key; }
+    drawValuesPaged.apply(this, arguments);
+    const rows = [...$("valueBody").querySelectorAll("tr")].filter(r => r.cells.length >= 3);
+    rows.forEach((r, i) => { r.style.display = i < vLimit ? "" : "none"; });
+    const left = rows.length - vLimit;
+    more.style.display = left > 0 ? "block" : "none";
+    $("valMore").textContent = `Show more (${Math.max(0, left)} left)`;
+  };
+  $("valMore").onclick = () => { vLimit += 50; drawValues(); };
+  let t = null;
+  $("valueQ").oninput = () => { clearTimeout(t); t = setTimeout(drawValues, 120); };
+  drawValues();
 })();
 </script>
 </body>
