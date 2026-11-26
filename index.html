@@ -1188,7 +1188,7 @@ const REQUESTS_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQZusnRnq4
   window.addEventListener("scroll", () => { if (ticking) return; ticking = true; requestAnimationFrame(() => { $("toTop").style.display = scrollY > 900 ? "block" : "none"; ticking = false; }); }, { passive: true });
 })();
 </script>
-  <!-- HOT ITEMS PATCH: each trade stays together and shows the full trade -->
+<!-- HOT ITEMS PATCH v2: each trade stays together and shows the full trade -->
 <script>
 (function(){
   function drawHot(){
@@ -1215,9 +1215,12 @@ const REQUESTS_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQZusnRnq4
     $("hotBox").style.display = "block";
     return true;
   }
-  let n = 0;
-  const timer = setInterval(() => { n++; if ((n > 10 && drawHot()) || n > 60) clearInterval(timer); }, 300);
+  /* redraw whenever the Trade Board updates (trades from Google load late) */
+  const drawTradesHot = drawTrades;
+  drawTrades = function(){ drawTradesHot.apply(this, arguments); drawHot(); };
+  [2000, 4000, 8000].forEach(ms => setTimeout(drawHot, ms));
 })();
+</script>
 </script>
 </body>
 </html>
