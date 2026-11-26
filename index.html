@@ -671,6 +671,15 @@ drawValues();
 </script>
   <!-- QUICK TRADE PATCH: Google Form posting + Google Sheet trades -->
 <script>
+/* Google Sheet timestamps are New York time: read them that way for every visitor */
+function parseNY(s){
+  const m = String(s || "").match(/(\d+)\/(\d+)\/(\d+)\s+(\d+):(\d+)(?::(\d+))?/);
+  if (!m) return Date.parse(s);
+  const wall = Date.UTC(+m[3], m[1] - 1, +m[2], +m[4], +m[5], +(m[6] || 0));
+  const p = Object.fromEntries(new Intl.DateTimeFormat("en-US", { timeZone: "America/New_York", hourCycle: "h23", year: "numeric", month: "numeric", day: "numeric", hour: "numeric", minute: "numeric", second: "numeric" }).formatToParts(new Date(wall)).map(x => [x.type, x.value]));
+  const off = Date.UTC(+p.year, p.month - 1, +p.day, +p.hour, +p.minute, +p.second) - wall;
+  return wall - off;
+}
 const TRADE_FORM = "https://docs.google.com/forms/d/e/1FAIpQLSdrW7ijA2A4Vq7_92wPd8ArnlOi3t2Mnw8fYWY8GPlakRA9hQ/viewform?embedded=true";
 const SHEET_CSV  = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQZusnRnq4DnoOnmKG-0e7ZoU4AucYBiikValn5yQZbVjwSk2m4X9OcV_8nd256WCCzpOzmnjAAjSX3/pub?gid=1952906821&single=true&output=csv";
 
@@ -716,7 +725,7 @@ if (SHEET_CSV.startsWith("http")){
       const cut = s => String(s || "").trim().slice(0, 80);
       const fresh = rows.slice(1)
         .filter(r => cut(r[OK]).toLowerCase() === "yes" && cut(r[G]) && cut(r[H]))
-        .filter(r => { const t = TS >= 0 ? Date.parse(r[TS]) : NaN; return isNaN(t) || Date.now() - t < MAX_AGE; })
+        .filter(r => { const t = TS >= 0 ? parseNY(r[TS]) : NaN; return isNaN(t) || Date.now() - t < MAX_AGE; })
         .reverse()
         .map(r => ({ game: cut(r[G]), has: String(r[H] || "").trim().slice(0, 200), wants: String(r[W] || "").trim().slice(0, 200) || "Offers",
                      user: RBX_NAME.test(cut(r[U])) ? cut(r[U]) : "Player", partner: MW >= 0 && RBX_NAME.test(cut(r[MW])) ? cut(r[MW]) : "", when: "", time: TS >= 0 ? cut(r[TS]) : "" }));
@@ -980,7 +989,7 @@ const VOTES_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQZusnRnq4Dno
 
   /* 2. Trade cards: many items per side, total value, time posted, copy username, report */
   const splitItems = s => String(s || "").split(/\s*(?:,|\+|&|\/|\n|\band\b)\s*/i).map(x => x.trim()).filter(Boolean).slice(0, 10);
-  const ago = ts => { const t = Date.parse(ts); if (isNaN(t)) return ""; const m = Math.max(0, Math.round((Date.now() - t) / 60000));
+  const ago = ts => { const t = parseNY(ts); if (isNaN(t)) return ""; const m = Math.max(0, Math.round((Date.now() - t) / 60000));
     return m < 60 ? (m <= 1 ? "just now" : m + " min ago") : m < 1440 ? Math.round(m / 60) + "h ago" : Math.round(m / 1440) + "d ago"; };
   const drawTradesBase = drawTrades;
   drawTrades = function(){
@@ -1076,7 +1085,7 @@ const VOTES_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQZusnRnq4Dno
       if (U < 0) return [];
       const since = Date.now() - 7 * 86400000, seen = new Set(), names = [];
       rows.slice(1).forEach(r => {
-        const name = String(r[U] || "").trim(), ts = T >= 0 ? Date.parse(r[T]) : NaN;
+        const name = String(r[U] || "").trim(), ts = T >= 0 ? parseNY(r[T]) : NaN;
         if (!RBX_NAME.test(name) || (!isNaN(ts) && ts < since) || seen.has(low(name))) return;
         seen.add(low(name)); names.push(name);
       });
@@ -1124,9 +1133,10 @@ const REQUESTS_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQZusnRnq4
 (function(){
   const tradeKey = t => `${t.game} | ${t.has} | ${t.wants} | ${t.user}`;
   document.body.insertAdjacentHTML("beforeend", `<div class="popBg" id="requestPop"><div class="popBox"><button class="popX" type="button" aria-label="Close">✕</button>
-    <h3>🤝 Request this trade</h3><p class="note" style="margin:-4px 0 8px;text-align:left">The trade is already filled in. Add your Roblox username and when you can trade. Then meet in the game and use the trade window.</p><iframe title="Trade Request"></iframe></div></div>`);
+    <h3>🤝 Request this trade</h3><p class="note" style="margin:-4px 0 8px;text-align:left">The trade is already filled in. Add your Roblox username and when you can trade. Then meet in the game and use the trade window.<br>⏰ <b style="color:var(--y)">Add your time zone</b> to the time, like <b>Sat 3 PM <span class="myTZ">EST</span></b>.</p><iframe title="Trade Request"></iframe></div></div>`);
   const pop = document.getElementById("requestPop");
   pop.onclick = e => { if (e.target === pop || e.target.classList.contains("popX")){ pop.classList.remove("open"); pop.querySelector("iframe").removeAttribute("src"); } };
+  try { const z = new Intl.DateTimeFormat([], { timeZoneName: "short" }).formatToParts(new Date()).find(x => x.type === "timeZoneName"); if (z) pop.querySelectorAll(".myTZ").forEach(e => e.textContent = z.value); } catch (e) {}
   openReq = function(t){
     pop.querySelector("iframe").src = `${REQUEST_FORM}?embedded=true&usp=pp_url&${REQUEST_TRADE_ENTRY}=${encodeURIComponent(tradeKey(t).slice(0, 400))}`;
     pop.classList.add("open");
@@ -1220,7 +1230,6 @@ const REQUESTS_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQZusnRnq4
   drawTrades = function(){ drawTradesHot.apply(this, arguments); drawHot(); };
   [2000, 4000, 8000].forEach(ms => setTimeout(drawHot, ms));
 })();
-</script>
 </script>
 </body>
 </html>
