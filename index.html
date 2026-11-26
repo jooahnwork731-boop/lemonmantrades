@@ -719,7 +719,7 @@ if (SHEET_CSV.startsWith("http")){
       if (rows.length < 2) return;
       const head = rows[0].map(h => h.trim().toLowerCase());
       const col = name => head.findIndex(h => h.startsWith(name));
-      const G = col("game"), H = col("i have"), W = col("i want"), U = col("roblox") >= 0 ? col("roblox") : col("username"), OK = col("ok"), TS = col("timestamp"), MW = col("matched"), WH = col("when");
+      const G = col("game"), H = col("i have"), W = col("i want"), U = col("roblox") >= 0 ? col("roblox") : col("username"), OK = col("ok"), TS = col("timestamp"), MW = col("matched"), WH = col("when"), VF = col("verified");
       const MAX_AGE = 14 * 86400000;
       if (G < 0 || H < 0 || OK < 0) return;
       const cut = s => String(s || "").trim().slice(0, 80);
@@ -728,7 +728,7 @@ if (SHEET_CSV.startsWith("http")){
         .filter(r => { const t = TS >= 0 ? parseNY(r[TS]) : NaN; return isNaN(t) || Date.now() - t < MAX_AGE; })
         .reverse()
         .map(r => ({ game: cut(r[G]), has: String(r[H] || "").trim().slice(0, 200), wants: String(r[W] || "").trim().slice(0, 200) || "Offers",
-                     user: RBX_NAME.test(cut(r[U])) ? cut(r[U]) : "Player", partner: MW >= 0 && RBX_NAME.test(cut(r[MW])) ? cut(r[MW]) : "", when: WH >= 0 ? cut(r[WH]).slice(0, 40) : "", time: TS >= 0 ? cut(r[TS]) : "" }));
+                     user: RBX_NAME.test(cut(r[U])) ? cut(r[U]) : "Player", partner: MW >= 0 && RBX_NAME.test(cut(r[MW])) ? cut(r[MW]) : "", when: WH >= 0 ? cut(r[WH]).slice(0, 40) : "", time: TS >= 0 ? cut(r[TS]) : "", verified: VF >= 0 && cut(r[VF]).toLowerCase() === "yes" }));
       const wait = setInterval(() => {
         if (!TRADES2) return;
         clearInterval(wait);
@@ -1016,6 +1016,8 @@ const VOTES_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQZusnRnq4Dno
           card.querySelector(".wants").insertAdjacentHTML("afterend", `<div class="tv"><span>💎 ${side(hOk, hv)} ⇄ ${side(wOk, wv)}</span>${badge}</div>`);
         }
       }
+      /* ✅ Verified badge (owner checked their Roblox About) */
+      if (t.verified) userEl.insertAdjacentHTML("afterend", `<span title="Lemon Man checked this Roblox account" style="font-size:.72rem;font-weight:900;color:#7ee2ad;white-space:nowrap">✅ Verified</span>`);
       /* time posted + copy username + report */
       const when = t.time ? ago(t.time) : "";
       userEl.style.cursor = "pointer"; userEl.title = "Tap to copy username";
@@ -1171,7 +1173,7 @@ const REQUESTS_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQZusnRnq4
 <script>
 (function(){
   /* tip for trading more than one item */
-  const tip = `<p class="note" style="margin-top:6px">💡 Trading more than one item? Put commas between them, like <b>Kitsune, Dough</b>.</p>`;
+  const tip = `<p class="note" style="margin-top:6px">💡 Trading more than one item? Put commas between them, like <b>Kitsune, Dough</b>.<br>✅ Want a <b>Verified</b> badge? Add <b>🍋 Lemon Man Trades</b> to your Roblox profile's About. We check it to prove the account is really yours.</p>`;
   const ob = document.getElementById("openTrade"); if (ob) ob.parentNode.insertAdjacentHTML("afterend", tip);
   const tp = document.querySelector("#tradePop .popBox h3"); if (tp) tp.insertAdjacentHTML("afterend", tip.replace('margin-top:6px', 'margin:-4px 0 8px;text-align:left'));
   /* share button */
