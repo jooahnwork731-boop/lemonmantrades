@@ -870,7 +870,7 @@ section,header{scroll-margin-top:60px}
 .tv .ok{color:#7ee2ad}.tv .no{color:#ffb86b}
 .calcSide{background:var(--c2);border:2px solid var(--c3);border-radius:16px;padding:14px}
 .calcSide h3{color:var(--y);font-size:1.05rem;margin-bottom:8px}
-.calcAdd{display:flex;gap:6px}.calcAdd .btn{margin:0;padding:10px 16px}
+.calcAdd{display:flex;gap:6px}.calcAdd .btn{margin:0;padding:10px 14px;white-space:nowrap;border-radius:12px}
 .calcList{list-style:none;margin-top:8px;display:flex;flex-direction:column;gap:6px}
 .calcList li{background:var(--bg);border-radius:10px;padding:8px 10px;display:flex;justify-content:space-between;gap:8px;font-weight:700;font-size:.9rem}
 .calcList button{background:none;border:none;color:#ff9fa2;font-size:1.1rem;cursor:pointer}
@@ -885,7 +885,7 @@ section,header{scroll-margin-top:60px}
 #homeTip button{position:absolute;top:6px;right:10px;background:none;border:none;color:#fff;font-size:1.3rem;cursor:pointer}
 </style>
 <script>
-const VOTES_CSV = "PASTE_VOTES_LINK_HERE";
+const VOTES_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQZusnRnq4DnoOnmKG-0e7ZoU4AucYBiikValn5yQZbVjwSk2m4X9OcV_8nd256WCCzpOzmnjAAjSX3/pub?gid=2088910549&single=true&output=csv";
 (function(){
   const waitFor = (test, fn) => { let n = 0; const t = setInterval(() => { if (test()){ clearInterval(t); fn(); } else if (++n > 150) clearInterval(t); }, 200); };
   const haveValues = () => typeof VALUES2 !== "undefined" && VALUES2 && VALUES2.length;
@@ -922,13 +922,13 @@ const VOTES_CSV = "PASTE_VOTES_LINK_HERE";
     <p class="sub">Is your trade a WIN, FAIR or LOSS? Pick a game, then add items to both sides.</p>
     <select id="cGame" style="max-width:640px;display:block;margin:0 auto 14px"></select>
     <div class="two" style="max-width:640px;margin:0 auto">
-      <div class="calcSide"><h3>📤 You give</h3><div class="calcAdd"><input id="cGiveQ" list="calcSug" placeholder="Item name…" autocomplete="off"><button type="button" class="btn y" id="cGiveB">+</button></div><ul class="calcList" id="cGiveL"></ul></div>
-      <div class="calcSide"><h3>📥 You get</h3><div class="calcAdd"><input id="cGetQ" list="calcSug" placeholder="Item name…" autocomplete="off"><button type="button" class="btn y" id="cGetB">+</button></div><ul class="calcList" id="cGetL"></ul></div>
+      <div class="calcSide"><h3>📤 You give</h3><div class="calcAdd"><select id="cGiveQ"></select><button type="button" class="btn y" id="cGiveB">+ Add</button></div><ul class="calcList" id="cGiveL"></ul></div>
+      <div class="calcSide"><h3>📥 You get</h3><div class="calcAdd"><select id="cGetQ"></select><button type="button" class="btn y" id="cGetB">+ Add</button></div><ul class="calcList" id="cGetL"></ul></div>
     </div>
     <div class="calcRes" id="cRes" style="max-width:640px;margin:14px auto 0">Add items to both sides 👆</div>
     <p class="note">Uses the Value List. Values are estimates, and demand matters too, so always double-check big trades.</p>
   </div></section>`);
-  const CALC = { give: [], get: [] };
+  const CALC = { give: [], get: [], items: [] };
   function calcDraw(){
     ["give", "get"].forEach(s => {
       const ul = $(s === "give" ? "cGiveL" : "cGetL");
@@ -944,21 +944,21 @@ const VOTES_CSV = "PASTE_VOTES_LINK_HERE";
       You give ${fmt(g)} · You get ${fmt(t)}<br><span style="font-weight:700;color:var(--mut);font-size:.85rem">${k === "fair" ? "Pretty even trade!" : k === "win" ? "You get more than you give." : "You give more than you get."}</span>`;
   }
   function calcAdd(side){
-    const inp = $(side === "give" ? "cGiveQ" : "cGetQ"), v = findItem($("cGame").value, inp.value);
-    if (!v){ inp.setCustomValidity("That item isn't on the Value List for this game."); inp.reportValidity(); return; }
-    inp.setCustomValidity(""); if (CALC[side].length >= 8) return;
-    CALC[side].push(v); inp.value = ""; calcDraw();
+    const sel = $(side === "give" ? "cGiveQ" : "cGetQ"), v = CALC.items[+sel.value];
+    if (!v || CALC[side].length >= 8) return;
+    CALC[side].push(v); calcDraw();
   }
   ["give", "get"].forEach(s => {
-    const inp = $(s === "give" ? "cGiveQ" : "cGetQ");
     $(s === "give" ? "cGiveB" : "cGetB").onclick = () => calcAdd(s);
-    inp.onkeydown = e => { if (e.key === "Enter"){ e.preventDefault(); calcAdd(s); } };
-    inp.oninput = () => inp.setCustomValidity("");
   });
   waitFor(haveValues, () => {
     const games = GAMES.map(g => g[0]).filter(n => VALUES2.some(v => low(v.game) === low(n)));
     $("cGame").innerHTML = games.map(n => `<option value="${esc(n)}">${em(n)} ${esc(n)}</option>`).join("");
-    const fill = () => { $("calcSug").innerHTML = VALUES2.filter(v => low(v.game) === low($("cGame").value)).map(v => `<option value="${esc(v.item)}">`).join(""); };
+    const fill = () => {
+      CALC.items = VALUES2.filter(v => low(v.game) === low($("cGame").value));
+      const opts = `<option value="">Pick an item…</option>` + CALC.items.map((v, i) => `<option value="${i}">${esc(v.item)} (${ptsOf(v)}/10)</option>`).join("");
+      $("cGiveQ").innerHTML = opts; $("cGetQ").innerHTML = opts;
+    };
     $("cGame").onchange = () => { CALC.give = []; CALC.get = []; fill(); calcDraw(); };
     fill();
   });
