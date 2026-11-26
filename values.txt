@@ -1,8 +1,8 @@
 # Lemon Man Trades value list
 # Format:  Game | Item | Points (1-10) (real value) | Demand
 # Points = how much it's worth. 10 = the best item in that game. Each point lower = worth a lot less. Real value in ( ).
-# Values are community estimates from public value lists (Nov 2026): game.guide, adoptmevalues.app, rblxguide (Supreme Values + MM2Values), jbvalues, axeetech, vaultedvalues, progameguides, traderie.
-# Some demand ratings are estimates where the source did not list one (most of Adopt Me and Grow a Garden).
+# Values are community estimates from public value lists (Nov 2026): game.guide, adoptmevalues.app, rblxguide (Supreme Values + MM2Values), jbvalues, axeetech, vaultedvalues, progameguides, traderie. Fisch extras converted from game.guide S$ to the same scale.
+# Some demand ratings are estimates where the source did not list one (most of Adopt Me, Grow a Garden, Pet Sim 99, the lower Toilet Tower Defense and Fisch items).
 # updated: Nov 25, 2026
 Blox Fruits | Eclipse Chromatic | 10/10 (65B) | Very High
 Blox Fruits | Rabid Skin | 10/10 (24B) | Medium
@@ -298,78 +298,228 @@ Grow a Garden | Blue Lobster Thermidor | 10/10 (377,000) | High
 Grow a Garden | Black Swan | 10/10 (318,000) | High
 Grow a Garden | Rainbow Elephant | 10/10 (243,000) | High
 Grow a Garden | Calico | 10/10 (189,000) | High
-Grow a Garden | Albino Peacock | 9/10 (87,750) | Medium
-Grow a Garden | Rainbow Griffin | 9/10 (63,750) | Medium
-Grow a Garden | Rainbow Chinchilla | 9/10 (58,750) | Medium
-Grow a Garden | Ghostly Mummy | 8/10 (51,250) | High
-Grow a Garden | Rainbow Phoenix | 8/10 (47,500) | Medium
-Grow a Garden | Rainbow Krampus | 8/10 (47,250) | Medium
-Grow a Garden | Rainbow Spinosaurus | 8/10 (42,000) | Medium
-Grow a Garden | Rainbow New Years Dragon | 8/10 (42,000) | High
-Grow a Garden | Giant Scorpion | 8/10 (38,250) | Medium
-Grow a Garden | Rainbow Bearded Dragon | 8/10 (36,750) | Medium
-Grow a Garden | Wind Wyvern | 8/10 (36,500) | Medium
-Grow a Garden | Festive Ice Golem | 8/10 (36,250) | Medium
-Grow a Garden | Galah Cockatoo | 8/10 (35,000) | Medium
-Grow a Garden | Ghostly Black Cat | 8/10 (30,500) | Medium
-Grow a Garden | GIANT Swan | 8/10 (27,750) | Medium
-Grow a Garden | Blue Whale | 8/10 (27,500) | Medium
-Grow a Garden | Ghostly Headless Horseman | 8/10 (23,750) | Medium
-Grow a Garden | Goblin Gardener | 8/10 (23,500) | Medium
-Grow a Garden | Ghostly Spider | 8/10 (21,000) | Medium
-Grow a Garden | Rainbow Dilophosaurus | 8/10 (20,750) | Medium
-Grow a Garden | Festive Wendigo | 8/10 (19,000) | Medium
-Grow a Garden | Rainbow Magpie | 7/10 (18,750) | Medium
-Grow a Garden | Rainbow Shroomie | 7/10 (18,250) | Medium
-Grow a Garden | Rainbow Lobster Thermidor | 7/10 (16,750) | Medium
-Grow a Garden | Rainbow Carnival Elephant | 7/10 (16,250) | Medium
-Grow a Garden | Rainbow Corrupted Kitsune | 7/10 (16,000) | Medium
-Grow a Garden | Rainbow Birb | 7/10 (15,000) | Medium
-Grow a Garden | German Shepherd | 7/10 (14,750) | Medium
-Grow a Garden | GIANT Barn Owl | 7/10 (14,500) | Medium
-Grow a Garden | Festive Moose | 7/10 (11,000) | Medium
-Grow a Garden | Diamond Dragonfly | 7/10 (10,750) | Medium
-Grow a Garden | Rainbow Hotdog Daschund | 7/10 (10,250) | Medium
-Grow a Garden | Rainbow Christmas Gorilla | 7/10 (9,500) | Low
-Grow a Garden | Rainbow Ankylosaurus | 7/10 (9,500) | Low
-Grow a Garden | GIANT Grizzly Bear | 6/10 (6,525) | Low
-Grow a Garden | Ghostly Tomb Marmot | 6/10 (5,225) | Low
-Grow a Garden | White Tiger | 6/10 (5,175) | Low
-Grow a Garden | Champion Beetle | 6/10 (5,000) | Low
-Grow a Garden | Rainbow Pachycephalosaurus | 6/10 (4,425) | Low
-Grow a Garden | Festive Frost Squirrel | 6/10 (4,225) | Low
-Grow a Garden | Rainbow Parasaurolophus | 6/10 (4,200) | Low
-Grow a Garden | Ghostly Scarab | 6/10 (3,800) | Low
-Grow a Garden | Rainbow Iguanodon | 6/10 (3,800) | Low
-Grow a Garden | Rainbow Star Wolf | 6/10 (3,750) | Low
-Grow a Garden | Angora Goat | 6/10 (3,700) | Low
-Grow a Garden | Festive Yeti | 6/10 (3,675) | Low
-Grow a Garden | Lioness | 6/10 (3,675) | Low
-Grow a Garden | Rainbow Rhino | 6/10 (3,400) | Low
-Grow a Garden | Festive Nutcracker | 6/10 (3,275) | Low
-Grow a Garden | Flame Bee | 6/10 (3,150) | Low
-Grow a Garden | Rainbow Kodama | 6/10 (2,800) | Low
-Grow a Garden | Rainbow Snow Bunny | 6/10 (2,750) | Low
-Grow a Garden | Rainbow French Hen | 6/10 (2,700) | Low
-Grow a Garden | Rainbow Mandrake | 5/10 (2,300) | Low
-Grow a Garden | Gilded Choc Nyala | 5/10 (2,150) | Low
-Grow a Garden | Festive Santa Bear | 5/10 (2,100) | Low
-Grow a Garden | Rainbow Pink Bunny | 5/10 (2,000) | Low
-Grow a Garden | Gilded Choc Peryton | 5/10 (1,875) | Low
-Grow a Garden | Rainbow Maneki-neko | 5/10 (1,800) | Low
-Grow a Garden | Rainbow Goldfinch | 5/10 (1,700) | Low
-Grow a Garden | GIANT Badger | 5/10 (1,675) | Low
-Grow a Garden | Wind-Up Rat | 5/10 (1,650) | Low
-Grow a Garden | Rainbow New Years Chimp | 5/10 (1,600) | Low
-Grow a Garden | Rainbow Unicycle Monkey | 5/10 (1,575) | Low
-Grow a Garden | Rainbow Bear on Bike | 5/10 (1,550) | Low
-Grow a Garden | Rainbow Show Pony | 5/10 (1,425) | Low
-Grow a Garden | Raccoon | 5/10 (1,225) | Low
-Grow a Garden | Ghostly Bone Dog | 5/10 (1,150) | Low
-Grow a Garden | Rainbow Bacon Pig | 5/10 (1,135) | Low
-Grow a Garden | Rainbow Oxpecker | 5/10 (1,075) | Low
-Grow a Garden | Rainbow Mochi Mouse | 5/10 (1,050) | Low
-Grow a Garden | Rainbow Zebra | 5/10 (1,000) | Low
+Grow a Garden | Albino Peacock | 10/10 (87,750) | Medium
+Grow a Garden | Rainbow Griffin | 10/10 (63,750) | Medium
+Grow a Garden | Rainbow Chinchilla | 10/10 (58,750) | Medium
+Grow a Garden | Ghostly Mummy | 10/10 (51,250) | High
+Grow a Garden | Rainbow Phoenix | 10/10 (47,500) | Medium
+Grow a Garden | Rainbow Krampus | 10/10 (47,250) | Medium
+Grow a Garden | Rainbow Spinosaurus | 10/10 (42,000) | Medium
+Grow a Garden | Rainbow New Years Dragon | 10/10 (42,000) | High
+Grow a Garden | Giant Scorpion | 10/10 (38,250) | Medium
+Grow a Garden | Rainbow Bearded Dragon | 10/10 (36,750) | Medium
+Grow a Garden | Wind Wyvern | 10/10 (36,500) | Medium
+Grow a Garden | Festive Ice Golem | 10/10 (36,250) | Medium
+Grow a Garden | Galah Cockatoo | 10/10 (35,000) | Medium
+Grow a Garden | Ghostly Black Cat | 10/10 (30,500) | Medium
+Grow a Garden | GIANT Swan | 10/10 (27,750) | Medium
+Grow a Garden | Blue Whale | 10/10 (27,500) | Medium
+Grow a Garden | Ghostly Headless Horseman | 9/10 (23,750) | Medium
+Grow a Garden | Goblin Gardener | 9/10 (23,500) | Medium
+Grow a Garden | Ghostly Spider | 9/10 (21,000) | Medium
+Grow a Garden | Rainbow Dilophosaurus | 9/10 (20,750) | Medium
+Grow a Garden | Festive Wendigo | 9/10 (19,000) | Medium
+Grow a Garden | Rainbow Magpie | 9/10 (18,750) | Medium
+Grow a Garden | Rainbow Shroomie | 9/10 (18,250) | Medium
+Grow a Garden | Rainbow Lobster Thermidor | 9/10 (16,750) | Medium
+Grow a Garden | Rainbow Carnival Elephant | 9/10 (16,250) | Medium
+Grow a Garden | Rainbow Corrupted Kitsune | 9/10 (16,000) | Medium
+Grow a Garden | Rainbow Birb | 9/10 (15,000) | Medium
+Grow a Garden | German Shepherd | 9/10 (14,750) | Medium
+Grow a Garden | GIANT Barn Owl | 9/10 (14,500) | Medium
+Grow a Garden | Festive Moose | 9/10 (11,000) | Medium
+Grow a Garden | Diamond Dragonfly | 9/10 (10,750) | Medium
+Grow a Garden | Rainbow Hotdog Daschund | 9/10 (10,250) | Medium
+Grow a Garden | Rainbow Christmas Gorilla | 9/10 (9,500) | Low
+Grow a Garden | Rainbow Ankylosaurus | 9/10 (9,500) | Low
+Grow a Garden | GIANT Grizzly Bear | 8/10 (6,525) | Low
+Grow a Garden | Ghostly Tomb Marmot | 8/10 (5,225) | Low
+Grow a Garden | White Tiger | 8/10 (5,175) | Low
+Grow a Garden | Champion Beetle | 8/10 (5,000) | Low
+Grow a Garden | Rainbow Pachycephalosaurus | 8/10 (4,425) | Low
+Grow a Garden | Festive Frost Squirrel | 8/10 (4,225) | Low
+Grow a Garden | Rainbow Parasaurolophus | 8/10 (4,200) | Low
+Grow a Garden | Ghostly Scarab | 8/10 (3,800) | Low
+Grow a Garden | Rainbow Iguanodon | 8/10 (3,800) | Low
+Grow a Garden | Rainbow Star Wolf | 8/10 (3,750) | Low
+Grow a Garden | Angora Goat | 8/10 (3,700) | Low
+Grow a Garden | Festive Yeti | 8/10 (3,675) | Low
+Grow a Garden | Lioness | 8/10 (3,675) | Low
+Grow a Garden | Rainbow Rhino | 8/10 (3,400) | Low
+Grow a Garden | Festive Nutcracker | 8/10 (3,275) | Low
+Grow a Garden | Flame Bee | 7/10 (3,150) | Low
+Grow a Garden | Rainbow Kodama | 7/10 (2,800) | Low
+Grow a Garden | Rainbow Snow Bunny | 7/10 (2,750) | Low
+Grow a Garden | Rainbow French Hen | 7/10 (2,700) | Low
+Grow a Garden | Rainbow Mandrake | 7/10 (2,300) | Low
+Grow a Garden | Gilded Choc Nyala | 7/10 (2,150) | Low
+Grow a Garden | Festive Santa Bear | 7/10 (2,100) | Low
+Grow a Garden | Rainbow Pink Bunny | 7/10 (2,000) | Low
+Grow a Garden | Gilded Choc Peryton | 7/10 (1,875) | Low
+Grow a Garden | Rainbow Maneki-neko | 7/10 (1,800) | Low
+Grow a Garden | Rainbow Goldfinch | 7/10 (1,700) | Low
+Grow a Garden | GIANT Badger | 7/10 (1,675) | Low
+Grow a Garden | Wind-Up Rat | 7/10 (1,650) | Low
+Grow a Garden | Rainbow New Years Chimp | 7/10 (1,600) | Low
+Grow a Garden | Rainbow Unicycle Monkey | 7/10 (1,575) | Low
+Grow a Garden | Rainbow Bear on Bike | 7/10 (1,550) | Low
+Grow a Garden | Rainbow Show Pony | 7/10 (1,425) | Low
+Grow a Garden | Raccoon | 7/10 (1,225) | Low
+Grow a Garden | Ghostly Bone Dog | 6/10 (1,150) | Low
+Grow a Garden | Rainbow Bacon Pig | 6/10 (1,135) | Low
+Grow a Garden | Rainbow Oxpecker | 6/10 (1,075) | Low
+Grow a Garden | Rainbow Mochi Mouse | 6/10 (1,050) | Low
+Grow a Garden | Rainbow Zebra | 6/10 (1,000) | Low
+Grow a Garden | Rainbow Elk | 6/10 (970) | Medium
+Grow a Garden | Kitsune | 6/10 (960) | Medium
+Grow a Garden | Tsuchinoko | 6/10 (940) | Medium
+Grow a Garden | Rainbow Firework Sprite | 6/10 (920) | Medium
+Grow a Garden | Rainbow Frost Dragon | 6/10 (870) | Medium
+Grow a Garden | GIANT Robin | 6/10 (860) | Medium
+Grow a Garden | Rainbow Celebration Puppy | 6/10 (860) | Medium
+Grow a Garden | Rainbow Cardinal | 6/10 (825) | Medium
+Grow a Garden | Ghostly Bat | 6/10 (810) | Medium
+Grow a Garden | Rainbow Cerberus | 6/10 (780) | Medium
+Grow a Garden | Rainbow Brown Owl | 6/10 (660) | Medium
+Grow a Garden | Festive Reindeer | 6/10 (560) | Medium
+Grow a Garden | Festive Partridge | 6/10 (550) | Medium
+Grow a Garden | Bearded Dragon | 6/10 (540) | Medium
+Grow a Garden | Rainbow Giraffe | 6/10 (520) | Medium
+Grow a Garden | Rainbow Performer Seal | 6/10 (520) | Medium
+Grow a Garden | Messenger Pigeon | 6/10 (480) | Low
+Grow a Garden | Gilded Choc Jerboa | 6/10 (475) | Low
+Grow a Garden | Panda | 6/10 (470) | Low
+Grow a Garden | Birb | 5/10 (380) | Low
+Grow a Garden | Rainbow New Years Bird | 5/10 (380) | Low
+Grow a Garden | Disco Bee | 5/10 (370) | Low
+Grow a Garden | Gilded Choc Easter Bunny | 5/10 (370) | Low
+Grow a Garden | Rainbow Hydra | 5/10 (320) | Low
+Grow a Garden | Peryton | 5/10 (240) | Low
+Grow a Garden | GIANT Ash Raven | 5/10 (240) | Low
+Grow a Garden | Krampus | 5/10 (220) | Low
+Grow a Garden | GIANT Firemite | 5/10 (220) | Low
+Grow a Garden | Festive Turtle Dove | 5/10 (210) | Low
+Grow a Garden | Goblin Miner | 5/10 (200) | Low
+Grow a Garden | Rainbow Black Bird | 5/10 (190) | Low
+Grow a Garden | Rainbow Cuckoo | 5/10 (180) | Low
+Grow a Garden | Fennec Fox | 5/10 (170) | Low
+Grow a Garden | Luminous Sprite | 5/10 (160) | Low
+Grow a Garden | Frost Dragon | 5/10 (160) | Low
+Grow a Garden | French Fry Ferret | 5/10 (160) | Low
+Grow a Garden | Gilded Choc Marshmallow Lamb | 5/10 (155) | Low
+Grow a Garden | Magpie | 4/10 (140) | Low
+Grow a Garden | GIANT Silver Dragonfly | 4/10 (140) | Low
+Grow a Garden | Ghostly Dark Spriggan | 4/10 (140) | Low
+Grow a Garden | Rainbow Stag Beetle | 4/10 (120) | Low
+Grow a Garden | Rainbow Mizuchi | 4/10 (120) | Low
+Grow a Garden | Cerberus | 4/10 (110) | Low
+Grow a Garden | Easter Bunny | 4/10 (100) | Low
+Grow a Garden | Shroomie | 4/10 (100) | Low
+Grow a Garden | Chimera | 4/10 (100) | Low
+Grow a Garden | Red-Nosed Reindeer | 4/10 (95) | Low
+Grow a Garden | Ice Golem | 4/10 (95) | Low
+Grow a Garden | Spinosaurus | 4/10 (95) | Low
+Grow a Garden | GIANT Mantis Shrimp | 4/10 (95) | Low
+Grow a Garden | Drake | 4/10 (85) | Low
+Grow a Garden | Mummy | 4/10 (85) | Low
+Grow a Garden | Queen Bee | 4/10 (85) | Low
+Grow a Garden | Wendigo | 4/10 (80) | Low
+Grow a Garden | Koi | 4/10 (80) | Low
+Grow a Garden | Trapdoor Spider | 4/10 (75) | Low
+Grow a Garden | Phoenix | 4/10 (75) | Low
+Grow a Garden | Wisp | 4/10 (70) | Low
+Grow a Garden | Ruby Squid | 4/10 (70) | Low
+Grow a Garden | Hydra | 4/10 (65) | Low
+Grow a Garden | Giant Snowman Builder | 4/10 (65) | Low
+Grow a Garden | Brontosaurus | 4/10 (65) | Low
+Grow a Garden | Lion | 3/10 (50) | Low
+Grow a Garden | Rainbow Hazehound | 3/10 (50) | Low
+Grow a Garden | Griffin | 3/10 (50) | Low
+Grow a Garden | Butterfly | 3/10 (50) | Low
+Grow a Garden | Woody | 3/10 (50) | Low
+Grow a Garden | GIANT Armadillo | 3/10 (50) | Low
+Grow a Garden | Hazehound | 3/10 (45) | Very Low
+Grow a Garden | GIANT Firefly | 3/10 (40) | Very Low
+Grow a Garden | Dilophosaurus | 3/10 (40) | Very Low
+Grow a Garden | T-Rex | 3/10 (40) | Very Low
+Grow a Garden | Golden Goose | 3/10 (35) | Very Low
+Grow a Garden | Mimic Octopus | 3/10 (35) | Very Low
+Grow a Garden | Termite | 3/10 (35) | Very Low
+Grow a Garden | Mizuchi | 3/10 (30) | Very Low
+Grow a Garden | Giant Snowman Soldier | 3/10 (30) | Very Low
+Grow a Garden | Elephant | 3/10 (30) | Very Low
+Grow a Garden | New Years Dragon | 3/10 (30) | Very Low
+Grow a Garden | Gilded Choc Easter Egg Chick | 3/10 (30) | Very Low
+Grow a Garden | Hotdog Daschund | 3/10 (25) | Very Low
+Grow a Garden | Nutcracker | 3/10 (25) | Very Low
+Grow a Garden | Headless Horseman | 3/10 (25) | Very Low
+Grow a Garden | Christmas Spirit | 3/10 (25) | Very Low
+Grow a Garden | Sheckling | 3/10 (23) | Very Low
+Grow a Garden | Rainbow Blue Jay | 3/10 (22) | Very Low
+Grow a Garden | Pack Bee | 3/10 (20) | Very Low
+Grow a Garden | Cockatrice | 3/10 (20) | Very Low
+Grow a Garden | Snowman Builder | 3/10 (20) | Very Low
+Grow a Garden | Tiger | 3/10 (20) | Very Low
+Grow a Garden | Silver Dragonfly | 3/10 (20) | Very Low
+Grow a Garden | Carnival Elephant | 3/10 (20) | Very Low
+Grow a Garden | Mantis Shrimp | 2/10 (18) | Very Low
+Grow a Garden | Arctic Fox | 2/10 (16) | Very Low
+Grow a Garden | Raiju | 2/10 (16) | Very Low
+Grow a Garden | Crocodile | 2/10 (15) | Very Low
+Grow a Garden | Orangutan | 2/10 (15) | Very Low
+Grow a Garden | Red Fox | 2/10 (15) | Very Low
+Grow a Garden | Bald Eagle | 2/10 (15) | Very Low
+Grow a Garden | Diamond Panther | 2/10 (15) | Very Low
+Grow a Garden | Yeti | 2/10 (15) | Very Low
+Grow a Garden | Lemon Lion | 2/10 (15) | Very Low
+Grow a Garden | Bat | 2/10 (15) | Very Low
+Grow a Garden | Seal | 2/10 (15) | Very Low
+Grow a Garden | Gnome | 2/10 (15) | Very Low
+Grow a Garden | Red Panda | 2/10 (15) | Very Low
+Grow a Garden | Sand Snake | 2/10 (15) | Very Low
+Grow a Garden | Red Rose Fox | 2/10 (15) | Very Low
+Grow a Garden | Swan | 2/10 (15) | Very Low
+Grow a Garden | Gilded Choc Chocolate Bunny | 2/10 (15) | Very Low
+Grow a Garden | Ash Raven | 2/10 (15) | Very Low
+Grow a Garden | Ankylosaurus | 2/10 (12) | Very Low
+Grow a Garden | Cheetah | 2/10 (11) | Very Low
+Grow a Garden | Blood Owl | 2/10 (10) | Very Low
+Grow a Garden | Owl | 2/10 (10) | Very Low
+Grow a Garden | Meerkat | 2/10 (10) | Very Low
+Grow a Garden | Cooked Owl | 2/10 (10) | Very Low
+Grow a Garden | Corrupted Kitsune | 2/10 (10) | Very Low
+Grow a Garden | Goldfinch | 2/10 (10) | Very Low
+Grow a Garden | Peacock | 2/10 (10) | Very Low
+Grow a Garden | Golem | 2/10 (10) | Very Low
+Grow a Garden | Capybara | 2/10 (10) | Very Low
+Grow a Garden | Hex Serpent | 2/10 (10) | Very Low
+Grow a Garden | Dragonfly | 2/10 (10) | Very Low
+Grow a Garden | Ostrich | 2/10 (10) | Very Low
+Grow a Garden | Camel | 2/10 (9) | Very Low
+Grow a Garden | Golden Piggy | 2/10 (9) | Very Low
+Grow a Garden | Pink Panda | 2/10 (8) | Very Low
+Grow a Garden | Emerald Snake | 1/10 (7) | Very Low
+Grow a Garden | Corrupted Kodama | 1/10 (7) | Very Low
+Grow a Garden | Summer Kiwi | 1/10 (6) | Very Low
+Grow a Garden | Orchid Mantis | 1/10 (6) | Very Low
+Grow a Garden | Nihonzaru | 1/10 (6) | Very Low
+Grow a Garden | Reindeer | 1/10 (6) | Very Low
+Grow a Garden | Cocoa Cat | 1/10 (6) | Very Low
+Grow a Garden | New Years Bird | 1/10 (6) | Very Low
+Grow a Garden | Topaz Snail | 1/10 (6) | Very Low
+Grow a Garden | Mistletoad | 1/10 (6) | Very Low
+Grow a Garden | Frost Squirrel | 1/10 (6) | Very Low
+Grow a Garden | Silver Piggy | 1/10 (6) | Very Low
+Grow a Garden | Red Squirrel | 1/10 (5) | Very Low
+Grow a Garden | Kiwi | 1/10 (5) | Very Low
+Grow a Garden | Gummy Bear | 1/10 (5) | Very Low
+Grow a Garden | Stork | 1/10 (5) | Very Low
+Grow a Garden | Seedling | 1/10 (5) | Very Low
+Grow a Garden | Hootsie Roll | 1/10 (5) | Very Low
+Grow a Garden | Red Giant Ant | 1/10 (5) | Very Low
+Grow a Garden | Giant Ant | 1/10 (5) | Very Low
+Grow a Garden | Easter Egg Chick | 1/10 (5) | Very Low
+Grow a Garden | Nyala | 1/10 (5) | Very Low
 Steal a Brainrot | OG Strawberry Elephant | 10/10 (4.55M) | Very High
 Steal a Brainrot | Secret Griffin | 10/10 (4.40M) | Very Low
 Steal a Brainrot | OG Skibidi Toilet | 10/10 (4.05M) | Very Low
@@ -424,49 +574,211 @@ Steal a Brainrot | Common Draculino | 2/10 (1K) | Very High
 Steal a Brainrot | Secret Kalika Bros | 2/10 (920) | Very High
 Steal a Brainrot | Foxini Lanternini | 2/10 (900) | Very Low
 Steal a Brainrot | Common Spooky Spooky Sahur | 2/10 (900) | High
-Pet Simulator 99 | Gargantuan Hypnotic Kitsune | 10/10 (925B) | Medium
-Pet Simulator 99 | Gargantuan Royal Beast | 10/10 (750B) | High
-Pet Simulator 99 | Gargantuan Kaiju King | 10/10 (630B) | Very High
-Pet Simulator 99 | Gargantuan Googly Agony | 10/10 (530B) | High
-Pet Simulator 99 | Gargantuan Yin-Yang Kitsune | 10/10 (425B) | High
-Pet Simulator 99 | Gargantuan Hellish Axolotl | 10/10 (385B) | High
-Pet Simulator 99 | Gargantuan Dot Matrix Pegasus | 9/10 (360B) | Medium
-Pet Simulator 99 | Gargantuan Exquisite Parrot | 9/10 (340B) | High
-Pet Simulator 99 | Gargantuan Jurassic Dragon | 9/10 (330B) | Medium
-Pet Simulator 99 | Golden Gargantuan Dark Dragon | 9/10 (300B) | Medium
-Pet Simulator 99 | Gargantuan Super Coral Kraken | 9/10 (285B) | Medium
-Pet Simulator 99 | Gargantuan Totem Monkey | 9/10 (265B) | High
-Pet Simulator 99 | Gargantuan Dark Dragon | 9/10 (255B) | Medium
-Pet Simulator 99 | Gargantuan Forest Wyvern | 9/10 (245B) | Medium
-Pet Simulator 99 | Gargantuan Santa Paws | 9/10 (230B) | High
-Pet Simulator 99 | Golden Gargantuan Skelemelon | 9/10 (230B) | Medium
-Pet Simulator 99 | Golden Gargantuan Doge | 9/10 (175B) | Medium
-Pet Simulator 99 | Gargantuan Matryoshka Bear | 9/10 (172B) | High
-Pet Simulator 99 | Gargantuan Grim Reaper | 9/10 (172B) | High
-Pet Simulator 99 | Gargantuan Doge | 9/10 (149B) | High
-Pet Simulator 99 | Golden Gargantuan Floppa | 9/10 (140B) | Medium
-Pet Simulator 99 | Golden Gargantuan Wise Cat | 9/10 (136B) | Medium
-Pet Simulator 99 | Gargantuan Leafy Deer | 8/10 (135B) | Medium
-Pet Simulator 99 | Gargantuan Glass Squid | 8/10 (126B) | Medium
-Pet Simulator 99 | Gargantuan Blurred Agony | 8/10 (115B) | Medium
-Pet Simulator 99 | Gargantuan Elf Golem | 8/10 (110B) | Medium
-Pet Simulator 99 | Gargantuan Krampus | 8/10 (110B) | Medium
-Pet Simulator 99 | Gargantuan Floppa | 8/10 (109B) | Medium
-Pet Simulator 99 | Gargantuan Snowflake Dragon | 8/10 (102B) | Medium
-Pet Simulator 99 | Gargantuan Nightfall Tiger | 8/10 (102B) | Medium
-Pet Simulator 99 | Gargantuan Treasure Angelus | 8/10 (101B) | Medium
-Pet Simulator 99 | Gargantuan Cappuccino Brainrot | 8/10 (100B) | Medium
-Pet Simulator 99 | Gargantuan Skelemelon | 8/10 (100B) | Medium
-Pet Simulator 99 | Gargantuan Gingerbread Angelus | 8/10 (100B) | Medium
-Pet Simulator 99 | Gargantuan Super Cat | 8/10 (95.5B) | Medium
-Pet Simulator 99 | Titanic Wild Corrupt Agony | 8/10 (85B) | High
-Pet Simulator 99 | Titanic Poseidon Axolotl | 7/10 (38B) | High
-Pet Simulator 99 | Titanic Yin-Yang Grim Reaper | 7/10 (20.25B) | High
-Pet Simulator 99 | Titanic Kaiju Moth | 7/10 (18B) | High
-Pet Simulator 99 | Titanic Starfall Dragon | 6/10 (16.2B) | High
-Pet Simulator 99 | Titanic Electric Werewolf | 6/10 (12.7B) | High
-Pet Simulator 99 | Titanic Empyrean Dragon | 5/10 (5.4B) | High
-Pet Simulator 99 | Titanic Special Ops Goat | 5/10 (4.85B) | High
+Pet Simulator 99 | Huge Empyrean Axolotl | 10/10 (915.19B gems) | High
+Pet Simulator 99 | Huge Owl | 10/10 (913.92B gems) | Very High
+Pet Simulator 99 | Gargantuan Solar Lion | 10/10 (753.38B gems) | High
+Pet Simulator 99 | Titanic Hippomelon | 10/10 (662.13B gems) | Very High
+Pet Simulator 99 | Gargantuan Hypnotic Kitsune | 10/10 (470.88B gems) | High
+Pet Simulator 99 | Gargantuan Kaiju King | 10/10 (422B gems) | High
+Pet Simulator 99 | Gargantuan Starfall Dragon | 10/10 (407.84B gems) | High
+Pet Simulator 99 | Gargantuan Dot Matrix Pegasus | 10/10 (335.14B gems) | High
+Pet Simulator 99 | Gargantuan Hellish Axolotl | 10/10 (334.63B gems) | High
+Pet Simulator 99 | Gargantuan Patchwork Agony | 10/10 (296.72B gems) | High
+Pet Simulator 99 | Gargantuan Exquisite Parrot | 10/10 (296.43B gems) | High
+Pet Simulator 99 | Gargantuan Jurassic Dragon | 10/10 (291.87B gems) | High
+Pet Simulator 99 | Gargantuan Lucki Chest Mimic | 10/10 (290.9B gems) | High
+Pet Simulator 99 | Gargantuan Clown Cat | 10/10 (276.58B gems) | High
+Pet Simulator 99 | Gargantuan Googly Agony | 10/10 (264.97B gems) | High
+Pet Simulator 99 | Titanic Pink Balloon | 10/10 (264.71B gems) | High
+Pet Simulator 99 | Gargantuan Yin-Yang Kitsune | 10/10 (247.38B gems) | High
+Pet Simulator 99 | Gargantuan Forest Wyvern | 10/10 (242.86B gems) | High
+Pet Simulator 99 | Gargantuan Dark Dragon | 10/10 (237.4B gems) | High
+Pet Simulator 99 | Gargantuan Royal Beast | 10/10 (236.51B gems) | High
+Pet Simulator 99 | Gargantuan Santa Paws | 10/10 (229.78B gems) | High
+Pet Simulator 99 | Gargantuan Aura Cat | 10/10 (225.24B gems) | High
+Pet Simulator 99 | Gargantuan Matryoshka Bear | 10/10 (202.16B gems) | High
+Pet Simulator 99 | Gargantuan Hippomelon | 10/10 (200.05B gems) | High
+Pet Simulator 99 | Gargantuan Frankenpup Dog | 10/10 (194.37B gems) | High
+Pet Simulator 99 | Gargantuan Mothman | 10/10 (191.56B gems) | High
+Pet Simulator 99 | Gargantuan Domino Dominus | 10/10 (187.51B gems) | High
+Pet Simulator 99 | Gargantuan Super Coral Kraken | 10/10 (182.3B gems) | High
+Pet Simulator 99 | Gargantuan Grim Reaper | 10/10 (179.52B gems) | High
+Pet Simulator 99 | Gargantuan Totem Monkey | 9/10 (172.42B gems) | High
+Pet Simulator 99 | Gargantuan Bloom Dominus | 9/10 (166.74B gems) | High
+Pet Simulator 99 | Gargantuan Dawn Phoenix | 9/10 (165.23B gems) | High
+Pet Simulator 99 | Titanic Luxe Axolotl | 9/10 (163.56B gems) | High
+Pet Simulator 99 | Gargantuan Magma Spirit | 9/10 (163.27B gems) | High
+Pet Simulator 99 | Gargantuan Super Fluffy Cat | 9/10 (159.58B gems) | High
+Pet Simulator 99 | Gargantuan Anime Agony | 9/10 (158.64B gems) | High
+Pet Simulator 99 | Gargantuan Doge | 9/10 (158.62B gems) | High
+Pet Simulator 99 | Gargantuan Special Ops Moth | 9/10 (154.66B gems) | High
+Pet Simulator 99 | Gargantuan Holofoil Agony | 9/10 (154.37B gems) | High
+Pet Simulator 99 | Gargantuan RGB Angelus | 9/10 (151.48B gems) | High
+Pet Simulator 99 | Gargantuan Leafy Deer | 9/10 (146.93B gems) | High
+Pet Simulator 99 | Gargantuan Nyan Cat | 9/10 (146.7B gems) | High
+Pet Simulator 99 | Gargantuan Rose Wolf | 9/10 (140.01B gems) | High
+Pet Simulator 99 | Gargantuan Glass Squid | 9/10 (139.43B gems) | High
+Pet Simulator 99 | Gargantuan M-2 PROTOTYPE | 9/10 (132.64B gems) | High
+Pet Simulator 99 | Gargantuan Wicked Kirin | 9/10 (130.31B gems) | High
+Pet Simulator 99 | Gargantuan Evil Scarecrow Pumpkin | 9/10 (127.59B gems) | High
+Pet Simulator 99 | Titanic Blueberry Cow | 9/10 (126.62B gems) | High
+Pet Simulator 99 | Gargantuan Ornate Dragon | 9/10 (125.94B gems) | High
+Pet Simulator 99 | Gargantuan Capybara | 9/10 (123.32B gems) | High
+Pet Simulator 99 | Gargantuan Porcelain Doll Cat | 9/10 (122.03B gems) | High
+Pet Simulator 99 | Gargantuan Lucki Angelus | 9/10 (121.14B gems) | High
+Pet Simulator 99 | Gargantuan Blurred Agony | 9/10 (120.33B gems) | High
+Pet Simulator 99 | Gargantuan Forcefield Chimera | 9/10 (119.64B gems) | High
+Pet Simulator 99 | Gargantuan Vapor Phoenix | 9/10 (118.07B gems) | High
+Pet Simulator 99 | Gargantuan Lost Hero Bulldog | 9/10 (115.75B gems) | High
+Pet Simulator 99 | Gargantuan Origami Kitsune | 9/10 (115.68B gems) | High
+Pet Simulator 99 | Gargantuan Elf Golem | 9/10 (114.9B gems) | High
+Pet Simulator 99 | Gargantuan Floppa | 9/10 (113.6B gems) | High
+Pet Simulator 99 | Gargantuan Samurai Kitsune | 9/10 (112.42B gems) | High
+Pet Simulator 99 | Gargantuan Krampus | 9/10 (111.22B gems) | High
+Pet Simulator 99 | Gargantuan Leprechaun Fox | 9/10 (110.7B gems) | High
+Pet Simulator 99 | Gargantuan Wise Cat | 9/10 (110.21B gems) | High
+Pet Simulator 99 | Gargantuan Fluffy Cat | 9/10 (109.87B gems) | High
+Pet Simulator 99 | Gargantuan Cardboard Dominus Astra | 9/10 (106.8B gems) | High
+Pet Simulator 99 | Gargantuan Black Balloon Cat | 9/10 (106.61B gems) | High
+Pet Simulator 99 | Gargantuan Snowflake Dragon | 9/10 (106.58B gems) | High
+Pet Simulator 99 | Gargantuan Skelemelon | 9/10 (106.04B gems) | High
+Pet Simulator 99 | Gargantuan Skateboard Bulldog | 9/10 (105.93B gems) | High
+Pet Simulator 99 | Gargantuan Storm Wolf | 9/10 (105.89B gems) | High
+Pet Simulator 99 | Gargantuan Meebo in a Spaceship | 9/10 (105.18B gems) | High
+Pet Simulator 99 | Titanic Dominus Darkwing | 9/10 (104.99B gems) | High
+Pet Simulator 99 | Gargantuan Nightfall Tiger | 9/10 (104.93B gems) | High
+Pet Simulator 99 | Gargantuan Tokusatsu Spider | 9/10 (104.86B gems) | High
+Pet Simulator 99 | Gargantuan Treasure Angelus | 9/10 (104.47B gems) | High
+Pet Simulator 99 | Gargantuan Stealth Dragon | 9/10 (104.44B gems) | High
+Pet Simulator 99 | Gargantuan Chrome Unicorn | 9/10 (104.17B gems) | High
+Pet Simulator 99 | Gargantuan Cappuccino Brainrot | 9/10 (103.51B gems) | High
+Pet Simulator 99 | Gargantuan Soccerball Trophy Angelus | 9/10 (103.17B gems) | High
+Pet Simulator 99 | Gargantuan Gingerbread Angelus | 9/10 (101.92B gems) | High
+Pet Simulator 99 | Gargantuan 1x1x1x1 | 9/10 (101.85B gems) | High
+Pet Simulator 99 | Gargantuan Guest 666 | 9/10 (101.56B gems) | High
+Pet Simulator 99 | Gargantuan Sombrero Cat | 9/10 (100.03B gems) | High
+Pet Simulator 99 | Gargantuan Super Cat | 9/10 (99.68B gems) | Medium
+Pet Simulator 99 | Gargantuan Cookie Cut Cat | 9/10 (99.45B gems) | Medium
+Pet Simulator 99 | Titanic Cat | 9/10 (98.16B gems) | Medium
+Pet Simulator 99 | Titanic Ghostface Cat | 9/10 (97.42B gems) | Medium
+Pet Simulator 99 | Gargantuan Lucky Block Angelus | 9/10 (97.42B gems) | Medium
+Pet Simulator 99 | Titanic Wild Corrupt Agony | 9/10 (96.35B gems) | Medium
+Pet Simulator 99 | Titanic Nightmare Cat | 9/10 (93.02B gems) | Medium
+Pet Simulator 99 | Titanic Blobfish | 9/10 (92.08B gems) | Medium
+Pet Simulator 99 | Huge Crowned Corgi | 9/10 (89.2B gems) | Medium
+Pet Simulator 99 | Titanic Sad Cat | 9/10 (74.02B gems) | Medium
+Pet Simulator 99 | Titanic Atlantean Jellyfish | 9/10 (65.8B gems) | Medium
+Pet Simulator 99 | Titanic Pink Balloon Cat | 9/10 (65B gems) | Medium
+Pet Simulator 99 | Titanic SpongeBob SquarePants | 8/10 (63.6B gems) | Medium
+Pet Simulator 99 | Titanic Arcane Pyro Cat | 8/10 (59.61B gems) | Medium
+Pet Simulator 99 | Huge Crowned Cat | 8/10 (55.71B gems) | Medium
+Pet Simulator 99 | Titanic Neon Agony | 8/10 (55.19B gems) | Medium
+Pet Simulator 99 | Titanic Black Hole Angelus | 8/10 (51.28B gems) | Medium
+Pet Simulator 99 | Titanic Jelly Cat | 8/10 (47.45B gems) | Medium
+Pet Simulator 99 | Titanic Jelly Dragon | 8/10 (45.89B gems) | Medium
+Pet Simulator 99 | Titanic Poseidon Axolotl | 8/10 (45.2B gems) | Medium
+Pet Simulator 99 | Titanic Arcane Cat | 8/10 (43.42B gems) | Medium
+Pet Simulator 99 | Titanic Silver Stag | 8/10 (40.31B gems) | Medium
+Pet Simulator 99 | Titanic Lovemelon | 8/10 (39.68B gems) | Medium
+Pet Simulator 99 | Titanic Hubert | 8/10 (39.51B gems) | Medium
+Pet Simulator 99 | Titanic Kawaii Cat | 8/10 (38.34B gems) | Medium
+Pet Simulator 99 | Titanic Sketch Cat | 8/10 (38.03B gems) | Medium
+Pet Simulator 99 | Titanic Bat Cat | 8/10 (37.27B gems) | Medium
+Pet Simulator 99 | Titanic Cartoon Cat | 8/10 (37.24B gems) | Medium
+Pet Simulator 99 | Titanic Valkyrie Pegasus | 8/10 (35.66B gems) | Medium
+Pet Simulator 99 | Titanic Jolly Cat | 8/10 (34.95B gems) | Medium
+Pet Simulator 99 | Titanic Silver Dragon | 8/10 (32.3B gems) | Medium
+Pet Simulator 99 | Titanic Strawberry Cow | 8/10 (32.06B gems) | Medium
+Pet Simulator 99 | Titanic Balloon Monkey | 8/10 (31.8B gems) | Medium
+Pet Simulator 99 | Titanic Red Balloon Cat | 8/10 (30.57B gems) | Medium
+Pet Simulator 99 | Titanic Starry Owl | 8/10 (29.91B gems) | Medium
+Pet Simulator 99 | Titanic Blue Balloon Cat | 8/10 (29.87B gems) | Medium
+Pet Simulator 99 | Huge Demon | 8/10 (29.08B gems) | Medium
+Pet Simulator 99 | Titanic Sun Angelus | 8/10 (28.75B gems) | Medium
+Pet Simulator 99 | Titanic Abstract Dominus | 8/10 (28.11B gems) | Medium
+Pet Simulator 99 | Titanic Cosmic Pegasus | 8/10 (27.11B gems) | Medium
+Pet Simulator 99 | Titanic Firegel Dragon | 8/10 (26.22B gems) | Medium
+Pet Simulator 99 | Titanic Clover Owl | 8/10 (25.9B gems) | Medium
+Pet Simulator 99 | Titanic Mystic Corgi | 8/10 (25.61B gems) | Medium
+Pet Simulator 99 | Huge Holographic Corgi | 8/10 (25.4B gems) | Medium
+Pet Simulator 99 | Titanic Love Lamb | 8/10 (25.25B gems) | Medium
+Pet Simulator 99 | Huge Mystical Fox | 8/10 (25.11B gems) | Medium
+Pet Simulator 99 | Titanic Angel Cow | 8/10 (25.01B gems) | Medium
+Pet Simulator 99 | Huge Present Cat | 8/10 (24.69B gems) | Medium
+Pet Simulator 99 | Titanic Angry Yeti | 8/10 (24.58B gems) | Medium
+Pet Simulator 99 | Titanic Bread Shiba | 8/10 (24.48B gems) | Medium
+Pet Simulator 99 | Titanic Hologram Cat | 8/10 (24.07B gems) | Medium
+Pet Simulator 99 | Titanic Valentines Cat | 8/10 (23.77B gems) | Medium
+Pet Simulator 99 | Huge Splash Angelus | 7/10 (22.81B gems) | Medium
+Pet Simulator 99 | Titanic Vampire Agony | 7/10 (22.25B gems) | Medium
+Pet Simulator 99 | Titanic Emoji Corgi | 7/10 (22.09B gems) | Medium
+Pet Simulator 99 | Titanic Wild Frost Agony | 7/10 (22.05B gems) | Medium
+Pet Simulator 99 | Titanic Blazing Dragon | 7/10 (21.85B gems) | Medium
+Pet Simulator 99 | Titanic Pumpkin Cat | 7/10 (21.48B gems) | Medium
+Pet Simulator 99 | Titanic Soul Owl | 7/10 (21.06B gems) | Medium
+Pet Simulator 99 | Titanic Dominus Astra | 7/10 (20.8B gems) | Medium
+Pet Simulator 99 | Titanic Yin-Yang Grim Reaper | 7/10 (20.72B gems) | Medium
+Pet Simulator 99 | Titanic Fire Dragon | 7/10 (20.66B gems) | Medium
+Pet Simulator 99 | Titanic Pop Cat | 7/10 (20.49B gems) | Medium
+Pet Simulator 99 | Titanic Nightfall Pegasus | 7/10 (20.29B gems) | Medium
+Pet Simulator 99 | Titanic Buff Tiger | 7/10 (20.18B gems) | Medium
+Pet Simulator 99 | Titanic Midnight Lion | 7/10 (20.16B gems) | Medium
+Pet Simulator 99 | Huge Wisp Deer | 7/10 (20.15B gems) | Medium
+Pet Simulator 99 | Titanic Daydream Fox | 7/10 (20.11B gems) | Medium
+Pet Simulator 99 | Titanic Lucki | 7/10 (19.84B gems) | Low
+Pet Simulator 99 | Titanic Dot Matrix Kitsune | 7/10 (19.58B gems) | Low
+Pet Simulator 99 | Titanic Spectral Deer | 7/10 (19.47B gems) | Low
+Pet Simulator 99 | Huge Pog Immortuus | 7/10 (19.39B gems) | Low
+Pet Simulator 99 | Huge Alien Arachnid | 7/10 (18.97B gems) | Low
+Pet Simulator 99 | Titanic Nightmare Corgi | 7/10 (18.52B gems) | Low
+Pet Simulator 99 | Titanic Capybara | 7/10 (18.48B gems) | Low
+Pet Simulator 99 | Titanic Stargazing Bull | 7/10 (18.38B gems) | Low
+Pet Simulator 99 | Huge Stunt Unicorn | 7/10 (18.09B gems) | Low
+Pet Simulator 99 | Titanic Nightfall Wolf | 7/10 (18.06B gems) | Low
+Pet Simulator 99 | Titanic Kaiju Moth | 7/10 (17.98B gems) | Low
+Pet Simulator 99 | Titanic Kitsune Fox | 7/10 (17.51B gems) | Low
+Pet Simulator 99 | Titanic Bejeweled Griffin | 7/10 (17.48B gems) | Low
+Pet Simulator 99 | Titanic Rich Cat | 7/10 (17.4B gems) | Low
+Pet Simulator 99 | Titanic Tiedye Cat | 7/10 (17.3B gems) | Low
+Pet Simulator 99 | Titanic Samurai Dragon | 7/10 (17.3B gems) | Low
+Pet Simulator 99 | Titanic Pixel M-2 PROTOTYPE | 7/10 (17.25B gems) | Low
+Pet Simulator 99 | Titanic Butterfly | 7/10 (17.24B gems) | Low
+Pet Simulator 99 | Titanic Inferno Dominus | 7/10 (17.19B gems) | Low
+Pet Simulator 99 | Titanic Wicked Angelus | 7/10 (17.13B gems) | Low
+Pet Simulator 99 | Titanic Ancient Dragon | 7/10 (16.87B gems) | Low
+Pet Simulator 99 | Titanic Banana Cat | 7/10 (16.85B gems) | Low
+Pet Simulator 99 | Titanic Chad Gorilla | 7/10 (16.85B gems) | Low
+Pet Simulator 99 | Titanic Tiedye Dragon | 7/10 (16.83B gems) | Low
+Pet Simulator 99 | Titanic Signature BIG Maskot | 7/10 (16.53B gems) | Low
+Pet Simulator 99 | Titanic Starfall Dragon | 7/10 (16.38B gems) | Low
+Pet Simulator 99 | Titanic Witch Wolf | 7/10 (16.2B gems) | Low
+Pet Simulator 99 | Titanic M-14 PROTOTYPE | 7/10 (15.86B gems) | Low
+Pet Simulator 99 | Titanic Luchador Cat | 7/10 (15.85B gems) | Low
+Pet Simulator 99 | Titanic Snow Globe Cat | 7/10 (15.54B gems) | Low
+Pet Simulator 99 | Huge Runic Wolf | 7/10 (15.39B gems) | Low
+Pet Simulator 99 | Titanic Flex Cat | 7/10 (15.17B gems) | Low
+Pet Simulator 99 | Titanic Giraffe | 7/10 (15.08B gems) | Low
+Pet Simulator 99 | Huge Cat | 7/10 (15.02B gems) | Low
+Pet Simulator 99 | Titanic Shadow Griffin | 7/10 (15.01B gems) | Low
+Pet Simulator 99 | Titanic Super Corgi | 7/10 (14.51B gems) | Low
+Pet Simulator 99 | Titanic Classic Cat | 7/10 (14.23B gems) | Low
+Pet Simulator 99 | Titanic Gamer Shiba | 7/10 (14.16B gems) | Low
+Pet Simulator 99 | Titanic Holiday Owl | 7/10 (14.01B gems) | Low
+Pet Simulator 99 | Titanic Wild Fire Agony | 7/10 (13.71B gems) | Low
+Pet Simulator 99 | Titanic Fossil Dragon | 7/10 (13.48B gems) | Low
+Pet Simulator 99 | Titanic Googly Blobfish | 7/10 (13.48B gems) | Low
+Pet Simulator 99 | Titanic Empyrean Owl | 7/10 (13.38B gems) | Low
+Pet Simulator 99 | Titanic Warrior Beast | 7/10 (13.24B gems) | Low
+Pet Simulator 99 | Titanic Scary Corgi | 7/10 (13.21B gems) | Low
+Pet Simulator 99 | Titanic Party Cat | 7/10 (13.14B gems) | Low
+Pet Simulator 99 | Titanic Vapor Dragon | 7/10 (13.1B gems) | Low
+Pet Simulator 99 | Titanic Diamond Dog | 7/10 (13.07B gems) | Low
+Pet Simulator 99 | Titanic Sock Cat | 7/10 (12.96B gems) | Low
+Pet Simulator 99 | Titanic Electric Werewolf | 7/10 (12.91B gems) | Low
+Pet Simulator 99 | Titanic Hypnotic Monkey | 7/10 (12.86B gems) | Low
+Pet Simulator 99 | Titanic Jelly Kitsune | 7/10 (12.83B gems) | Low
+Pet Simulator 99 | Titanic Sock Monkey | 7/10 (12.82B gems) | Low
+Pet Simulator 99 | Huge Sensei Penguin | 7/10 (12.54B gems) | Low
 Jailbreak | HyperShift | 10/10 (306M cash) | Low
 Jailbreak | HyperBlue Lvl5 | 10/10 (64M cash) | High
 Jailbreak | HyperPink Lvl5 | 10/10 (55M cash) | High
@@ -511,7 +823,7 @@ King Legacy | Perm Toy | 10/10 (637.5 Fins) | High
 King Legacy | Perm Melody | 10/10 (615 Fins) | High
 King Legacy | Cerulean Blossom | 10/10 (590 Fins) | High
 King Legacy | Primal Pack | 10/10 (500 Fins) | High
-King Legacy | Perm Quake | 9/10 (425 Fins) | High
+King Legacy | Perm Quake | 10/10 (425 Fins) | High
 King Legacy | Perm Rumble | 9/10 (410 Fins) | High
 King Legacy | Perm Gas | 9/10 (410 Fins) | High
 King Legacy | BlazeIce Pack | 9/10 (375 Fins) | High
@@ -529,7 +841,7 @@ King Legacy | Perm Flame | 9/10 (205 Fins) | High
 King Legacy | Perm Allo | 9/10 (200 Fins) | High
 King Legacy | Perm Magma | 9/10 (190 Fins) | High
 King Legacy | Perm Brachio | 9/10 (175 Fins) | High
-King Legacy | Perm Venom | 8/10 (155 Fins) | High
+King Legacy | Perm Venom | 9/10 (155 Fins) | High
 King Legacy | Dragon Band | 8/10 (135 Fins) | High
 King Legacy | Perm Ice | 8/10 (125 Fins) | High
 King Legacy | Crustacean Armor | 8/10 (120 Fins) | High
@@ -539,7 +851,7 @@ King Legacy | Ancient Sword | 8/10 (95 Fins) | Medium
 King Legacy | Coffin Boat | 8/10 (90 Fins) | Medium
 King Legacy | +1 Fruit Storage | 8/10 (85 Fins) | Medium
 King Legacy | Legacy Pose | 8/10 (72.5 Fins) | Medium
-King Legacy | EXP Crown | 7/10 (55 Fins) | Medium
+King Legacy | EXP Crown | 8/10 (55 Fins) | Medium
 King Legacy | Perm Rubber | 7/10 (45 Fins) | Medium
 King Legacy | Perm Paw | 7/10 (45 Fins) | Medium
 King Legacy | Water Kimono | 7/10 (42.5 Fins) | Medium
@@ -555,7 +867,110 @@ King Legacy | Dark Stone (Mats) | 7/10 (25.5 Fins) | Medium
 King Legacy | Poison Stone (Mats) | 7/10 (22.5 Fins) | Medium
 King Legacy | Tree Fruit | 7/10 (22.5 Fins) | Medium
 King Legacy | Pter Fruit | 7/10 (22.5 Fins) | Medium
-King Legacy | Demon Fruit | 6/10 (21 Fins) | Medium
+King Legacy | Demon Fruit | 7/10 (21 Fins) | Medium
+King Legacy | Dragon Fruit | 7/10 (20 Fins) | Medium
+King Legacy | Night Necklace | 6/10 (19 Fins) | Medium
+King Legacy | Blaze Stone (Mats) | 6/10 (14.5 Fins) | Medium
+King Legacy | Abyss Stone (Mats) | 6/10 (13 Fins) | Medium
+King Legacy | Phoenix Fruit | 6/10 (13 Fins) | Medium
+King Legacy | Perm Bomb | 6/10 (12.5 Fins) | Medium
+King Legacy | Oceanic Tanto | 6/10 (12 Fins) | Medium
+King Legacy | Gale Stone (Mats) | 6/10 (11.5 Fins) | Medium
+King Legacy | Gate Fruit | 6/10 (11.5 Fins) | Medium
+King Legacy | Bloodthirsty Stone (Mats) | 6/10 (11 Fins) | Medium
+King Legacy | Dominion Cloak | 6/10 (10 Fins) | Medium
+King Legacy | Melody Fruit | 6/10 (9.5 Fins) | Medium
+King Legacy | Dough Fruit | 6/10 (9 Fins) | Medium
+King Legacy | Phoenix's Tear | 6/10 (7.5 Fins) | Medium
+King Legacy | Light Stone (Mats) | 6/10 (7 Fins) | Medium
+King Legacy | Serpent Fin | 6/10 (7 Fins) | Medium
+King Legacy | Kraken's Ink | 5/10 (6.5 Fins) | Medium
+King Legacy | Glacier Stone (Mats) | 5/10 (5.5 Fins) | Medium
+King Legacy | 2x EXP (12 hours) | 5/10 (5.5 Fins) | Medium
+King Legacy | Tempestas Stone (Mats) | 5/10 (5 Fins) | Medium
+King Legacy | Hydra's Tail | 5/10 (5 Fins) | Medium
+King Legacy | Ethereal | 5/10 (4.5 Fins) | Low
+King Legacy | Phoenix Blade | 5/10 (4.5 Fins) | Low
+King Legacy | Race Rerolls | 5/10 (4 Fins) | Low
+King Legacy | Crab Meat | 5/10 (4 Fins) | Low
+King Legacy | Severed Kraken | 5/10 (4 Fins) | Low
+King Legacy | Inferno Cloak | 5/10 (4 Fins) | Low
+King Legacy | Floffy Glasses | 5/10 (4 Fins) | Low
+King Legacy | Glacies Shoulder | 5/10 (4 Fins) | Low
+King Legacy | Nativitatis | 5/10 (4 Fins) | Low
+King Legacy | Green Dryadalis | 5/10 (4 Fins) | Low
+King Legacy | Cervus | 5/10 (4 Fins) | Low
+King Legacy | Acroscythe | 5/10 (4 Fins) | Low
+King Legacy | Toy Fruit | 5/10 (4 Fins) | Low
+King Legacy | Spino Fruit | 5/10 (4 Fins) | Low
+King Legacy | Dark Beard Hat | 5/10 (3.5 Fins) | Low
+King Legacy | Scepter of Flames | 5/10 (3.5 Fins) | Low
+King Legacy | Authentic Triple Katana | 5/10 (3.5 Fins) | Low
+King Legacy | Allo Fruit | 5/10 (3 Fins) | Low
+King Legacy | Refund Stats | 4/10 (2.5 Fins) | Low
+King Legacy | Abyss Sentinel Armor | 4/10 (2 Fins) | Low
+King Legacy | Rumble Fruit | 4/10 (2 Fins) | Low
+King Legacy | Brachio Fruit | 4/10 (2 Fins) | Low
+King Legacy | Palm Fruit | 4/10 (2 Fins) | Low
+King Legacy | Spark Stone (Mats) | 4/10 (1.5 Fins) | Low
+King Legacy | Metal Fin | 4/10 (1.5 Fins) | Low
+King Legacy | Disillusion Stone (Mats) | 4/10 (1 Fins) | Low
+King Legacy | Sea King's Fin | 4/10 (1 Fins) | Low
+King Legacy | Sea's Wraith (2.5x) | 4/10 (1 Fins) | Low
+King Legacy | Aqua Gem (3.5x) | 4/10 (1 Fins) | Low
+King Legacy | Lost Ruby (4x) | 4/10 (1 Fins) | Low
+King Legacy | Essence of Fire (4x) | 4/10 (1 Fins) | Low
+King Legacy | Dragon Scale (5x) | 4/10 (1 Fins) | Low
+King Legacy | Samurai's Bandage (7.5x) | 4/10 (1 Fins) | Low
+King Legacy | Twilight's Orb (7.5x) | 4/10 (1 Fins) | Low
+King Legacy | Sea King's Blood (10x) | 4/10 (1 Fins) | Low
+King Legacy | Dragon Orb (10x) | 4/10 (1 Fins) | Low
+King Legacy | Shark's Canine (12.5x) | 4/10 (1 Fins) | Low
+King Legacy | Pearl (15x) | 4/10 (1 Fins) | Low
+King Legacy | Vampire's Vital Fluid (22.5x) | 4/10 (1 Fins) | Low
+King Legacy | Lucidus's Totem (25x) | 4/10 (1 Fins) | Low
+King Legacy | Magma Crystal (25x) | 4/10 (1 Fins) | Low
+King Legacy | Ice Crystal (25x) | 4/10 (1 Fins) | Low
+King Legacy | Dark Beard's Totem (30x) | 4/10 (1 Fins) | Low
+King Legacy | Shark's Fin (40x) | 4/10 (1 Fins) | Low
+King Legacy | Coral (40x) | 4/10 (1 Fins) | Low
+King Legacy | Gunpowder (300x) | 4/10 (1 Fins) | Low
+King Legacy | Fresh Fish (375x) | 4/10 (1 Fins) | Low
+King Legacy | Iron Ingot (500x) | 4/10 (1 Fins) | Low
+King Legacy | Sea Artifact (500x) | 4/10 (1 Fins) | Low
+King Legacy | Rusted Scrap (600x) | 4/10 (1 Fins) | Low
+King Legacy | Carrot (600x) | 4/10 (1 Fins) | Low
+King Legacy | Pile of Bones (600x) | 4/10 (1 Fins) | Low
+King Legacy | Angellic's Feather (600x) | 4/10 (1 Fins) | Low
+King Legacy | Thief's Rag (600x) | 4/10 (1 Fins) | Low
+King Legacy | Leather (600x) | 4/10 (1 Fins) | Low
+King Legacy | Undead's Ooze (750x) | 4/10 (1 Fins) | Low
+King Legacy | Oceanic Tentacle | 4/10 (1 Fins) | Low
+King Legacy | Tomoe Taiko | 4/10 (1 Fins) | Low
+King Legacy | Lucidus Coat | 4/10 (1 Fins) | Low
+King Legacy | Sally Crown | 4/10 (1 Fins) | Low
+King Legacy | Dragon Necklace | 4/10 (1 Fins) | Low
+King Legacy | Tengu Mask | 4/10 (1 Fins) | Low
+King Legacy | Oni Mask | 4/10 (1 Fins) | Low
+King Legacy | Shadow Cloak | 4/10 (1 Fins) | Low
+King Legacy | Sentinel Armor | 4/10 (1 Fins) | Low
+King Legacy | Flame Hair | 4/10 (1 Fins) | Low
+King Legacy | Crimson Scarf | 4/10 (1 Fins) | Low
+King Legacy | Avalon | 4/10 (1 Fins) | Low
+King Legacy | Longaevus | 4/10 (1 Fins) | Low
+King Legacy | Daybreak Cleaver | 4/10 (1 Fins) | Low
+King Legacy | Aquatic Anchor | 4/10 (1 Fins) | Low
+King Legacy | Gas Fruit | 4/10 (1 Fins) | Low
+King Legacy | Magma Fruit | 4/10 (1 Fins) | Low
+King Legacy | Light Fruit | 4/10 (1 Fins) | Low
+King Legacy | Quake Fruit | 4/10 (1 Fins) | Low
+King Legacy | Flame Fruit | 4/10 (1 Fins) | Low
+King Legacy | Snow Fruit | 4/10 (1 Fins) | Low
+King Legacy | Ice Fruit | 4/10 (1 Fins) | Low
+King Legacy | Control Fruit | 3/10 (0.8 Fins) | Low
+King Legacy | Buddha Fruit | 3/10 (0.8 Fins) | Low
+King Legacy | Gravity Fruit | 3/10 (0.8 Fins) | Low
+King Legacy | Dark Fruit | 3/10 (0.8 Fins) | Low
 Fisch | Puff of Heaven | 10/10 (7.2K) | Medium
 Fisch | Cthulu's Revenge | 10/10 (5K) | Medium
 Fisch | Evangeline | 10/10 (2.3K) | High
@@ -563,116 +978,664 @@ Fisch | Nocturne | 10/10 (1.92K) | High
 Fisch | Curse IV | 10/10 (1.8K) | High
 Fisch | Cyanic Demonride | 10/10 (1.57K) | High
 Fisch | Scarwing | 10/10 (1.4K) | High
-Fisch | Heavyblade of Glory | 9/10 (825) | High
-Fisch | Slime Trade Booth | 9/10 (700) | Medium
-Fisch | Black Comet | 9/10 (570) | High
-Fisch | Fuchsia Fidelity | 9/10 (525) | High
-Fisch | Malevolence | 9/10 (490) | High
-Fisch | The Reaper | 9/10 (445) | High
-Fisch | Platinum Menace | 8/10 (410) | High
-Fisch | Demonwake | 8/10 (380) | High
-Fisch | Final Census | 8/10 (375) | High
-Fisch | Nessie Booth | 8/10 (370) | Medium
-Fisch | Meowmobile | 8/10 (285) | High
-Fisch | Cuddly Claw | 8/10 (285) | High
-Fisch | Pastel Impulse | 8/10 (275) | High
-Fisch | Elysian Jolt | 8/10 (275) | High
-Fisch | Dreamline | 8/10 (265) | High
-Fisch | Seastrum | 8/10 (240) | Medium
-Fisch | Violet Viper | 8/10 (210) | Medium
-Fisch | Purr of Rebellion | 8/10 (210) | High
-Fisch | Curse III | 8/10 (200) | Medium
-Fisch | Shelter Booth | 8/10 (180) | Medium
-Fisch | Aurelia's Grace | 8/10 (175) | Medium
-Fisch | Pinky Parcel | 8/10 (160) | High
-Fisch | Radiant Executioner | 7/10 (145) | High
-Fisch | Kraken of the Void | 7/10 (135) | Medium
-Fisch | Cathedral Booth | 7/10 (130) | Medium
-Fisch | Pantheress | 7/10 (130) | High
-Fisch | Crimson Excision | 7/10 (130) | High
-Fisch | AntiMatter | 7/10 (125) | High
-Fisch | Blue Bonsai | 7/10 (115) | High
-Fisch | Vampmobile | 7/10 (110) | Medium
-Fisch | Battimobile | 7/10 (110) | Medium
-Fisch | Cthulhu Boat | 7/10 (110) | Medium
-Fisch | Umbral Vengeance | 7/10 (105) | High
-Fisch | Crest of Galactica | 7/10 (100) | High
-Fisch | Roslit Leviathan | 7/10 (100) | Low
-Fisch | Cthulunaut | 7/10 (100) | Medium
-Fisch | Fine Offering | 7/10 (95) | High
-Fisch | Infrared Tunes | 7/10 (95) | Medium
-Fisch | Poltergeist | 7/10 (95) | High
-Fisch | Puffernaut | 7/10 (90) | Medium
-Fisch | Bunblade | 7/10 (85) | Medium
-Fisch | Stars Highways | 7/10 (85) | Medium
-Fisch | Seraphic Rainbow | 7/10 (85) | Medium
-Fisch | Demonia Surfblade | 7/10 (85) | Medium
-Fisch | KR ROAR | 7/10 (80) | High
-Fisch | Caelinfernum | 7/10 (75) | Medium
-Fisch | Inky Pal | 7/10 (75) | Low
-Fisch | Peep Princess Booth | 7/10 (75) | Medium
-Fisch | Purrari | 7/10 (75) | High
-Fisch | Orange Unicycle | 7/10 (70) | Low
-Fisch | Inkling Overseer | 7/10 (70) | Low
-Fisch | Grand Symphony | 7/10 (65) | High
-Fisch | Sushi-Rider | 7/10 (65) | Low
+Fisch | Heavyblade of Glory | 10/10 (825) | High
+Fisch | Slime Trade Booth | 10/10 (700) | Medium
+Fisch | Black Comet | 10/10 (570) | High
+Fisch | Fuchsia Fidelity | 10/10 (525) | High
+Fisch | Malevolence | 10/10 (490) | High
+Fisch | The Reaper | 10/10 (445) | High
+Fisch | Platinum Menace | 10/10 (410) | High
+Fisch | Demonwake | 10/10 (380) | High
+Fisch | Final Census | 10/10 (375) | High
+Fisch | Nessie Booth | 10/10 (370) | Medium
+Fisch | Meowmobile | 9/10 (285) | High
+Fisch | Cuddly Claw | 9/10 (285) | High
+Fisch | Pastel Impulse | 9/10 (275) | High
+Fisch | Elysian Jolt | 9/10 (275) | High
+Fisch | Dreamline | 9/10 (265) | High
+Fisch | Seastrum | 9/10 (240) | Medium
+Fisch | Violet Viper | 9/10 (210) | Medium
+Fisch | Purr of Rebellion | 9/10 (210) | High
+Fisch | Curse III | 9/10 (200) | Medium
+Fisch | Shelter Booth | 9/10 (180) | Medium
+Fisch | Aurelia's Grace | 9/10 (175) | Medium
+Fisch | Pinky Parcel | 9/10 (160) | High
+Fisch | Radiant Executioner | 9/10 (145) | High
+Fisch | Kraken of the Void | 9/10 (135) | Medium
+Fisch | Cathedral Booth | 9/10 (130) | Medium
+Fisch | Pantheress | 9/10 (130) | High
+Fisch | Crimson Excision | 9/10 (130) | High
+Fisch | AntiMatter | 9/10 (125) | High
+Fisch | Blue Bonsai | 8/10 (115) | High
+Fisch | Emo Gurt | 8/10 (112.2) | Medium
+Fisch | Kurohane | 8/10 (111.6) | Medium
+Fisch | Vampmobile | 8/10 (110) | Medium
+Fisch | Battimobile | 8/10 (110) | Medium
+Fisch | Cthulhu Boat | 8/10 (110) | Medium
+Fisch | Zanshin Zen | 8/10 (108.8) | Medium
+Fisch | Umbral Vengeance | 8/10 (105) | High
+Fisch | Crest of Galactica | 8/10 (100) | High
+Fisch | Roslit Leviathan | 8/10 (100) | Low
+Fisch | Cthulunaut | 8/10 (100) | Medium
+Fisch | Fine Offering | 8/10 (95) | High
+Fisch | Infrared Tunes | 8/10 (95) | Medium
+Fisch | Poltergeist | 8/10 (95) | High
+Fisch | Puffernaut | 8/10 (90) | Medium
+Fisch | Koutetsu | 8/10 (88.4) | Medium
+Fisch | Brutal Redemption | 8/10 (87.8) | Medium
+Fisch | Bunblade | 8/10 (85) | Medium
+Fisch | Stars Highways | 8/10 (85) | Medium
+Fisch | Seraphic Rainbow | 8/10 (85) | Medium
+Fisch | Demonia Surfblade | 8/10 (85) | Medium
+Fisch | Transcendence | 8/10 (81.6) | Medium
+Fisch | KR ROAR | 8/10 (80) | High
+Fisch | Caelinfernum | 8/10 (75) | Medium
+Fisch | Inky Pal | 8/10 (75) | Low
+Fisch | Peep Princess Booth | 8/10 (75) | Medium
+Fisch | Purrari | 8/10 (75) | High
+Fisch | Diablo | 8/10 (74.8) | Medium
+Fisch | Amouria | 8/10 (74.8) | Medium
+Fisch | Lyrical Loft | 8/10 (74.8) | Medium
+Fisch | Orange Unicycle | 8/10 (70) | Low
+Fisch | Inkling Overseer | 8/10 (70) | Low
+Fisch | Draconica | 8/10 (69.4) | Medium
+Fisch | Surgeon's Sword | 8/10 (68) | Medium
+Fisch | Pyre of Mercy | 8/10 (68) | Medium
+Fisch | Crypted Ivory | 8/10 (68) | Medium
+Fisch | Macabre Mistress | 8/10 (66.7) | Medium
+Fisch | Nullprawn | 8/10 (66.7) | Medium
+Fisch | Petrichor | 8/10 (65.3) | Medium
+Fisch | Paranormeow | 8/10 (65.3) | Medium
+Fisch | Grand Symphony | 8/10 (65) | High
+Fisch | Sushi-Rider | 8/10 (65) | Low
+Fisch | Kaboom! | 8/10 (63.9) | Medium
+Fisch | Archangelite | 8/10 (62.6) | Medium
+Fisch | Shinigami | 8/10 (62.6) | Medium
+Fisch | Raven's Hush | 8/10 (62.6) | Medium
+Fisch | Plushy Duomo | 8/10 (61.2) | Medium
+Fisch | Frostbite | 8/10 (59.9) | Medium
+Fisch | Meowtastic Tower | 8/10 (59.9) | Medium
+Fisch | Iridescence | 8/10 (58.5) | Medium
+Fisch | Cobalt Crusader | 8/10 (57.8) | Medium
+Fisch | John Reaper | 8/10 (57.1) | Medium
+Fisch | Onyxum | 8/10 (57.1) | Medium
+Fisch | Haunted Manor | 8/10 (57.1) | Medium
+Fisch | Evergreene | 8/10 (57.1) | Medium
+Fisch | Martyr's Battleaxe | 8/10 (56.5) | Medium
+Fisch | Ramenama | 8/10 (55.8) | Medium
+Fisch | Stealing Spirits | 8/10 (54.4) | Medium
+Fisch | Ivorous | 8/10 (54.4) | Medium
+Fisch | Party Puffer | 8/10 (54.4) | Medium
+Fisch | Soulful Omen | 8/10 (54.4) | Medium
+Fisch | Celestial Cadence | 8/10 (54.4) | Medium
+Fisch | Celestiana | 8/10 (51.7) | Medium
+Fisch | Sweetheart Scissors | 8/10 (49.7) | Medium
+Fisch | Raingokart | 8/10 (49.7) | Medium
+Fisch | Xanthos | 8/10 (47.6) | Medium
+Fisch | Guardian Angel | 8/10 (47.6) | Medium
+Fisch | Hollowed Harp | 8/10 (47.6) | Medium
+Fisch | Infrarana | 8/10 (47.6) | Medium
+Fisch | Specimen of the Skeleton | 8/10 (46.3) | Medium
+Fisch | Riptide | 8/10 (46.3) | Medium
+Fisch | Winged Royalty | 8/10 (46.3) | Medium
+Fisch | Tropica Booth | 8/10 (46.3) | Medium
+Fisch | Jettling | 8/10 (44.9) | Medium
+Fisch | Malisteel | 8/10 (44.9) | Medium
+Fisch | Echolocator | 8/10 (44.9) | Medium
+Fisch | Botanica | 8/10 (44.2) | Medium
+Fisch | Wavestrummer | 8/10 (44.2) | Medium
+Fisch | Mechanexus | 7/10 (43.5) | Medium
+Fisch | RoboChomp! | 7/10 (42.2) | Medium
+Fisch | Moss | 7/10 (42.2) | Medium
+Fisch | Luckysaurus | 7/10 (41.5) | Medium
+Fisch | Treasure Island | 7/10 (41.5) | Medium
+Fisch | Melodii | 7/10 (40.8) | Medium
+Fisch | Corruptor | 7/10 (40.8) | Medium
+Fisch | Lily of Glacia | 7/10 (40.8) | Medium
+Fisch | Nevermore | 7/10 (38.1) | Low
+Fisch | Nightfaller | 7/10 (38.1) | Low
+Fisch | Vitalica | 7/10 (38.1) | Low
+Fisch | Sanzu's Embrace | 7/10 (37.4) | Low
+Fisch | Mew-FO | 7/10 (37.4) | Low
+Fisch | Nameless Illuminator | 7/10 (36.7) | Low
+Fisch | Submarine | 7/10 (36.7) | Low
+Fisch | Ominous Ouija | 7/10 (35.4) | Low
+Fisch | Prismatic Parasite | 7/10 (35.4) | Low
+Fisch | Beachball | 7/10 (35.4) | Low
+Fisch | Nekobura | 7/10 (34) | Low
+Fisch | Kitty Keys | 7/10 (34) | Low
+Fisch | Mango Tango! | 7/10 (34) | Low
+Fisch | Astropod | 7/10 (34) | Low
+Fisch | Bunvoyage | 7/10 (34) | Low
+Fisch | Arteria | 7/10 (34) | Low
+Fisch | The Blubbernaut | 7/10 (32.7) | Low
+Fisch | Solstice Partners | 7/10 (32.7) | Low
+Fisch | Chromancer | 7/10 (32.7) | Low
+Fisch | Hidden Treasure | 7/10 (32.7) | Low
+Fisch | Somber Oath | 7/10 (32.7) | Low
+Fisch | Rawrboard | 7/10 (32) | Low
+Fisch | Panko Pup | 7/10 (32) | Low
+Fisch | Cursed Coin | 7/10 (31.3) | Low
+Fisch | Tabby Racer | 7/10 (31.3) | Low
+Fisch | Deceptive Shears | 7/10 (31.3) | Low
+Fisch | Zephyrmantis | 7/10 (30.6) | Low
+Fisch | Imperial Mauve | 7/10 (30.6) | Low
+Fisch | Never After | 7/10 (29.9) | Low
+Fisch | Talismania | 7/10 (29.9) | Low
+Fisch | Porcelain Chord | 7/10 (29.9) | Low
+Fisch | Sunfyre | 7/10 (29.9) | Low
+Fisch | Starcrusher | 7/10 (29.9) | Low
+Fisch | Dutchman's Penance | 7/10 (28.6) | Low
+Fisch | Krampus Curse | 7/10 (28.6) | Low
+Fisch | Cursed Mirror | 7/10 (28.6) | Low
+Fisch | Racerbooth | 7/10 (27.2) | Low
+Fisch | CritSlasher | 7/10 (27.2) | Low
+Fisch | Lavenescence | 7/10 (27.2) | Low
+Fisch | Gloombear | 7/10 (27.2) | Low
+Fisch | Starliner | 7/10 (27.2) | Low
+Fisch | Novaris | 7/10 (27.2) | Low
+Fisch | Centicute | 7/10 (25.9) | Low
+Fisch | Nemesis | 7/10 (25.9) | Low
+Fisch | Spinal Scythia | 7/10 (23.1) | Low
+Fisch | Blackout Crusher | 7/10 (21.8) | Low
+Fisch | Onslaught | 7/10 (21.8) | Low
+Fisch | Pawsome Ghoulfestation | 7/10 (20.4) | Low
+Fisch | Twilight's Wildcard | 7/10 (20.4) | Low
+Fisch | Time Reaper | 7/10 (19.7) | Low
+Fisch | Whiteout Maul | 7/10 (19) | Low
+Fisch | Dovepoint | 7/10 (19) | Low
+Fisch | Angel's Wings | 7/10 (16.3) | Low
+Fisch | Meilo | 7/10 (16.3) | Low
+Fisch | Hana Halo | 7/10 (16.3) | Low
+Fisch | Spooky Relic | 6/10 (15) | Low
+Fisch | Santa Relic | 6/10 (13.6) | Low
+Fisch | Apple Cider | 6/10 (9.5) | Low
+Fisch | Soapy Pibble | 6/10 (8.2) | Low
+Fisch | Joystick | 6/10 (8.2) | Low
+Fisch | Inky Halo | 6/10 (6.8) | Low
+Fisch | Chromatic Noiseform | 6/10 (6.1) | Low
+Fisch | Peppermint Purrs | 5/10 (3.8) | Low
+Fisch | Zipp | 5/10 (3.5) | Low
+Fisch | Plaguereaver | 5/10 (3.4) | Low
+Fisch | Wisp of Etheria | 5/10 (3.4) | Low
+Fisch | Frightful Relic | 5/10 (2.7) | Low
+Fisch | Eerie Relic | 5/10 (2.4) | Low
+Fisch | Onirifalx | 4/10 (2) | Low
+Fisch | Lumine Flag | 4/10 (2) | Low
+Fisch | Gothic Crown | 4/10 (2) | Low
+Fisch | Derpkat | 4/10 (2) | Low
+Fisch | Pebble | 4/10 (1.8) | Low
+Fisch | Pook | 4/10 (1.6) | Low
+Fisch | Lucky Cat | 4/10 (1.6) | Low
+Fisch | Valentines Relic | 4/10 (1.4) | Low
+Fisch | Astra | 4/10 (1.4) | Low
 Toilet Tower Defense | Golden Speakerman Titan | 10/10 (423M gems) | Medium
 Toilet Tower Defense | Telanthric Titan | 10/10 (380M gems) | Low
 Toilet Tower Defense | Nuke Titan TV Man | 10/10 (230M gems) | Low
-Toilet Tower Defense | Frost Speakerman Titan | 8/10 (35M gems) | Low
-Toilet Tower Defense | Hacked Juggernaut Titan | 8/10 (30M gems) | Medium
-Toilet Tower Defense | Titan Infected Speakerman | 8/10 (20M gems) | High
-Toilet Tower Defense | Titan Cactus Man | 7/10 (17.5M gems) | Medium
-Toilet Tower Defense | Titan Colosseus Maximus | 7/10 (15M gems) | Very Low
-Toilet Tower Defense | Komodo Speakerman Titan | 7/10 (15M gems) | Low
-Toilet Tower Defense | Chrono Clockman | 7/10 (8.25M gems) | Medium
-Toilet Tower Defense | Upgraded Titan Clockman | 7/10 (7M gems) | Low
-Toilet Tower Defense | Upgraded Titan Drilldragon | 7/10 (6.8M gems) | High
-Toilet Tower Defense | Gamma Ray Sniper | 6/10 (6.3M gems) | Medium
-Toilet Tower Defense | DJ TV Man | 6/10 (6.2M gems) | Medium
-Toilet Tower Defense | Exclusive Scientist Crate | 6/10 (5.5M gems) | Medium
-Toilet Tower Defense | Upgraded Titan Drillman | 6/10 (5.35M gems) | Medium
-Toilet Tower Defense | Futuristic Titan Speakerman | 6/10 (5M gems) | Medium
-Toilet Tower Defense | Titan Freedom Speakerman | 6/10 (4.65M gems) | Low
-Toilet Tower Defense | Omega Reactor Overlord | 6/10 (4.34M gems) | Low
-Toilet Tower Defense | Titan Warlord Clockman | 6/10 (4.34M gems) | Low
-Toilet Tower Defense | Titan Cryo Clock Striker | 6/10 (3.6M gems) | Medium
-Toilet Tower Defense | Chief Drillman | 6/10 (3.5M gems) | Low
-Toilet Tower Defense | Telanthric | 6/10 (3.5M gems) | Low
-Toilet Tower Defense | Spider TV | 6/10 (3.2M gems) | Low
-Toilet Tower Defense | Chained Watchman Of Doom | 6/10 (3.2M gems) | Medium
-Toilet Tower Defense | Titan Grill TV Man | 6/10 (3.1M gems) | Very Low
-Toilet Tower Defense | Aquatitan Speakerman | 6/10 (3.1M gems) | Low
-Toilet Tower Defense | Titan Meatball Man | 6/10 (3.1M gems) | Low
-Toilet Tower Defense | Titan Astro Duchess | 6/10 (3M gems) | Low
-Toilet Tower Defense | Backman | 6/10 (3M gems) | Very Low
-Toilet Tower Defense | Engineer Cameraman | 6/10 (2.8M gems) | Medium
-Toilet Tower Defense | Chief Clockman | 6/10 (2.7M gems) | Medium
-Toilet Tower Defense | Quantum Cameraman | 6/10 (2.65M gems) | Low
-Toilet Tower Defense | Corrupted Cameraman | 6/10 (2.5M gems) | Low
-Toilet Tower Defense | Futuristic G-Man | 6/10 (2.35M gems) | Low
-Toilet Tower Defense | Clone Titan TV Man | 5/10 (2.15M gems) | Medium
-Toilet Tower Defense | Golden Future Large Clockman | 5/10 (2.04M gems) | Medium
-Toilet Tower Defense | Puppet Master TV Man | 5/10 (2.04M gems) | Low
-Toilet Tower Defense | Octopus VIP | 5/10 (1.85M gems) | Medium
-Toilet Tower Defense | Sinister Titan Clockman | 5/10 (1.75M gems) | Low
-Toilet Tower Defense | Electric TV Man | 5/10 (1.6M gems) | Low
-Toilet Tower Defense | Exclusive Food Crate | 5/10 (1.55M gems) | Very Low
-Toilet Tower Defense | Titan Abomination | 5/10 (1.45M gems) | Low
-Toilet Tower Defense | Angelic Guardian | 5/10 (1.4M gems) | Low
-Toilet Tower Defense | Titan Watchman Of Doom | 5/10 (1.4M gems) | Low
-Toilet Tower Defense | Titan Printer Man | 5/10 (1.35M gems) | Medium
-Toilet Tower Defense | Executioner Speakerman | 5/10 (1.3M gems) | Low
-Toilet Tower Defense | Scary Crate | 5/10 (1.3M gems) | Low
-Toilet Tower Defense | Scientist Cameraman 1337 | 5/10 (1.25M gems) | Medium
-Toilet Tower Defense | 2025 Independence Day Crate | 5/10 (1.25M gems) | Very Low
-Toilet Tower Defense | Titan Mafia Toilet | 5/10 (1.2M gems) | Low
-Toilet Tower Defense | Summer Juggernaut | 5/10 (1.2M gems) | Low
-Toilet Tower Defense | Titan Glacier TV Man | 5/10 (1.2M gems) | Low
-Toilet Tower Defense | Hacked Astro Juggernaut | 5/10 (1.1M gems) | High
-Toilet Tower Defense | Turkey Crate | 5/10 (1M gems) | Medium
-Toilet Tower Defense | Solar Flare TV Man | 5/10 (1M gems) | Low
-Toilet Tower Defense | Speakerman | 5/10 (1M gems) | Very Low
+Toilet Tower Defense | Frost Speakerman Titan | 10/10 (35M gems) | Low
+Toilet Tower Defense | Hacked Juggernaut Titan | 10/10 (30M gems) | Medium
+Toilet Tower Defense | Titan Infected Speakerman | 10/10 (20M gems) | High
+Toilet Tower Defense | Titan Cactus Man | 10/10 (17.5M gems) | Medium
+Toilet Tower Defense | Titan Colosseus Maximus | 10/10 (15M gems) | Very Low
+Toilet Tower Defense | Komodo Speakerman Titan | 10/10 (15M gems) | Low
+Toilet Tower Defense | Chrono Clockman | 10/10 (8.25M gems) | Medium
+Toilet Tower Defense | Upgraded Titan Clockman | 10/10 (7M gems) | Low
+Toilet Tower Defense | Upgraded Titan Drilldragon | 10/10 (6.8M gems) | High
+Toilet Tower Defense | Gamma Ray Sniper | 10/10 (6.3M gems) | Medium
+Toilet Tower Defense | DJ TV Man | 10/10 (6.2M gems) | Medium
+Toilet Tower Defense | Exclusive Scientist Crate | 10/10 (5.5M gems) | Medium
+Toilet Tower Defense | Upgraded Titan Drillman | 10/10 (5.35M gems) | Medium
+Toilet Tower Defense | Futuristic Titan Speakerman | 10/10 (5M gems) | Medium
+Toilet Tower Defense | Titan Freedom Speakerman | 10/10 (4.65M gems) | Low
+Toilet Tower Defense | Omega Reactor Overlord | 10/10 (4.34M gems) | Low
+Toilet Tower Defense | Titan Warlord Clockman | 10/10 (4.34M gems) | Low
+Toilet Tower Defense | Titan Cryo Clock Striker | 10/10 (3.6M gems) | Medium
+Toilet Tower Defense | Chief Drillman | 10/10 (3.5M gems) | Low
+Toilet Tower Defense | Telanthric | 10/10 (3.5M gems) | Low
+Toilet Tower Defense | Spider TV | 10/10 (3.2M gems) | Low
+Toilet Tower Defense | Chained Watchman Of Doom | 10/10 (3.2M gems) | Medium
+Toilet Tower Defense | Titan Grill TV Man | 10/10 (3.1M gems) | Very Low
+Toilet Tower Defense | Aquatitan Speakerman | 10/10 (3.1M gems) | Low
+Toilet Tower Defense | Titan Meatball Man | 10/10 (3.1M gems) | Low
+Toilet Tower Defense | Titan Astro Duchess | 10/10 (3M gems) | Low
+Toilet Tower Defense | Backman | 10/10 (3M gems) | Very Low
+Toilet Tower Defense | Engineer Cameraman | 10/10 (2.8M gems) | Medium
+Toilet Tower Defense | Chief Clockman | 10/10 (2.7M gems) | Medium
+Toilet Tower Defense | Quantum Cameraman | 10/10 (2.65M gems) | Low
+Toilet Tower Defense | Corrupted Cameraman | 10/10 (2.5M gems) | Low
+Toilet Tower Defense | Futuristic G-Man | 10/10 (2.35M gems) | Low
+Toilet Tower Defense | Clone Titan TV Man | 10/10 (2.15M gems) | Medium
+Toilet Tower Defense | Golden Future Large Clockman | 10/10 (2.04M gems) | Medium
+Toilet Tower Defense | Puppet Master TV Man | 10/10 (2.04M gems) | Low
+Toilet Tower Defense | Octopus VIP | 9/10 (1.85M gems) | Medium
+Toilet Tower Defense | Sinister Titan Clockman | 9/10 (1.75M gems) | Low
+Toilet Tower Defense | Electric TV Man | 9/10 (1.6M gems) | Low
+Toilet Tower Defense | Exclusive Food Crate | 9/10 (1.55M gems) | Very Low
+Toilet Tower Defense | Balloon Pop TV Man | 9/10 (1.5M gems) | Medium
+Toilet Tower Defense | Titan Abomination | 9/10 (1.45M gems) | Low
+Toilet Tower Defense | Titan Plunger Cameraman | 9/10 (1.45M gems) | Medium
+Toilet Tower Defense | Angelic Guardian | 9/10 (1.4M gems) | Low
+Toilet Tower Defense | Titan Watchman Of Doom | 9/10 (1.4M gems) | Low
+Toilet Tower Defense | Mafia Boss Cameraman | 9/10 (1.4M gems) | Medium
+Toilet Tower Defense | Titan Printer Man | 9/10 (1.35M gems) | Medium
+Toilet Tower Defense | Titan Fanman | 9/10 (1.35M gems) | Medium
+Toilet Tower Defense | Executioner Speakerman | 9/10 (1.3M gems) | Low
+Toilet Tower Defense | Scary Crate | 9/10 (1.3M gems) | Low
+Toilet Tower Defense | Scientist Cameraman 1337 | 9/10 (1.25M gems) | Medium
+Toilet Tower Defense | 2025 Independence Day Crate | 9/10 (1.25M gems) | Very Low
+Toilet Tower Defense | Titan Mafia Toilet | 9/10 (1.2M gems) | Low
+Toilet Tower Defense | Summer Juggernaut | 9/10 (1.2M gems) | Low
+Toilet Tower Defense | Titan Glacier TV Man | 9/10 (1.2M gems) | Low
+Toilet Tower Defense | Reaper Titan Cameraman | 9/10 (1.2M gems) | Medium
+Toilet Tower Defense | Titan Clover Man | 9/10 (1.15M gems) | Medium
+Toilet Tower Defense | Hacked Astro Juggernaut | 9/10 (1.1M gems) | High
+Toilet Tower Defense | Titan Bucket Head Speaker Woman | 9/10 (1.05M gems) | Medium
+Toilet Tower Defense | Turkey Crate | 9/10 (1M gems) | Medium
+Toilet Tower Defense | Solar Flare TV Man | 9/10 (1M gems) | Low
+Toilet Tower Defense | Speakerman | 9/10 (1M gems) | Very Low
+Toilet Tower Defense | Galaxy Tung Tung | 9/10 (1M gems) | Medium
+Toilet Tower Defense | Developer Crate | 9/10 (1M gems) | Medium
+Toilet Tower Defense | Exclusive Booster Crate | 9/10 (1M gems) | Medium
+Toilet Tower Defense | Titan Boombox Man | 9/10 (1M gems) | Medium
+Toilet Tower Defense | Fallen Clockman | 9/10 (925K gems) | Low
+Toilet Tower Defense | Futuristic Titan Cameraman | 9/10 (825K gems) | Low
+Toilet Tower Defense | Titan Trap Man | 9/10 (825K gems) | Low
+Toilet Tower Defense | Santa Crate | 9/10 (800K gems) | Low
+Toilet Tower Defense | Healer TV Woman | 9/10 (775K gems) | Low
+Toilet Tower Defense | Exclusive Injured Titan Crate | 9/10 (700K gems) | Low
+Toilet Tower Defense | Titan Dice Man | 8/10 (620K gems) | Low
+Toilet Tower Defense | Titan Pencil Woman | 8/10 (600K gems) | Low
+Toilet Tower Defense | Large Clockman | 8/10 (550K gems) | Low
+Toilet Tower Defense | Hammer Pencilman | 8/10 (550K gems) | Low
+Toilet Tower Defense | Speaker Repair Drone | 8/10 (550K gems) | Low
+Toilet Tower Defense | Golden Gladiator Crate | 8/10 (500K gems) | Low
+Toilet Tower Defense | Printer Crate | 8/10 (500K gems) | Low
+Toilet Tower Defense | Hyper Upgraded Titan Speakerman | 8/10 (500K gems) | Low
+Toilet Tower Defense | Exclusive Fan Crate | 8/10 (500K gems) | Low
+Toilet Tower Defense | Titan Turkey Man | 8/10 (500K gems) | Low
+Toilet Tower Defense | Large Turkey Speakerman | 8/10 (450K gems) | Low
+Toilet Tower Defense | Titan Gardening Cameraman | 8/10 (410K gems) | Low
+Toilet Tower Defense | Gadget Crate | 8/10 (400K gems) | Low
+Toilet Tower Defense | Titan Doomspeaker | 8/10 (360K gems) | Low
+Toilet Tower Defense | Large Firework Cameraman | 8/10 (360K gems) | Low
+Toilet Tower Defense | Cage Scientist Clockman | 8/10 (350K gems) | Low
+Toilet Tower Defense | Titan Drillman | 8/10 (350K gems) | Low
+Toilet Tower Defense | Sinister Titan TV Man | 8/10 (350K gems) | Low
+Toilet Tower Defense | Carrot Farmer Bunnyman | 8/10 (310K gems) | Low
+Toilet Tower Defense | Freedom Crate | 8/10 (300K gems) | Low
+Toilet Tower Defense | Halloween Crate | 8/10 (300K gems) | Low
+Toilet Tower Defense | Titan Samurai Speakerwoman | 8/10 (300K gems) | Low
+Toilet Tower Defense | Samurai Crate | 8/10 (300K gems) | Low
+Toilet Tower Defense | Ultra Turkey Crate | 8/10 (300K gems) | Low
+Toilet Tower Defense | Bunny Crate | 8/10 (300K gems) | Low
+Toilet Tower Defense | St. Patrick's Day 2024 Crate | 8/10 (300K gems) | Low
+Toilet Tower Defense | Valentines Day 2024 Crate | 8/10 (300K gems) | Low
+Toilet Tower Defense | Sinister Cameraman | 8/10 (260K gems) | Low
+Toilet Tower Defense | Future Crate | 8/10 (250K gems) | Low
+Toilet Tower Defense | July 4th Crate | 8/10 (250K gems) | Low
+Toilet Tower Defense | Kingpin Titan Cameraman | 8/10 (250K gems) | Low
+Toilet Tower Defense | Robot Cameraman | 8/10 (250K gems) | Low
+Toilet Tower Defense | Very Important Titan | 8/10 (250K gems) | Low
+Toilet Tower Defense | Christmas Crate | 8/10 (250K gems) | Low
+Toilet Tower Defense | Camera Mothership | 8/10 (250K gems) | Low
+Toilet Tower Defense | Octopus Crate | 8/10 (250K gems) | Low
+Toilet Tower Defense | Knee Surgery Clockman | 7/10 (230K gems) | Low
+Toilet Tower Defense | Printer Henchman | 7/10 (230K gems) | Low
+Toilet Tower Defense | Rainbow Future Large Clockman | 7/10 (205K gems) | Low
+Toilet Tower Defense | Lifeguard Speakerman | 7/10 (200K gems) | Low
+Toilet Tower Defense | Valentines Day 2025 Crate | 7/10 (200K gems) | Low
+Toilet Tower Defense | Sigma Crate | 7/10 (200K gems) | Low
+Toilet Tower Defense | Microphone Crate | 7/10 (200K gems) | Low
+Toilet Tower Defense | Titan Titan Man | 7/10 (200K gems) | Low
+Toilet Tower Defense | Streamer Cameraman | 7/10 (200K gems) | Low
+Toilet Tower Defense | Samurai Cameraman | 7/10 (200K gems) | Low
+Toilet Tower Defense | Ultra Drill Crate | 7/10 (200K gems) | Low
+Toilet Tower Defense | Upgraded Titan Cinemaman | 7/10 (200K gems) | Low
+Toilet Tower Defense | Titan Samurai Cameraman | 7/10 (200K gems) | Low
+Toilet Tower Defense | Titan Sigma Man | 7/10 (200K gems) | Low
+Toilet Tower Defense | Titan Sand Man | 7/10 (200K gems) | Low
+Toilet Tower Defense | Creator Pencilman | 7/10 (200K gems) | Low
+Toilet Tower Defense | Titan Alien Man | 7/10 (180K gems) | Low
+Toilet Tower Defense | Scientist Cameraman | 7/10 (180K gems) | Low
+Toilet Tower Defense | Titan Mogman | 7/10 (175K gems) | Low
+Toilet Tower Defense | Coconut Crate | 7/10 (150K gems) | Low
+Toilet Tower Defense | Chill Clock Guy | 7/10 (150K gems) | Low
+Toilet Tower Defense | Gladiator Crate | 7/10 (150K gems) | Low
+Toilet Tower Defense | Titan Microphone Man | 7/10 (150K gems) | Low
+Toilet Tower Defense | Time Crate | 7/10 (150K gems) | Low
+Toilet Tower Defense | King Drillman | 7/10 (140K gems) | Low
+Toilet Tower Defense | Demented Cameraman | 7/10 (135K gems) | Low
+Toilet Tower Defense | Grim Reaperman | 7/10 (130K gems) | Low
+Toilet Tower Defense | Witch Camerawoman | 7/10 (130K gems) | Low
+Toilet Tower Defense | Zombie Titan TV Man | 7/10 (125K gems) | Low
+Toilet Tower Defense | Tropical Crate | 7/10 (125K gems) | Low
+Toilet Tower Defense | Lucky Cameraman | 7/10 (125K gems) | Low
+Toilet Tower Defense | Titan Cinemaman | 7/10 (120K gems) | Low
+Toilet Tower Defense | Haunted Crate | 7/10 (120K gems) | Low
+Toilet Tower Defense | Sergeant Drillman | 7/10 (120K gems) | Low
+Toilet Tower Defense | Titan Beach Ball Man | 7/10 (120K gems) | Low
+Toilet Tower Defense | Ringmaster Cameraman | 7/10 (105K gems) | Low
+Toilet Tower Defense | Titan Reaper Speakerman | 7/10 (100K gems) | Low
+Toilet Tower Defense | Ghost Cameraman | 7/10 (100K gems) | Low
+Toilet Tower Defense | Drill Support Crate | 7/10 (100K gems) | Low
+Toilet Tower Defense | Colosseum Crate | 7/10 (100K gems) | Low
+Toilet Tower Defense | Titan Swat Cameraman | 7/10 (100K gems) | Low
+Toilet Tower Defense | Titan Forcefield Man | 7/10 (100K gems) | Low
+Toilet Tower Defense | Scientist Drillman | 7/10 (100K gems) | Low
+Toilet Tower Defense | RNG Crate | 7/10 (100K gems) | Low
+Toilet Tower Defense | Leprechaun Cameraman | 7/10 (100K gems) | Low
+Toilet Tower Defense | Titan Camera Strider | 7/10 (90K gems) | Low
+Toilet Tower Defense | Juggernaut Titan TV Man | 6/10 (82.5K gems) | Low
+Toilet Tower Defense | Chrono Skull | 6/10 (80K gems) | Low
+Toilet Tower Defense | Titan Clock Man | 6/10 (80K gems) | Low
+Toilet Tower Defense | Titan Forcefield Woman | 6/10 (75K gems) | Low
+Toilet Tower Defense | Futuristic Crate | 6/10 (70K gems) | Low
+Toilet Tower Defense | Mech Bunny Titan | 6/10 (51.5K gems) | Low
+Toilet Tower Defense | Astro Upgraded Titan Cameraman | 6/10 (51.5K gems) | Low
+Toilet Tower Defense | The Golden Skibidi | 6/10 (50K gems) | Low
+Toilet Tower Defense | Future Large Clockman | 6/10 (50K gems) | Low
+Toilet Tower Defense | Scientist Clockman | 6/10 (50K gems) | Low
+Toilet Tower Defense | Turkey Herder Speakerman | 6/10 (50K gems) | Low
+Toilet Tower Defense | Titan Centurion Speakerman | 6/10 (45K gems) | Very Low
+Toilet Tower Defense | Tech Crate | 6/10 (45K gems) | Very Low
+Toilet Tower Defense | Pencil Crate | 6/10 (45K gems) | Very Low
+Toilet Tower Defense | Titan Santa Cameraman | 6/10 (41K gems) | Very Low
+Toilet Tower Defense | Forcefield Crate | 6/10 (35K gems) | Very Low
+Toilet Tower Defense | Santa TV Man | 6/10 (35K gems) | Very Low
+Toilet Tower Defense | Disaster Scientist Mech | 5/10 (30K gems) | Very Low
+Toilet Tower Defense | Brutus The Bound | 5/10 (30K gems) | Very Low
+Toilet Tower Defense | Infected Future Clockman | 5/10 (30K gems) | Very Low
+Toilet Tower Defense | Speaker Drill Pencil Clock TV Cameraman | 5/10 (30K gems) | Very Low
+Toilet Tower Defense | Shield Cameraman | 5/10 (30K gems) | Very Low
+Toilet Tower Defense | Titan Paradox Drillman | 5/10 (30K gems) | Very Low
+Toilet Tower Defense | Infected Toilet | 5/10 (30K gems) | Very Low
+Toilet Tower Defense | Boss Toilet 5.0 | 5/10 (30K gems) | Very Low
+Toilet Tower Defense | Armored Drillman | 5/10 (30K gems) | Very Low
+Toilet Tower Defense | Camera Spider | 5/10 (25K gems) | Very Low
+Toilet Tower Defense | Samurai Speakerman | 5/10 (25K gems) | Very Low
+Toilet Tower Defense | Assassin Drillman | 5/10 (25K gems) | Very Low
+Toilet Tower Defense | Emperor Cameraman | 5/10 (25K gems) | Very Low
+Toilet Tower Defense | Mewing TV Man | 5/10 (25K gems) | Very Low
+Toilet Tower Defense | Coconut Cameraman | 5/10 (25K gems) | Very Low
+Toilet Tower Defense | Infected Plunger Man | 5/10 (24.5K gems) | Very Low
+Toilet Tower Defense | Skibidi Claus | 5/10 (23K gems) | Very Low
+Toilet Tower Defense | Giraffa Meloniera | 5/10 (22K gems) | Very Low
+Toilet Tower Defense | Frost DJ Speakerman | 5/10 (20.5K gems) | Very Low
+Toilet Tower Defense | Vollyball Speakerman | 5/10 (20K gems) | Very Low
+Toilet Tower Defense | Titan Basketman | 5/10 (20K gems) | Very Low
+Toilet Tower Defense | Starfall TV Man | 5/10 (20K gems) | Very Low
+Toilet Tower Defense | Cupid Cameraman | 5/10 (20K gems) | Very Low
+Toilet Tower Defense | Evil TV Man | 5/10 (20K gems) | Very Low
+Toilet Tower Defense | Pov Cameraman | 5/10 (20K gems) | Very Low
+Toilet Tower Defense | Gravity Gun Cameraman | 5/10 (20K gems) | Very Low
+Toilet Tower Defense | Defense Crate | 5/10 (20K gems) | Very Low
+Toilet Tower Defense | Printer Man | 5/10 (20K gems) | Very Low
+Toilet Tower Defense | Titan Motherboard | 5/10 (20K gems) | Very Low
+Toilet Tower Defense | Corrupt Bombardiro Crocodilo | 5/10 (20K gems) | Very Low
+Toilet Tower Defense | Titan Kraken Speakerman | 5/10 (20K gems) | Very Low
+Toilet Tower Defense | Corrupted Titan Clock Man | 5/10 (20K gems) | Very Low
+Toilet Tower Defense | Bombardiro Crocodilo | 5/10 (20K gems) | Very Low
+Toilet Tower Defense | Large Printer Man | 5/10 (20K gems) | Very Low
+Toilet Tower Defense | Fanman | 5/10 (20K gems) | Very Low
+Toilet Tower Defense | Titan Bunny Cameraman | 5/10 (20K gems) | Very Low
+Toilet Tower Defense | Titan Leviathan Speakerman | 5/10 (20K gems) | Very Low
+Toilet Tower Defense | Sniper Cameraman | 5/10 (16K gems) | Very Low
+Toilet Tower Defense | DJ Speakerman | 5/10 (15K gems) | Very Low
+Toilet Tower Defense | Buff Mutant Toilet | 5/10 (15K gems) | Very Low
+Toilet Tower Defense | Drill Helicopter | 5/10 (15K gems) | Very Low
+Toilet Tower Defense | Forcefield Cameraman | 5/10 (15K gems) | Very Low
+Toilet Tower Defense | Green Laser Cameraman | 5/10 (15K gems) | Very Low
+Toilet Tower Defense | Influencer Cameraman | 5/10 (15K gems) | Very Low
+Toilet Tower Defense | Mage Cameraman | 5/10 (15K gems) | Very Low
+Toilet Tower Defense | Hunter Cameraman | 5/10 (15K gems) | Very Low
+Toilet Tower Defense | Guardian Clockman | 5/10 (15K gems) | Very Low
+Toilet Tower Defense | Volcanic Titan | 5/10 (15K gems) | Very Low
+Toilet Tower Defense | Titan Fast Armoured Cameraman | 5/10 (15K gems) | Very Low
+Toilet Tower Defense | Upgraded Titan Cameraman | 5/10 (15K gems) | Very Low
+Toilet Tower Defense | Upgraded Camerawoman | 5/10 (15K gems) | Very Low
+Toilet Tower Defense | Clock Clockman | 5/10 (15K gems) | Very Low
+Toilet Tower Defense | Shadow TV Man | 5/10 (15K gems) | Very Low
+Toilet Tower Defense | Sword Clockman | 5/10 (15K gems) | Very Low
+Toilet Tower Defense | Chair | 5/10 (15K gems) | Very Low
+Toilet Tower Defense | Dark Printer Man | 5/10 (15K gems) | Very Low
+Toilet Tower Defense | Pencil Helicopter | 5/10 (15K gems) | Very Low
+Toilet Tower Defense | Mystical Titan | 5/10 (14.5K gems) | Very Low
+Toilet Tower Defense | Upgraded Mech Cameraman | 5/10 (13K gems) | Very Low
+Toilet Tower Defense | Upgraded Titan Speakerman | 5/10 (13K gems) | Very Low
+Toilet Tower Defense | Announcer Cameraman | 5/10 (12.5K gems) | Very Low
+Toilet Tower Defense | Red Laser Cameraman | 5/10 (12K gems) | Very Low
+Toilet Tower Defense | Arachnid Militant Toilet | 5/10 (12K gems) | Very Low
+Toilet Tower Defense | Titan Heart Man | 5/10 (12K gems) | Very Low
+Toilet Tower Defense | Torch TV Man | 5/10 (12K gems) | Very Low
+Toilet Tower Defense | Vampire Cameraman | 4/10 (11.5K gems) | Very Low
+Toilet Tower Defense | Pumpkin Farmer | 4/10 (11K gems) | Very Low
+Toilet Tower Defense | Smooth Toilet | 4/10 (11K gems) | Very Low
+Toilet Tower Defense | Classic Cameraman | 4/10 (10K gems) | Very Low
+Toilet Tower Defense | Katana Speakerwoman | 4/10 (10K gems) | Very Low
+Toilet Tower Defense | Barbarian Large TV Man | 4/10 (10K gems) | Very Low
+Toilet Tower Defense | Turkey Clockman | 4/10 (10K gems) | Very Low
+Toilet Tower Defense | Speaker Spider | 4/10 (10K gems) | Very Low
+Toilet Tower Defense | Astro Gun Cameraman | 4/10 (10K gems) | Very Low
+Toilet Tower Defense | Surfer TV Man | 4/10 (10K gems) | Very Low
+Toilet Tower Defense | Forcefield Speakerman | 4/10 (10K gems) | Very Low
+Toilet Tower Defense | Glitch Cameraman | 4/10 (10K gems) | Very Low
+Toilet Tower Defense | Ramen Chef TV Man | 4/10 (10K gems) | Very Low
+Toilet Tower Defense | Sigma Drillman | 4/10 (10K gems) | Very Low
+Toilet Tower Defense | Large Fanman | 4/10 (10K gems) | Very Low
+Toilet Tower Defense | Large Laser Cameraman | 4/10 (10K gems) | Very Low
+Toilet Tower Defense | Drillman | 4/10 (10K gems) | Very Low
+Toilet Tower Defense | Frozen Speakerman | 4/10 (10K gems) | Very Low
+Toilet Tower Defense | Mace Camerawoman | 4/10 (10K gems) | Very Low
+Toilet Tower Defense | Chicken Storm Drillman | 4/10 (10K gems) | Very Low
+Toilet Tower Defense | Mutant Toilet | 4/10 (10K gems) | Very Low
+Toilet Tower Defense | Crab Cameraman | 4/10 (9.5K gems) | Very Low
+Toilet Tower Defense | Skeleton Cameraman | 4/10 (9K gems) | Very Low
+Toilet Tower Defense | Monster Speakerman | 4/10 (9K gems) | Very Low
+Toilet Tower Defense | Shotgun Cameraman | 4/10 (9K gems) | Very Low
+Toilet Tower Defense | Clock Spider | 4/10 (8.45K gems) | Very Low
+Toilet Tower Defense | Speakerwoman's Rose Farm | 4/10 (8K gems) | Very Low
+Toilet Tower Defense | Cheese Drillman | 4/10 (8K gems) | Very Low
+Toilet Tower Defense | Sand Wizard Cameraman | 4/10 (8K gems) | Very Low
+Toilet Tower Defense | Bald Toilet | 4/10 (8K gems) | Very Low
+Toilet Tower Defense | Bombombini Gusini | 4/10 (7.3K gems) | Very Low
+Toilet Tower Defense | Scary Speakerman | 4/10 (7K gems) | Very Low
+Toilet Tower Defense | Pencil Mech | 4/10 (7K gems) | Very Low
+Toilet Tower Defense | Dark Drillman | 4/10 (7K gems) | Very Low
+Toilet Tower Defense | Hunter Astro Mutant | 4/10 (6.5K gems) | Very Low
+Toilet Tower Defense | Shrimp Speakerman | 4/10 (6.5K gems) | Very Low
+Toilet Tower Defense | Seagull Cameraman | 4/10 (6K gems) | Very Low
+Toilet Tower Defense | Microwave Man | 4/10 (6K gems) | Very Low
+Toilet Tower Defense | Shogun Cameraman | 4/10 (6K gems) | Very Low
+Toilet Tower Defense | Microphone Man | 4/10 (6K gems) | Very Low
+Toilet Tower Defense | Alarm Clockman | 4/10 (5K gems) | Very Low
+Toilet Tower Defense | Sneaky Speakerman | 4/10 (5K gems) | Very Low
+Toilet Tower Defense | Egg Launcher Cameraman | 4/10 (5K gems) | Very Low
+Toilet Tower Defense | Strider Toilet | 4/10 (5K gems) | Very Low
+Toilet Tower Defense | Large Bunnyman | 4/10 (5K gems) | Very Low
+Toilet Tower Defense | Turkey Cameraman | 4/10 (5K gems) | Very Low
+Toilet Tower Defense | Bladestorm Brute | 4/10 (5K gems) | Very Low
+Toilet Tower Defense | Titan Snowman | 4/10 (5K gems) | Very Low
+Toilet Tower Defense | Gingerbread House | 4/10 (4.5K gems) | Very Low
+Toilet Tower Defense | Mystical Camerawoman | 3/10 (4K gems) | Very Low
+Toilet Tower Defense | Scientist TV | 3/10 (3.5K gems) | Very Low
+Toilet Tower Defense | Commander Cameraman | 3/10 (3.5K gems) | Very Low
+Toilet Tower Defense | Large Scientist Cameraman | 3/10 (3.5K gems) | Very Low
+Toilet Tower Defense | Bass Microphone Man | 3/10 (3.5K gems) | Very Low
+Toilet Tower Defense | Zombie Horde Cameraman | 3/10 (3K gems) | Very Low
+Toilet Tower Defense | Titan Angelic Cameraman | 3/10 (3K gems) | Very Low
+Toilet Tower Defense | Titan Chimney Man | 3/10 (3K gems) | Very Low
+Toilet Tower Defense | Dual Blade Samurai Cameraman | 3/10 (2.6K gems) | Very Low
+Toilet Tower Defense | Jetpack Cameraman | 3/10 (2.5K gems) | Very Low
+Toilet Tower Defense | Upgraded Scientist Clockman | 3/10 (2.5K gems) | Very Low
+Toilet Tower Defense | Tralalelo Tralala | 3/10 (2.45K gems) | Very Low
+Toilet Tower Defense | Titan Reaper TV Man | 3/10 (2.4K gems) | Very Low
+Toilet Tower Defense | Brr Brr Patapim | 3/10 (2.4K gems) | Very Low
+Toilet Tower Defense | Bomb Clockman | 3/10 (2K gems) | Very Low
+Toilet Tower Defense | Upgraded Strider Toilet | 3/10 (2K gems) | Very Low
+Toilet Tower Defense | Titan Samurai Speakerman | 3/10 (2K gems) | Very Low
+Toilet Tower Defense | Chimpanzini Bananini | 3/10 (2K gems) | Very Low
+Toilet Tower Defense | Dice Cameraman | 3/10 (2K gems) | Very Low
+Toilet Tower Defense | Turkey Speakerman | 3/10 (2K gems) | Very Low
+Toilet Tower Defense | Mace Cameraman | 3/10 (2K gems) | Very Low
+Toilet Tower Defense | Titan Eggreaper | 3/10 (2K gems) | Very Low
+Toilet Tower Defense | Cuckoo Clockman | 3/10 (2K gems) | Very Low
+Toilet Tower Defense | Shield Microphone Man | 3/10 (2K gems) | Very Low
+Toilet Tower Defense | Titan Crocodile Speakerman | 3/10 (2K gems) | Very Low
+Toilet Tower Defense | Upgraded Cameraman Spider | 3/10 (2K gems) | Very Low
+Toilet Tower Defense | Clockwoman | 3/10 (2K gems) | Very Low
+Toilet Tower Defense | Boneca Ambalabu | 3/10 (1.95K gems) | Very Low
+Toilet Tower Defense | Boss Toilet | 3/10 (1.5K gems) | Very Low
+Toilet Tower Defense | Titan Octopus Man | 3/10 (1.5K gems) | Very Low
+Toilet Tower Defense | Titan Cameraman | 3/10 (1.5K gems) | Very Low
+Toilet Tower Defense | Elf Camerawoman | 3/10 (1.5K gems) | Very Low
+Toilet Tower Defense | Hot Dog Speakerman | 3/10 (1.5K gems) | Very Low
+Toilet Tower Defense | Jetpack Mace Cameraman | 3/10 (1.5K gems) | Very Low
+Toilet Tower Defense | Toy Clockman | 3/10 (1.5K gems) | Very Low
+Toilet Tower Defense | Saber Mutant Toilet | 2/10 (1.4K gems) | Very Low
+Toilet Tower Defense | Sword Large Cameraman | 2/10 (1.3K gems) | Very Low
+Toilet Tower Defense | Trap Man | 2/10 (1.25K gems) | Very Low
+Toilet Tower Defense | Titan Shiverguard Clockman | 2/10 (1.25K gems) | Very Low
+Toilet Tower Defense | Astro Large TV Man | 2/10 (1.2K gems) | Very Low
+Toilet Tower Defense | Titan TV Man | 2/10 (1.2K gems) | Very Low
+Toilet Tower Defense | Love Blade Cameraman | 2/10 (1K gems) | Very Low
+Toilet Tower Defense | VIP Cameraman | 2/10 (1K gems) | Very Low
+Toilet Tower Defense | Upgraded Large Laser Cameraman | 2/10 (1K gems) | Very Low
+Toilet Tower Defense | Camera Repair Drone | 2/10 (1K gems) | Very Low
+Toilet Tower Defense | Present Speakerman | 2/10 (1K gems) | Very Low
+Toilet Tower Defense | Titan Speakerman | 2/10 (1K gems) | Very Low
+Toilet Tower Defense | Swat Mutant Toilet | 2/10 (1K gems) | Very Low
+Toilet Tower Defense | Candy Launcher Speakerman | 2/10 (1K gems) | Very Low
+Toilet Tower Defense | Trick or Treat Cameraman | 2/10 (1K gems) | Very Low
+Toilet Tower Defense | Eternal Clock Titan | 2/10 (1K gems) | Very Low
+Toilet Tower Defense | Drillwoman | 2/10 (1K gems) | Very Low
+Toilet Tower Defense | Corporal Drillman | 2/10 (1K gems) | Very Low
+Toilet Tower Defense | Static Speakerman | 2/10 (1K gems) | Very Low
+Toilet Tower Defense | Sparkler Cameraman | 2/10 (1K gems) | Very Low
+Toilet Tower Defense | Axe Upgraded Titan Speakerman | 2/10 (1K gems) | Very Low
+Toilet Tower Defense | Titan Orca Speakerman | 2/10 (800 gems) | Very Low
+Toilet Tower Defense | Tung Tung | 2/10 (775 gems) | Very Low
+Toilet Tower Defense | Oracle Speakerman | 2/10 (775 gems) | Very Low
+Toilet Tower Defense | Pool | 2/10 (750 gems) | Very Low
+Toilet Tower Defense | Titan CH4D Cameraman | 2/10 (600 gems) | Very Low
+Toilet Tower Defense | Octopus Cameraman | 1/10 (500 gems) | Very Low
+Toilet Tower Defense | Titan Present Man | 1/10 (500 gems) | Very Low
+Toilet Tower Defense | TV Woman | 1/10 (500 gems) | Very Low
+Toilet Tower Defense | Scientist Mech | 1/10 (500 gems) | Very Low
+Toilet Tower Defense | Octopus TV Man | 1/10 (500 gems) | Very Low
+Toilet Tower Defense | Futuristic Juggernaut | 1/10 (500 gems) | Very Low
+Toilet Tower Defense | Pendulum Clockman | 1/10 (500 gems) | Very Low
+Toilet Tower Defense | New Years (2023) Crate | 1/10 (500 gems) | Very Low
+Toilet Tower Defense | Rocket Launcher Toilet | 1/10 (500 gems) | Very Low
+Toilet Tower Defense | Hamburger TV Man | 1/10 (500 gems) | Very Low
+Toilet Tower Defense | Future Cameraman | 1/10 (500 gems) | Very Low
+Toilet Tower Defense | Infected Crate | 1/10 (500 gems) | Very Low
+Toilet Tower Defense | Firework Cameraman | 1/10 (500 gems) | Very Low
+Toilet Tower Defense | Computer Speakerman | 1/10 (500 gems) | Very Low
+Toilet Tower Defense | Amplifier Microphone Man | 1/10 (500 gems) | Very Low
+Toilet Tower Defense | Toilet Man | 1/10 (500 gems) | Very Low
+Toilet Tower Defense | Flamethrower Cameraman | 1/10 (400 gems) | Very Low
+Toilet Tower Defense | Summoner Pencilman | 1/10 (400 gems) | Very Low
+Toilet Tower Defense | Z1MP Cameraman | 1/10 (390 gems) | Very Low
+Toilet Tower Defense | Titan Shark Speakerman | 1/10 (350 gems) | Very Low
+Toilet Tower Defense | Beret Cameraman | 1/10 (350 gems) | Very Low
+Toilet Tower Defense | Large Forcefield Cameraman | 1/10 (350 gems) | Very Low
+Toilet Tower Defense | Futuristic Scientist Mech | 1/10 (300 gems) | Very Low
+Toilet Tower Defense | Camerawoman | 1/10 (300 gems) | Very Low
+Toilet Tower Defense | Beach Cameraman | 1/10 (300 gems) | Very Low
+Toilet Tower Defense | Reindeer Speakerman | 1/10 (300 gems) | Very Low
+Toilet Tower Defense | Alpha Speakerman | 1/10 (300 gems) | Very Low
+Toilet Tower Defense | Sandshield Soldier | 1/10 (300 gems) | Very Low
+Toilet Tower Defense | Headless Camerawoman | 1/10 (290 gems) | Very Low
+Toilet Tower Defense | Cat Toilet | 1/10 (250 gems) | Very Low
+Toilet Tower Defense | Headless Speakerman | 1/10 (250 gems) | Very Low
+Toilet Tower Defense | Airplane Toilet | 1/10 (200 gems) | Very Low
+Toilet Tower Defense | Upgraded Mafia Toilet | 1/10 (200 gems) | Very Low
+Toilet Tower Defense | Cameraman Car | 1/10 (200 gems) | Very Low
+Toilet Tower Defense | Large Heart Speakerman | 1/10 (200 gems) | Very Low
+Toilet Tower Defense | Cupid Camerawoman | 1/10 (200 gems) | Very Low
+Toilet Tower Defense | American Speakerman | 1/10 (150 gems) | Very Low
+Toilet Tower Defense | Knife Upgraded Titan Speakerman | 1/10 (150 gems) | Very Low
+Toilet Tower Defense | Dual Bat Speakerman | 1/10 (150 gems) | Very Low
+Toilet Tower Defense | Magician Speakerman | 1/10 (120 gems) | Very Low
+Toilet Tower Defense | Speaker Large TV Man | 1/10 (120 gems) | Very Low
+Toilet Tower Defense | Mech Cameraman | 1/10 (120 gems) | Very Low
+Toilet Tower Defense | Spear Speakerman | 1/10 (120 gems) | Very Low
+Toilet Tower Defense | Laser Gun Cameraman | 1/10 (100 gems) | Very Low
+Toilet Tower Defense | Laser Cameraman Car | 1/10 (100 gems) | Very Low
+Toilet Tower Defense | Zombie Toilet | 1/10 (100 gems) | Very Low
+Toilet Tower Defense | Camera Helicopter | 1/10 (100 gems) | Very Low
+Toilet Tower Defense | Minigun Camerawoman | 1/10 (100 gems) | Very Low
+Toilet Tower Defense | Dancing Speakerwoman | 1/10 (100 gems) | Very Low
+Toilet Tower Defense | Goal Crate | 1/10 (100 gems) | Very Low
+Toilet Tower Defense | Military Mutant Toilet Girl | 1/10 (100 gems) | Very Low
+Toilet Tower Defense | Dark Speakerman | 1/10 (100 gems) | Very Low
+Toilet Tower Defense | Secret Agent | 1/10 (100 gems) | Very Low
+Toilet Tower Defense | Demented Titan Cameraman | 1/10 (100 gems) | Very Low
+Toilet Tower Defense | Teddy Bear Speakerman | 1/10 (100 gems) | Very Low
+Toilet Tower Defense | Stopwatch Cameraman | 1/10 (100 gems) | Very Low
+Toilet Tower Defense | Jetpack Speakerman | 1/10 (100 gems) | Very Low
+Toilet Tower Defense | Flamethrower Toilet | 1/10 (100 gems) | Very Low
+Toilet Tower Defense | Lucky Speakerman | 1/10 (100 gems) | Very Low
+Toilet Tower Defense | Mafia Mutant | 1/10 (100 gems) | Very Low
+Toilet Tower Defense | Robber Cameraman | 1/10 (100 gems) | Very Low
+Toilet Tower Defense | Ninja Cameraman | 1/10 (80 gems) | Very Low
+Toilet Tower Defense | Toxic Upgraded Titan Cameraman | 1/10 (80 gems) | Very Low
+Toilet Tower Defense | Bat Speakerman | 1/10 (70 gems) | Very Low
+Toilet Tower Defense | Turkey Drillman | 1/10 (70 gems) | Very Low
+Toilet Tower Defense | Ohio Cameraman | 1/10 (67 gems) | Very Low
+Toilet Tower Defense | Medic Cameraman | 1/10 (60 gems) | Very Low
+Toilet Tower Defense | Candy Cane Cameraman | 1/10 (50 gems) | Very Low
+Toilet Tower Defense | Chocolate Cameraman | 1/10 (50 gems) | Very Low
+Toilet Tower Defense | Speaker Helicopter | 1/10 (50 gems) | Very Low
+Toilet Tower Defense | Speed Run Crate | 1/10 (50 gems) | Very Low
+Toilet Tower Defense | Camera Attack Helicopter | 1/10 (50 gems) | Very Low
+Toilet Tower Defense | Chariot Cameraman | 1/10 (50 gems) | Very Low
+Toilet Tower Defense | Heartbroken TV Man | 1/10 (50 gems) | Very Low
+Toilet Tower Defense | Pineapple Speakerman | 1/10 (50 gems) | Very Low
+Toilet Tower Defense | Saw Upgraded Titan Cameraman | 1/10 (50 gems) | Very Low
+Toilet Tower Defense | Speedy Speakerman | 1/10 (45 gems) | Very Low
+Toilet Tower Defense | Dark Blue Suit Cameraman | 1/10 (43 gems) | Very Low
+Toilet Tower Defense | VIP Crate | 1/10 (30 gems) | Very Low
+Toilet Tower Defense | Cappuccino Assassino | 1/10 (25 gems) | Very Low
+Toilet Tower Defense | Layered Drillman | 1/10 (20 gems) | Very Low
+Toilet Tower Defense | Upgraded Toilet Scientist | 1/10 (20 gems) | Very Low
+Toilet Tower Defense | Easter Speakerman | 1/10 (15 gems) | Very Low
+Toilet Tower Defense | Large Cameraman | 1/10 (10 gems) | Very Low
+Toilet Tower Defense | Large Drillman | 1/10 (10 gems) | Very Low
+Toilet Tower Defense | Dual Blade Bunnyman | 1/10 (10 gems) | Very Low
+Toilet Tower Defense | Bubble Blaster TV Man | 1/10 (10 gems) | Very Low
+Toilet Tower Defense | Cop Cameraman | 1/10 (7 gems) | Very Low
+Toilet Tower Defense | DJ Toilet | 1/10 (5 gems) | Very Low
+Toilet Tower Defense | Plumber Cameraman | 1/10 (5 gems) | Very Low
+Toilet Tower Defense | Toilet | 1/10 (5 gems) | Very Low
+Toilet Tower Defense | Upgraded Refined Drillman | 1/10 (5 gems) | Very Low
+Toilet Tower Defense | Turkey TV Man | 1/10 (5 gems) | Very Low
+Toilet Tower Defense | Scientist Toilet | 1/10 (5 gems) | Very Low
+Toilet Tower Defense | Large TV Man | 1/10 (5 gems) | Very Low
+Toilet Tower Defense | Gun Pencilman | 1/10 (5 gems) | Very Low
+Toilet Tower Defense | Mafia Toilet | 1/10 (3 gems) | Very Low
+Toilet Tower Defense | Camo Toilet | 1/10 (3 gems) | Very Low
+Toilet Tower Defense | Rocket Cameraman | 1/10 (3 gems) | Very Low
+Toilet Tower Defense | Orbital Camera | 1/10 (3 gems) | Very Low
+Toilet Tower Defense | Ice Cream Speakerman | 1/10 (3 gems) | Very Low
+Toilet Tower Defense | Refined Drillman | 1/10 (3 gems) | Very Low
+Toilet Tower Defense | Upgraded Camera Spider | 1/10 (2 gems) | Very Low
+Toilet Tower Defense | Gladiator Speakerman | 1/10 (1 gems) | Very Low
+Toilet Tower Defense | Calendar Speakerman | 1/10 (1 gems) | Very Low
+Toilet Tower Defense | TV Man | 1/10 (1 gems) | Very Low
+Toilet Tower Defense | Scientist TV Man | 1/10 (1 gems) | Very Low
+Toilet Tower Defense | Mob Boss Toilet | 1/10 (1 gems) | Very Low
+Toilet Tower Defense | Tracksuit Cameraman | 1/10 (1 gems) | Very Low
+Toilet Tower Defense | Brown Suit Cameraman | 1/10 (1 gems) | Very Low
+Toilet Tower Defense | Translator Cameraman | 1/10 (1 gems) | Very Low
+Toilet Tower Defense | Large Speakerman | 1/10 (1 gems) | Very Low
+Toilet Tower Defense | Surveillance Camerawoman | 1/10 (1 gems) | Very Low
+Toilet Tower Defense | Thumbs Up Speakerman | 1/10 (1 gems) | Very Low
+Toilet Tower Defense | Car Speakerman | 1/10 (1 gems) | Very Low
+Toilet Tower Defense | Sunglasses Speakerman | 1/10 (1 gems) | Very Low
+Toilet Tower Defense | Pencilman | 1/10 (1 gems) | Very Low
+Toilet Tower Defense | Cameraman | 1/10 (1 gems) | Very Low
+Toilet Tower Defense | Hourglass Speakerman | 1/10 (1 gems) | Very Low
 Royale High | Harmonic Hearts Everfriend Halo 2025 | 10/10 (19.6M diamonds) | Very High
 Royale High | Divine Adoration Everfriend Halo 2024 | 10/10 (16M-17.2M diamonds) | Very High
 Royale High | Glacial Angel Glitterfrost Halo 2024 | 10/10 (15.5M-16.5M diamonds) | Very High
