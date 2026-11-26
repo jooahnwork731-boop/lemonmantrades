@@ -1056,14 +1056,6 @@ const VOTES_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQZusnRnq4Dno
   waitFor(() => typeof TRADES2 !== "undefined" && TRADES2, () => setTimeout(() => {
     const matched = TRADES2.filter(t => t.partner).length, winners = document.querySelectorAll("#winnerGrid .wcard").length;
     $("trust").textContent = `✅ ${matched} trades matched · 🔁 ${TRADES2.length} trades posted · 🏆 ${winners} winners`;
-    const count = {};
-    TRADES2.filter(t => !t.partner).forEach(t => splitItems(t.wants).forEach(k => { if (low(k) !== "offers") count[k] = (count[k] || 0) + 1; }));
-    const top = Object.entries(count).sort((a, b) => b[1] - a[1]).slice(0, 6);
-    if (top.length){
-      $("hotList").innerHTML = top.map(([k, n]) => `<span class="hotChip" data-q="${esc(k)}">${esc(k)}${n > 1 ? " ×" + n : ""}</span>`).join("");
-      $("hotList").querySelectorAll(".hotChip").forEach(c => c.onclick = () => { $("tradeQ").value = c.dataset.q; shown = 12; drawTrades(); $("trades").scrollIntoView(); });
-      $("hotBox").style.display = "block";
-    }
   }, 1500));
   waitFor(haveValues, () => {
     const pool = VALUES2.filter(v => ptsOf(v) >= 7), v = pool.length ? pool[hash(nyDate()) % pool.length] : null;
@@ -1201,6 +1193,7 @@ const REQUESTS_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQZusnRnq4
 <!-- HOT ITEMS PATCH v2: each trade stays together and shows the full trade -->
 <script>
 (function(){
+  let lastHot = null;
   function drawHot(){
     if (typeof TRADES2 === "undefined" || !TRADES2 || !$("hotList")) return false;
     const open = TRADES2.filter(t => !t.partner && String(t.wants).trim().toLowerCase() !== "offers");
@@ -1210,6 +1203,9 @@ const REQUESTS_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQZusnRnq4
       (groups[key] = groups[key] || { t, n: 0 }).n++;
     });
     const top = Object.values(groups).sort((a, b) => b.n - a.n).slice(0, 5);
+    const key = top.map(({ t, n }) => t.game + "|" + t.wants + "|" + t.user + "|" + n).join("~");
+    if (key === lastHot) return true;
+    lastHot = key;
     if (!top.length){ $("hotBox").style.display = "none"; return true; }
     $("hotList").innerHTML = top.map(({ t, n }, i) => `
       <div class="hotRow" data-i="${i}" style="background:var(--c2);border:1px solid var(--c3);border-radius:12px;padding:8px 10px;margin-top:6px;cursor:pointer">
