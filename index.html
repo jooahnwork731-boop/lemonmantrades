@@ -710,7 +710,7 @@ if (SHEET_CSV.startsWith("http")){
       if (rows.length < 2) return;
       const head = rows[0].map(h => h.trim().toLowerCase());
       const col = name => head.findIndex(h => h.startsWith(name));
-      const G = col("game"), H = col("i have"), W = col("i want"), U = col("roblox") >= 0 ? col("roblox") : col("username"), OK = col("ok"), TS = col("timestamp");
+      const G = col("game"), H = col("i have"), W = col("i want"), U = col("roblox") >= 0 ? col("roblox") : col("username"), OK = col("ok"), TS = col("timestamp"), MW = col("matched");
       const MAX_AGE = 14 * 86400000;
       if (G < 0 || H < 0 || OK < 0) return;
       const cut = s => String(s || "").trim().slice(0, 80);
@@ -719,7 +719,7 @@ if (SHEET_CSV.startsWith("http")){
         .filter(r => { const t = TS >= 0 ? Date.parse(r[TS]) : NaN; return isNaN(t) || Date.now() - t < MAX_AGE; })
         .reverse()
         .map(r => ({ game: cut(r[G]), has: String(r[H] || "").trim().slice(0, 200), wants: String(r[W] || "").trim().slice(0, 200) || "Offers",
-                     user: RBX_NAME.test(cut(r[U])) ? cut(r[U]) : "Player", partner: "", when: "", time: TS >= 0 ? cut(r[TS]) : "" }));
+                     user: RBX_NAME.test(cut(r[U])) ? cut(r[U]) : "Player", partner: MW >= 0 && RBX_NAME.test(cut(r[MW])) ? cut(r[MW]) : "", when: "", time: TS >= 0 ? cut(r[TS]) : "" }));
       const wait = setInterval(() => {
         if (!TRADES2) return;
         clearInterval(wait);
@@ -1115,6 +1115,51 @@ const VOTES_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQZusnRnq4Dno
     });
   }
   wheelSetup();
+})();
+</script>
+<!-- REQUEST FORM PATCH: "Request this trade" opens the Trade Request Google Form; requests show on the card -->
+<script>
+const REQUEST_FORM = "https://docs.google.com/forms/d/e/1FAIpQLSfAiv5l42SGKeyCLmIYABiplHyZhrQbQh7P_vc6YfSlCn9Itg/viewform", REQUEST_TRADE_ENTRY = "entry.588077881";
+const REQUESTS_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQZusnRnq4DnoOnmKG-0e7ZoU4AucYBiikValn5yQZbVjwSk2m4X9OcV_8nd256WCCzpOzmnjAAjSX3/pub?gid=532070378&single=true&output=csv";
+(function(){
+  const tradeKey = t => `${t.game} | ${t.has} | ${t.wants} | ${t.user}`;
+  document.body.insertAdjacentHTML("beforeend", `<div class="popBg" id="requestPop"><div class="popBox"><button class="popX" type="button" aria-label="Close">✕</button>
+    <h3>🤝 Request this trade</h3><p class="note" style="margin:-4px 0 8px;text-align:left">The trade is already filled in. Add your Roblox username and when you can trade. Then meet in the game and use the trade window.</p><iframe title="Trade Request"></iframe></div></div>`);
+  const pop = document.getElementById("requestPop");
+  pop.onclick = e => { if (e.target === pop || e.target.classList.contains("popX")){ pop.classList.remove("open"); pop.querySelector("iframe").removeAttribute("src"); } };
+  openReq = function(t){
+    pop.querySelector("iframe").src = `${REQUEST_FORM}?embedded=true&usp=pp_url&${REQUEST_TRADE_ENTRY}=${encodeURIComponent(tradeKey(t).slice(0, 400))}`;
+    pop.classList.add("open");
+  };
+  /* show requests on each card */
+  const REQS = {};
+  const base = drawTrades;
+  drawTrades = function(){
+    base();
+    if (!Object.keys(REQS).length) return;
+    $("tradeGrid").querySelectorAll(".trade").forEach(card => {
+      const b = card.querySelector("[data-req]"); if (!b || typeof TRADES2 === "undefined" || !TRADES2) return;
+      const t = TRADES2[+b.dataset.req], list = t && REQS[tradeKey(t).toLowerCase()];
+      if (!list || !list.length) return;
+      b.insertAdjacentHTML("beforebegin", `<div style="background:var(--bg);border-radius:12px;padding:8px 10px;font-size:.85rem;font-weight:700">
+        🙋 ${list.length} request${list.length > 1 ? "s" : ""}:<br>${list.slice(0, 5).map(r => `👤 ${esc(r.user)}${r.when ? ` <span style="color:var(--mut)">· ${esc(r.when)}</span>` : ""}`).join("<br>")}${list.length > 5 ? "<br>…" : ""}</div>`);
+    });
+  };
+  if (REQUESTS_CSV.startsWith("http")){
+    fetch(REQUESTS_CSV + "&v=" + Date.now()).then(r => r.ok ? r.text() : "").catch(() => "").then(text => {
+      const rows = parseCSV(text); if (rows.length < 2) return;
+      const head = rows[0].map(x => x.trim().toLowerCase()), col = n => head.findIndex(x => x.includes(n));
+      const K = col("which trade"), U = col("username"), W = col("when");
+      if (K < 0 || U < 0) return;
+      const seen = new Set();
+      rows.slice(1).forEach(r => {
+        const k = String(r[K] || "").trim().toLowerCase(), u = String(r[U] || "").trim(), w = W >= 0 ? String(r[W] || "").trim().slice(0, 40) : "";
+        if (!k || !RBX_NAME.test(u) || seen.has(k + "|" + u.toLowerCase())) return;
+        seen.add(k + "|" + u.toLowerCase()); (REQS[k] = REQS[k] || []).push({ user: u, when: w });
+      });
+      drawTrades();
+    });
+  }
 })();
 </script>
 <!-- LAUNCH QOL PATCH: multi-item tip, share button, back to top -->
