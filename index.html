@@ -719,7 +719,7 @@ if (SHEET_CSV.startsWith("http")){
       if (rows.length < 2) return;
       const head = rows[0].map(h => h.trim().toLowerCase());
       const col = name => head.findIndex(h => h.startsWith(name));
-      const G = col("game"), H = col("i have"), W = col("i want"), U = col("roblox") >= 0 ? col("roblox") : col("username"), OK = col("ok"), TS = col("timestamp"), MW = col("matched");
+      const G = col("game"), H = col("i have"), W = col("i want"), U = col("roblox") >= 0 ? col("roblox") : col("username"), OK = col("ok"), TS = col("timestamp"), MW = col("matched"), WH = col("when");
       const MAX_AGE = 14 * 86400000;
       if (G < 0 || H < 0 || OK < 0) return;
       const cut = s => String(s || "").trim().slice(0, 80);
@@ -728,7 +728,7 @@ if (SHEET_CSV.startsWith("http")){
         .filter(r => { const t = TS >= 0 ? parseNY(r[TS]) : NaN; return isNaN(t) || Date.now() - t < MAX_AGE; })
         .reverse()
         .map(r => ({ game: cut(r[G]), has: String(r[H] || "").trim().slice(0, 200), wants: String(r[W] || "").trim().slice(0, 200) || "Offers",
-                     user: RBX_NAME.test(cut(r[U])) ? cut(r[U]) : "Player", partner: MW >= 0 && RBX_NAME.test(cut(r[MW])) ? cut(r[MW]) : "", when: "", time: TS >= 0 ? cut(r[TS]) : "" }));
+                     user: RBX_NAME.test(cut(r[U])) ? cut(r[U]) : "Player", partner: MW >= 0 && RBX_NAME.test(cut(r[MW])) ? cut(r[MW]) : "", when: WH >= 0 ? cut(r[WH]).slice(0, 40) : "", time: TS >= 0 ? cut(r[TS]) : "" }));
       const wait = setInterval(() => {
         if (!TRADES2) return;
         clearInterval(wait);
