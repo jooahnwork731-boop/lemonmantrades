@@ -967,6 +967,17 @@ const VOTES_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQZusnRnq4Dno
   const ml = document.getElementById("menuList");
   if (ml){ const a = ml.querySelector('a[href="#values"]'); if (a) a.insertAdjacentHTML("afterend", `<a href="#calc">🧮 Trade Calculator</a>`); }
 
+  /* Report pop-up (Google Form, trade filled in automatically) */
+  const REPORT_FORM = "https://docs.google.com/forms/d/e/1FAIpQLSdSrXseS6DpLN0TcrK-GghuK5xDg3-mXD6Ua9c6ghE6l_RrAQ/viewform", REPORT_TRADE_ENTRY = "entry.151424625";
+  document.body.insertAdjacentHTML("beforeend", `<div class="popBg" id="reportPop"><div class="popBox"><button class="popX" type="button" aria-label="Close">✕</button>
+    <h3>🚩 Report a Trade</h3><p class="note" style="margin:-4px 0 8px;text-align:left">Thanks for keeping Lemon Man safe! The trade is already filled in.</p><iframe title="Report a Trade"></iframe></div></div>`);
+  const repPop = $("reportPop");
+  repPop.onclick = e => { if (e.target === repPop || e.target.classList.contains("popX")){ repPop.classList.remove("open"); repPop.querySelector("iframe").removeAttribute("src"); } };
+  function openReport(info){
+    repPop.querySelector("iframe").src = `${REPORT_FORM}?embedded=true&usp=pp_url&${REPORT_TRADE_ENTRY}=${encodeURIComponent(info.slice(0, 300))}`;
+    repPop.classList.add("open");
+  }
+
   /* 2. Trade cards: many items per side, total value, time posted, copy username, report */
   const splitItems = s => String(s || "").split(/\s*(?:,|\+|&|\/|\n|\band\b)\s*/i).map(x => x.trim()).filter(Boolean).slice(0, 10);
   const ago = ts => { const t = Date.parse(ts); if (isNaN(t)) return ""; const m = Math.max(0, Math.round((Date.now() - t) / 60000));
@@ -1002,8 +1013,7 @@ const VOTES_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQZusnRnq4Dno
       userEl.onclick = () => { try { navigator.clipboard.writeText(user); userEl.textContent = "✅ Copied!"; setTimeout(() => userEl.textContent = "👤 " + user, 1500); } catch (e) {} };
       card.insertAdjacentHTML("beforeend", `<div style="display:flex;justify-content:space-between;font-size:.75rem;color:var(--mut);font-weight:700">
         <span>${when ? "🕓 " + when : ""}</span><a href="#" class="repLink" style="color:var(--mut)">🚩 Report</a></div>`);
-      card.querySelector(".repLink").onclick = e => { e.preventDefault();
-        mail({ subject: "Report trade: " + game + " - " + user, body: `🚩 Report this trade\n\nGame: ${game}\nHas: ${hasTxt}\nWants: ${wantTxt}\nUser: ${user}\n\nWhat's wrong:` }); };
+      card.querySelector(".repLink").onclick = e => { e.preventDefault(); openReport(`${game} | Has: ${hasTxt} | Wants: ${wantTxt} | User: ${user}`); };
     });
     /* trade counts on game buttons */
     if (typeof TRADES2 !== "undefined" && TRADES2) $("tradeChips").querySelectorAll(".chip").forEach(c => {
